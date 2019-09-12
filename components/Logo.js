@@ -6,12 +6,17 @@ const SVG = ({
         strokeMiterLimit: "10",
         fill: "url(#linear-gradient)",
     },
+    svgStyle = {
+        position: "absolute",
+        left: "55px",
+        top: "20px",
+    },
     viewBox = "0 0 73 73",
     fill = "#ffffff",
-    width = "15%",
+    width = "10%",
     padding = "50px"
 }) => (
-    <svg 
+    <svg style={svgStyle}
     width={width}
     viewBox={viewBox}
     padding={padding}>

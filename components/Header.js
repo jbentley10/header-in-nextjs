@@ -5,7 +5,7 @@ import {useSpring, animated} from 'react-spring';
 /* Animations */ 
 function HeaderFadeInAnimation() {
   // Define one of our springs
-  const fadeInQuick = useSpring({opacity: 1, from: {opacity: 0.25}})
+  const fadeInQuick = useSpring({opacity: 1, from: {opacity: 0}})
 
   return (
     <animated.h1 style={fadeInQuick}>Create. Design. Elevate</animated.h1>
