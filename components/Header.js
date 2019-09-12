@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Logo from './Logo';
-import {useSpring, animated} from 'react-spring';
+import {useSpring, animated, config} from 'react-spring';
 
 /* Animations */ 
 function HeaderFadeInAnimation() {
   // Define one of our springs
-  const fadeInQuick = useSpring({opacity: 1, from: {opacity: 0}})
+  const fadeInQuick = useSpring({delay: 250, opacity: 1, from: {opacity: 0}})
 
   return (
     <animated.h1 style={fadeInQuick}>Create. Design. Elevate</animated.h1>
@@ -13,7 +13,7 @@ function HeaderFadeInAnimation() {
 }
 
 function SubtitleFadeInAnimation() {
-  const fadeInSlow = useSpring({opacity: 1, from: {opacity: 0}})
+  const fadeInSlow = useSpring({delay: 1000, opacity: 1, from: {opacity: 0}})
 
   return (
     <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
