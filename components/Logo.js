@@ -32,7 +32,6 @@ function Spring() {
     
     const svgStyle = {
         position: "absolute",
-        left: "55px",
         top: "60px",
         zIndex: '999',
         position: 'relative'

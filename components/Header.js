@@ -63,7 +63,7 @@ const headerContentStyle = {
 const Header = () => (
   <div className="background">
     <Logo />
-    <div style={navStyle}>
+    <div className="navigation" style={navStyle}>
       <Link href="/contact">
         <a style={linkStyle}>Contact</a>
       </Link>
@@ -75,7 +75,7 @@ const Header = () => (
       </Link>
     </div>
     <Goo />
-    <div style={headerContentStyle}>
+    <div class="header__content" style={headerContentStyle}>
       <HeaderFadeInAnimation />
       <SubtitleFadeInAnimation />
     </div>
