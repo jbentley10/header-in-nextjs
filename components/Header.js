@@ -8,15 +8,15 @@ import '../styles.css';
 /* Animations */ 
 function HeaderFadeInAnimation() {
   // Define one of our springs
-  const fadeInQuick = useSpring({delay: 250, opacity: 1, from: {opacity: 0}})
+  const fadeInQuick = useSpring({delay: 500, opacity: 1, from: {opacity: 0}})
 
   return (
-    <animated.h1 style={fadeInQuick}>Create. Design. Elevate</animated.h1>
+    <animated.h1 style={fadeInQuick}>Create. Design. Elevate.</animated.h1>
   )
 }
 
 function SubtitleFadeInAnimation() {
-  const fadeInSlow = useSpring({delay: 1000, opacity: 1, from: {opacity: 0}})
+  const fadeInSlow = useSpring({delay: 1500, opacity: 1, from: {opacity: 0}})
 
   return (
     <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
@@ -49,11 +49,6 @@ const navStyle = {
   position: 'relative'
 }
 
-const headerStyle = {
-  backgroundColor: '#1c252c',
-  height: '100vh'
-}
-
 const headerContentStyle = {
   color: '#ffffff',
   fontFamily: 'Barlow, sans-serif',
@@ -66,7 +61,7 @@ const headerContentStyle = {
 
 /* Component Layout */ 
 const Header = () => (
-  <div style={headerStyle}>
+  <div className="background">
     <Logo />
     <div style={navStyle}>
       <Link href="/contact">
