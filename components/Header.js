@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import Logo from './Logo';
-import {useSpring, animated, config} from 'react-spring';
+import Goo from './Goo';
+import {useSpring, useTrail, animated, config} from 'react-spring';
+
+import '../styles.css';
 
 
 /* Animations */ 
@@ -35,13 +38,16 @@ const linkStyle = {
   fontFamily: 'Barlow, sans-serif',
   float: 'right',
   padding: '0 20px',
-  textDecoration: 'none'
+  textDecoration: 'none',
+  fontWeight: 'bolder',
+  fontSize: '20px'
 }
 
 const navStyle = {
-  paddingTop: '50px',
   marginRight: '50px',
-  marginBottom: '27vh'
+  marginBottom: '27vh',
+  zIndex: '999',
+  position: 'relative'
 }
 
 const headerStyle = {
@@ -54,7 +60,9 @@ const headerContentStyle = {
   fontFamily: 'Barlow, sans-serif',
   textAlign: 'center',
   width: '70%',
-  margin: '0 auto'
+  margin: '0 auto',
+  zIndex: '999',
+  position: 'relative'
 }
 
 /* Component Layout */ 
@@ -72,6 +80,7 @@ const Header = () => (
         <a style={linkStyle}>Work</a>
       </Link>
     </div>
+    <Goo />
     <div style={headerContentStyle}>
       <HeaderFadeInAnimation />
       <SubtitleFadeInAnimation />
