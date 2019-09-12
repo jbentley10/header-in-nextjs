@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from './Logo';
 import {useSpring, animated} from 'react-spring';
 
 /* Animations */ 
@@ -19,6 +20,13 @@ function SubtitleFadeInAnimation() {
   )
 }
 
+function LogoCircleAnimation() {
+  const AnimatedDonut = animated(Donut);
+  const props = useSpring({ value: 100, from: { value: 0 } })
+
+  return <AnimatedDonut percent={props.value} />
+}
+
 /* CSS Styles */ 
 const linkStyle = {
   color: '#ffffff',
@@ -27,7 +35,7 @@ const linkStyle = {
   float: 'right',
   padding: '0 20px',
   textDecoration: 'none'
-};
+}
 
 const navStyle = {
   paddingTop: '50px',
@@ -51,7 +59,7 @@ const headerContentStyle = {
 /* Component Layout */ 
 const Header = () => (
   <div style={headerStyle}>
-    {/* Logo */}
+    <Logo />
     <div style={navStyle}>
       <Link href="/contact">
         <a style={linkStyle}>Contact</a>
