@@ -6,20 +6,24 @@ import {useSpring, useTrail, animated, config} from 'react-spring';
 import '../styles.css';
 
 /* Animations */ 
+
+/* Text parallax */
+const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
+const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
+const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`
+
 function HeaderFadeInAnimation() {
+  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
+
   // Define one of our springs
   const fadeInQuick = useSpring({delay: 500, opacity: 1, from: {opacity: 0}})
-
-  return (
-    <animated.h1 style={fadeInQuick}>Create. Design. Elevate.</animated.h1>
-  )
-}
-
-function SubtitleFadeInAnimation() {
   const fadeInSlow = useSpring({delay: 1500, opacity: 1, from: {opacity: 0}})
 
   return (
-    <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
+    <div className="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+      <animated.h1 style={transform=props.xy.interpolate(trans1)}>Create. Design. Elevate.</animated.h1>
+      <animated.p style={transform=props.xy.interpolate(trans1)}}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
+    </div>
   )
 }
 
@@ -77,7 +81,6 @@ const Header = () => (
     <Goo />
     <div class="header__content" style={headerContentStyle}>
       <HeaderFadeInAnimation />
-      <SubtitleFadeInAnimation />
     </div>
 
     <style jsx>{`
