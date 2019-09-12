@@ -1,5 +1,33 @@
 import Link from 'next/link';
+import Logo from './Logo';
+import {useSpring, animated} from 'react-spring';
 
+/* Animations */ 
+function HeaderFadeInAnimation() {
+  // Define one of our springs
+  const fadeInQuick = useSpring({opacity: 1, from: {opacity: 0}})
+
+  return (
+    <animated.h1 style={fadeInQuick}>Create. Design. Elevate</animated.h1>
+  )
+}
+
+function SubtitleFadeInAnimation() {
+  const fadeInSlow = useSpring({opacity: 1, from: {opacity: 0}})
+
+  return (
+    <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
+  )
+}
+
+function LogoCircleAnimation() {
+  const AnimatedDonut = animated(Donut);
+  const props = useSpring({ value: 100, from: { value: 0 } })
+
+  return <AnimatedDonut percent={props.value} />
+}
+
+/* CSS Styles */ 
 const linkStyle = {
   color: '#ffffff',
   transition: '.5s',
@@ -7,7 +35,7 @@ const linkStyle = {
   float: 'right',
   padding: '0 20px',
   textDecoration: 'none'
-};
+}
 
 const navStyle = {
   paddingTop: '50px',
@@ -26,12 +54,12 @@ const headerContentStyle = {
   textAlign: 'center',
   width: '70%',
   margin: '0 auto'
-
 }
 
+/* Component Layout */ 
 const Header = () => (
   <div style={headerStyle}>
-    {/* Logo */}
+    <Logo />
     <div style={navStyle}>
       <Link href="/contact">
         <a style={linkStyle}>Contact</a>
@@ -44,9 +72,10 @@ const Header = () => (
       </Link>
     </div>
     <div style={headerContentStyle}>
-      <h1>Create. Analyze. Elevate.</h1>
-      <p>I am a freelance web and graphic designer, passionate about taking brands to the next level.</p>
+      <HeaderFadeInAnimation />
+      <SubtitleFadeInAnimation />
     </div>
+
     <style jsx>{`
       h1 {
         font-size: 50px;
