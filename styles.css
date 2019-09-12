@@ -1,9 +1,21 @@
+body {
+    margin: 0;
+}
+
 h1 {
     font-size: 60px;
 }
 
 p {
     font-size: 32px;
+}
+
+h1:hover, p:hover {
+    cursor: default;
+}
+
+a {
+    transition: .5s;
 }
 
 /* From Blobs tutorial: https://codesandbox.io/embed/8zx4ppk01l */
@@ -14,25 +26,28 @@ p {
   .hooks-main > div {
     position: absolute;
     will-change: transform;
-    border-radius: 50%;
-    background: lightcoral;
+    border-radius: 0;
+    background: #a64eba;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    opacity: 0.6;
+    opacity: 0.4;
   }
   
+  /* Small */
   .hooks-main > div:nth-child(1) {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
   
+  /* Large */
   .hooks-main > div:nth-child(2) {
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
   }
   
+  /* Medium */
   .hooks-main > div:nth-child(3) {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
   }
   
   .hooks-main > div::after {
@@ -42,7 +57,7 @@ p {
     left: 20px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 0;
     background: rgba(255, 255, 255, 0.8);
   }
   

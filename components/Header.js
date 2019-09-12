@@ -37,7 +37,9 @@ const linkStyle = {
   fontFamily: 'Barlow, sans-serif',
   float: 'right',
   padding: '0 20px',
-  textDecoration: 'none'
+  textDecoration: 'none',
+  fontWeight: 'bolder',
+  fontSize: '20px'
 }
 
 const navStyle = {
