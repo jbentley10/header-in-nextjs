@@ -18,6 +18,15 @@ a {
     transition: .5s;
 }
 
+.background {
+    background-image: url('/static/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: 0 -80px;
+    height: 109vh;
+}
+
 /* From Blobs tutorial: https://codesandbox.io/embed/8zx4ppk01l */
 .hooks-main > svg {
     display: none;
