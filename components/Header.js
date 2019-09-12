@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import {useSpring, animated, config} from 'react-spring';
 
+
 /* Animations */ 
 function HeaderFadeInAnimation() {
   // Define one of our springs
