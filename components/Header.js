@@ -13,7 +13,7 @@ function HeaderFadeInAnimation() {
 
   return (
     <div className="container">
-      <animated.h1 style={fadeInQuick}>Create. Design. Elevate.</animated.h1>
+      <animated.h1 style={fadeInQuick}>Create. Analyze. Elevate.</animated.h1>
       <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
     </div>
   )
@@ -32,8 +32,6 @@ const linkStyle = {
 }
 
 const navStyle = {
-  marginRight: '50px',
-  marginBottom: '27vh',
   zIndex: '999',
   position: 'relative'
 }
@@ -64,7 +62,7 @@ const Header = () => (
       </Link>
     </div>
     <Goo />
-    <div class="header__content" style={headerContentStyle}>
+    <div className="header__content" style={headerContentStyle}>
       <HeaderFadeInAnimation />
     </div>
 

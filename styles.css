@@ -2,14 +2,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 60px;
-}
-
-p {
-    font-size: 32px;
-}
-
 h1:hover, p:hover {
     cursor: default;
 }
@@ -24,7 +16,7 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     background-position: 0 -80px;
-    height: 109vh;
+    height: 110vh;
 }
 
 /* From Blobs tutorial: https://codesandbox.io/embed/8zx4ppk01l */
@@ -94,23 +86,52 @@ a {
   }
 
   @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+        font-size: 32px;
+    }
+
     svg {
-        left: 55px;
+      left: 55px;
+      top: 60px;
+    }
+
+    .navigation {
+        margin-right: 50px;
+        margin-bottom: 27vh;
     }
   }
 
   @media screen and (max-width: 767px) {
-      svg {
-          left: 35vw;
-          width: 130px;
-      }
+    h1 {
+        font-size: 50px;
+    }
 
-      .navigation {
-        top: 11vh;
-        left: 0;
-      }
+    p {
+        font-size: 24px;
+    }
 
-      .header__content {
-          top: -80px
-      }
+    svg {
+      left: 35vw;
+      width: 100px;
+      top: 20px;
+    }
+
+    .background { 
+      height: 170vh;
+    }
+
+    .navigation {
+      top: 7vh;
+      margin: 0 auto;
+      text-align: center;
+      float: none;
+    }
+
+    .header__content {
+      top: 70px
+    }
   }
