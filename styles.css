@@ -92,3 +92,25 @@ a {
     overflow: hidden;
     top: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    svg {
+        left: 55px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+      svg {
+          left: 35vw;
+          width: 130px;
+      }
+
+      .navigation {
+        top: 11vh;
+        left: 0;
+      }
+
+      .header__content {
+          top: -80px
+      }
+  }

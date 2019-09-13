@@ -10,25 +10,14 @@ import '../styles.css';
 function HeaderFadeInAnimation() {
   // Define one of our springs
   const fadeInQuick = useSpring({delay: 500, opacity: 1, from: {opacity: 0}})
-
-  return (
-    <animated.h1 style={fadeInQuick}>Create. Design. Elevate.</animated.h1>
-  )
-}
-
-function SubtitleFadeInAnimation() {
   const fadeInSlow = useSpring({delay: 1500, opacity: 1, from: {opacity: 0}})
 
   return (
-    <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
+    <div className="container">
+      <animated.h1 style={fadeInQuick}>Create. Design. Elevate.</animated.h1>
+      <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
+    </div>
   )
-}
-
-function LogoCircleAnimation() {
-  const AnimatedDonut = animated(Donut);
-  const props = useSpring({ value: 100, from: { value: 0 } })
-
-  return <AnimatedDonut percent={props.value} />
 }
 
 /* CSS Styles */ 
@@ -64,7 +53,7 @@ const headerContentStyle = {
 const Header = () => (
   <div className="background">
     <Logo />
-    <div style={navStyle}>
+    <div className="navigation" style={navStyle}>
       <Link href="/contact">
         <a style={linkStyle}>Contact</a>
       </Link>
@@ -76,9 +65,8 @@ const Header = () => (
       </Link>
     </div>
     <Goo />
-    <div style={headerContentStyle}>
+    <div class="header__content" style={headerContentStyle}>
       <HeaderFadeInAnimation />
-      <SubtitleFadeInAnimation />
     </div>
 
     <style jsx>{`
