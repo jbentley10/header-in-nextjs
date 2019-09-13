@@ -8,8 +8,8 @@ import '../styles.css';
 /* Animations */ 
 function HeaderFadeInAnimation() {
   // Define one of our springs
-  const fadeInQuick = useSpring({delay: 500, opacity: 1, from: {opacity: 0}})
-  const fadeInSlow = useSpring({delay: 1500, opacity: 1, from: {opacity: 0}})
+  const fadeInQuick = useSpring({delay: 4000, opacity: 1, from: {opacity: 0}})
+  const fadeInSlow = useSpring({delay: 5200, opacity: 1, from: {opacity: 0}})
 
   return (
     <div className="container">

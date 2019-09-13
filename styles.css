@@ -10,6 +10,23 @@ a {
     transition: .5s;
 }
 
+svg {
+    animation: fadeInSVG 2s linear;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    box-shadow: 3px 2px 8px #4d4e53;
+    border-radius: 50%;
+}
+
+@keyframes fadeInSVG {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}
+
 .background {
     background-image: url('/static/background.png');
     background-size: cover;
@@ -17,6 +34,52 @@ a {
     width: 100%;
     background-position: 0 -80px;
     height: 110vh;
+}
+
+/* Animate the logo */
+/* Circle */
+.cls-1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dashCircle 7s linear;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.cls-2 {
+    stroke-dasharray: 109.766;
+    stroke-dashoffset: 109.766;
+}
+
+.cls-3, .cls-4{
+    stroke-dasharray: 117.38;
+    stroke-dashoffset: 117.38;
+}
+
+.cls-2, .cls-3, .cls-4 {
+    animation: dashSignature 2s linear;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes dashSignature {
+    from {
+        stroke-dashoffset: 118;
+        fill: #000;
+      }
+      to {
+        stroke-dashoffset: 0;
+        fill: #fff;
+      }
+}
+
+@keyframes dashCircle {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
 }
 
 /* From Blobs tutorial: https://codesandbox.io/embed/8zx4ppk01l */
