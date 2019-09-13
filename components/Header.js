@@ -21,8 +21,8 @@ function HeaderFadeInAnimation() {
 
   return (
     <div className="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-      <animated.h1 style={transform=props.xy.interpolate(trans1)}>Create. Design. Elevate.</animated.h1>
-      <animated.p style={transform=props.xy.interpolate(trans1)}}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
+      <animated.h1 style={{transform:props.xy.interpolate(trans1)}}>Create. Design. Elevate.</animated.h1>
+      <animated.p style={{transform:props.xy.interpolate(trans1)}}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
     </div>
   )
 }
