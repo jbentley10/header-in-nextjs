@@ -154,6 +154,10 @@ svg {
     top: 0;
   }
 
+  .margin-0-auto {
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: 768px) {
     h1 {
       font-size: 60px;
@@ -169,7 +173,6 @@ svg {
     }
 
     .navigation {
-        margin-right: 50px;
         margin-bottom: 27vh;
     }
   }

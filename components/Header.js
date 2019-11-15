@@ -12,7 +12,7 @@ function HeaderFadeInAnimation() {
   const fadeInSlow = useSpring({delay: 5200, opacity: 1, from: {opacity: 0}})
 
   return (
-    <div className="container">
+    <div className="container px-12">
       <animated.h1 style={fadeInQuick}>Create. Analyze. Elevate.</animated.h1>
       <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
     </div>
