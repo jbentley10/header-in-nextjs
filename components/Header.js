@@ -3,7 +3,7 @@ import Logo from './Logo';
 import Goo from './Goo';
 import {useSpring, useTrail, animated, config} from 'react-spring';
 
-import '../styles.css';
+import '../styles/styles.css';
 
 /* Animations */ 
 function HeaderFadeInAnimation() {
