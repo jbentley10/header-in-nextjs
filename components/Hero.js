@@ -10,9 +10,10 @@ function HeaderFadeInAnimation() {
   const fadeInSlow = useSpring({delay: 5200, opacity: 1, from: {opacity: 0}})
 
   return (
-    <div className="container px-12">
-      <animated.h1 style={fadeInQuick}>Create. Analyze. Elevate.</animated.h1>
-      <animated.p style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.p>
+    <div className="container">
+      <animated.h1 className="text-6xl" style={fadeInQuick}>Create. Analyze. Elevate.</animated.h1>
+      <br />
+      <animated.h2 className="text-4xl" style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.h2>
     </div>
   )
 }
@@ -22,7 +23,7 @@ const headerContentStyle = {
   color: '#ffffff',
   fontFamily: 'Barlow, sans-serif',
   textAlign: 'center',
-  width: '70%',
+  width: '80%',
   margin: '0 auto',
   zIndex: '999',
   position: 'relative'
@@ -37,13 +38,6 @@ const Hero = () => (
     </div>
 
     <style jsx>{`
-      h1 {
-        font-size: 50px;
-      }
-
-      p {
-        font-size: 25px;
-      }
 
       a:hover {
         transition: .5s;
