@@ -1,3 +1,4 @@
+import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../styles/styles.css';
 
@@ -5,7 +6,7 @@ import '../styles/styles.css';
 const ThreeColumnIcons = () => (
   <div className="three-column-icons text-center bg-dark-background text-white px-12">
     <div className="three-column-icons__content-row inline w-4/5 m-0 text-center">
-        <div className="three-column-icons__left inline-block p-12 mb-7">
+        <div className="move-up three-column-icons__left inline-block p-12 mb-7">
             <div className="three-column-icons__icon w-20 h-20 pb-8 margin-0-auto">
                 <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
             </div>
@@ -21,7 +22,7 @@ const ThreeColumnIcons = () => (
                 <h3 className="text-3xl">Heading!</h3>                
             </div>
         </div>
-        <div className="three-column-icons__right inline-block p-12 mb-7">
+        <div className="move-up three-column-icons__right inline-block p-12 mb-7">
             <div className="three-column-icons__icon w-20 h-20 pb-8 margin-0-auto">
                 <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
             </div>
@@ -29,6 +30,7 @@ const ThreeColumnIcons = () => (
                 <h3 className="text-3xl">Heading!</h3>                
             </div>
         </div>
+        <Button />
     </div>
 
     <style jsx>{`

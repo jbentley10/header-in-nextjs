@@ -6,10 +6,18 @@ module.exports = {
           display: ['Volte', 'Inter-Loom', 'Roboto', 'NanumBarunGothic', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
         },
         colors: {
-          'dark-background': '#1b242c'
+          'dark-background': '#1b242c',
+          'link-purple': '#9c79e3',
+          'button-purple': '#a880f4'
+        },
+        borderRadius: {
+          'button-radius': '15px'
         },
         width: {
           '49': '49%',
+        },
+        padding: {
+          'button-padding': '20px 30px'
         },
         minHeight: {
           '1/20': '5%',
