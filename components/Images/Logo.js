@@ -43,7 +43,7 @@ function Spring() {
             viewBox = {"0 0 73 73"}
             width = {"10%"}
             padding = {"50px"}
-            style={svgStyle}  
+            style={svgStyle} 
         >
             <defs>
                 <linearGradient 

@@ -8,7 +8,8 @@ module.exports = {
         colors: {
           'dark-background': '#1b242c',
           'link-purple': '#9c79e3',
-          'button-purple': '#a880f4'
+          'button-purple': '#a880f4',
+          'horizontal-bar': '#707070'
         },
         borderRadius: {
           'button-radius': '15px'

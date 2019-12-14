@@ -4,6 +4,8 @@ import ImageTextSplit from './ImageTextSplit';
 import CallToAction from './CallToAction';
 import DotsTransition from './Images/DotsTransition';
 import TwoTextSplit from './TwoTextSplit';
+import HorizontalBar from './Images/HorizontalBar';
+import Footer from './Footer';
 
 /* Font Awesome */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -21,7 +23,9 @@ const Layout = () => (
     <ImageTextSplit />
     <DotsTransition />
     <TwoTextSplit />
+    <HorizontalBar />
     <CallToAction />
+    <Footer />
   </div>
 );
 

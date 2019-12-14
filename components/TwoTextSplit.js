@@ -5,7 +5,7 @@ import '../styles/styles.css';
 const TwoTextSplit = () => (
     <div className="two-text-split bg-dark-background lines-background text-white px-12 w-full h-full">
         <div className="left inline">
-            <div className="left-quote w-2/5 text-left inline-block">
+            <div className="left-quote w-1/2 text-left inline-block">
                 <p className="text-base">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                     when an unknown printer took a galley of type and scrambled it to make a 
@@ -17,13 +17,13 @@ const TwoTextSplit = () => (
                 </p>
                 <p><strong>Person Name,</strong> Person Title</p>
             </div>
-            <div className="w-4/5 inline-block" />            
+            <div className="w-2/5 inline-block" />            
         </div>
         <br />
         <br />
         <div className="right inline">
-            <div className="w-4/5 inline-block" />
-            <div className="right-quote w-2/5 text-right inline-block">
+            <div className="w-2/5 inline-block" />
+            <div className="right-quote w-1/2 text-right inline-block mb-12">
                 <p className="text-base">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                     when an unknown printer took a galley of type and scrambled it to make a 
@@ -36,9 +36,6 @@ const TwoTextSplit = () => (
                 <p><strong>Person Name,</strong> Person Title</p>
             </div>
         </div>
-
-        <br />
-        <br />
         <Button />
 
         <style jsx>{`

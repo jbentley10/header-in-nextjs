@@ -49,7 +49,20 @@ svg {
 
 /* Jagged lines background */
 .lines-background {
-  background-image: url('/static/lines-background.png');
+  background-image: url('/static/line-background.png');
+}
+
+/* Horizontal bar that's tilted */
+.horizontal-bar {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  left: -15px;
+  transform: rotate(-10deg);
+}
+
+.grayscale {
+  filter: grayscale(0);
 }
 
 /* Animate the logo */
