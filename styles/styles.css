@@ -62,7 +62,7 @@ svg {
 }
 
 .grayscale {
-  filter: grayscale(0);
+  filter: grayscale(1);
 }
 
 /* Animate the logo */

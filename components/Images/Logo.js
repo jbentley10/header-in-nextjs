@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { useSpring, animated, config } from 'react-spring';
 
 // Example function from https://codesandbox.io/embed/nw61327570
@@ -18,7 +19,12 @@ function componentDidMount() {
     this.setState({ offset: Math.max(...pathLengths) + 0.3});
 }
 
-function Spring() {
+const LogoSpring = (props) => {
+    const {
+      TagName: tag,
+      className
+    } = props
+
     delay: 1000
     from: {opacity: 0}
     to: opacity: 1
@@ -43,7 +49,8 @@ function Spring() {
             viewBox = {"0 0 73 73"}
             width = {"10%"}
             padding = {"50px"}
-            style={svgStyle} 
+            style={svgStyle}
+            className={className} 
         >
             <defs>
                 <linearGradient 
@@ -71,4 +78,14 @@ function Spring() {
     )
 } 
 
-export default Spring;
+LogoSpring.propTypes = {
+  tagName: PropTypes.string,
+  className: PropTypes.string,
+}
+
+LogoSpring.defaultProps = {
+  tagName: '',
+  className: ''
+}
+
+export default LogoSpring;
