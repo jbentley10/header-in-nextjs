@@ -65,6 +65,10 @@ svg {
   filter: grayscale(1);
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
 /* Animate the logo */
 /* Circle */
 .cls-1 {
