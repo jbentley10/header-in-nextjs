@@ -1,19 +1,28 @@
 import Navigation from './Navigation';
 import {useSpring, useTrail, animated, config} from 'react-spring';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../styles/styles.css';
 
 /* Animations */ 
-function HeaderFadeInAnimation() {
+const HeaderFadeInAnimation = (props) => {
+  const {
+    TagName: tag,
+    className,
+    heading,
+    subtext
+  } = props
+
   // Define one of our springs
   const fadeInQuick = useSpring({delay: 4000, opacity: 1, from: {opacity: 0}})
   const fadeInSlow = useSpring({delay: 5200, opacity: 1, from: {opacity: 0}})
 
   return (
     <div className="container">
-      <animated.h1 className="text-6xl" style={fadeInQuick}>Create. Analyze. Elevate.</animated.h1>
+      <animated.h1 className="text-6xl" style={fadeInQuick}>{heading}</animated.h1>
       <br />
-      <animated.h2 className="text-4xl" style={fadeInSlow}>I am a freelance web and graphic designer, passionate about taking brands to the next level.</animated.h2>
+      <animated.h2 className="text-4xl" style={fadeInSlow}>{subtext}</animated.h2>
     </div>
   )
 }
@@ -47,5 +56,19 @@ const Hero = () => (
     `}</style>
   </div>
 );
+
+Hero.propTypes = {
+  tagName: PropTypes.string,
+  className: PropTypes.string,
+  heading: PropTypes.string,
+  subtext: PropTypes.string
+}
+
+Hero.defaultProps = {
+  tagName: '',
+  className: '',
+  heading: '',
+  subtext: ''
+}
 
 export default Hero;
