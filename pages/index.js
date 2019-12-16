@@ -1,9 +1,7 @@
 /* Utilities (React and Prismic) */
 import React from 'react'
-import Prismic from 'prismic-javascript'
-import PrismicDom from 'prismic-dom'
-var apiEndpoint = "https://portfolionextjs.cdn.prismic.io/api/v2";
-import RichText from 'prismic-reactjs'
+import { RichText } from 'prismic-reactjs'
+import { client } from '../prismic-configuration'
 
 /* Components */
 import Hero from '../Components/Hero';
@@ -25,36 +23,26 @@ library.add(fab, faCheckSquare, faCoffee, faEnvelope)
 /* CSS */
 import '../styles/styles.css';
 
-export default class extends React.Component {
-  static async getInitialProps(context) {
-    const req = context.req
-    const home = await this.getHomePage(req)
-    return {
-      doc: home
-    }
-  }
- 
-  static async getHomePage (req) {
-    const API = await Prismic.getApi(apiEndpoint, { req })
-    return await API.getSingle('homepage')
-  }
- 
-  /* Get the components for the homepage */
-  render () {
-    return (
-      <div>
-        <Hero 
-          heading={RichText.asText(this.props.doc.data.hero_heading)}
-          subtext={RichText.asText(this.props.doc.data.hero_subheading)}
-        />
-        <ThreeColumnIcons />
-        <ImageTextSplit />
-        <DotsTransition />
-        <TwoTextSplit />
-        <HorizontalBar />
-        <CallToAction />
-        <Footer />
-      </div>
-    );
-  }
+const Homepage = (props) => { 
+  <div>
+    <Hero 
+      heading={RichText.render(props.home.data.hero_heading)}
+      subtext={RichText.render(props.home.data.hero_subheading)}
+    />
+    <ThreeColumnIcons />
+    <ImageTextSplit />
+    <DotsTransition />
+    <TwoTextSplit />
+    <HorizontalBar />
+    <CallToAction />
+    <Footer />
+  </div>
 }
+ 
+Homepage.getInitialProps = async context => {
+  const home = await client.getSingle('homepage')
+
+  return { home }
+}
+
+export default Homepage
