@@ -11,7 +11,7 @@ const ThreeColumnIcons = () => (
           <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
         </div>
         <div className="three-column-icons__text text-left mt-8">
-          <h3 className="text-3xl">Heading!</h3>
+          <h3 className="text-3xl">Design and Develop</h3>
         </div>
       </div>
       <div className="three-column-icons__middle inline-block p-12 mt-6">
@@ -19,7 +19,7 @@ const ThreeColumnIcons = () => (
           <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
         </div>
         <div className="three-column-icons__text text-left mt-8">
-          <h3 className="text-3xl">Heading!</h3>
+          <h3 className="text-3xl">Build Your Brand</h3>
         </div>
       </div>
       <div className="move-up three-column-icons__right inline-block p-12 mb-7">
@@ -27,7 +27,7 @@ const ThreeColumnIcons = () => (
           <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
         </div>
         <div className="three-column-icons__text text-left mt-8">
-          <h3 className="text-3xl">Heading!</h3>
+          <h3 className="text-3xl">Drive Results</h3>
         </div>
       </div>
       <Button />

@@ -3,6 +3,7 @@ import Logo from './Images/Logo';
 
 import '../styles/styles.css';
 
+
 /* CSS Styles */
 const backgroundStyle = {
   backgroundColor: '#1b242c'
@@ -28,17 +29,20 @@ const navStyle = {
 const Navigation = () => (
   <div className="navigation" style={backgroundStyle}>
     <Logo 
-      className={'relative'}
+      className={'relative cursor-pointer'}
     />
     <div className="navigation" style={navStyle}>
-      <Link href="/contact">
-        <a style={linkStyle}>Contact</a>
-      </Link>
-      <Link href="/about">
-        <a style={linkStyle}>About Me</a>
-      </Link>
       <Link href="/work">
         <a style={linkStyle}>Work</a>
+      </Link>
+      <Link href="/about-me">
+        <a style={linkStyle}>About Me</a>
+      </Link>
+      <Link href="/services">
+        <a style={linkStyle}>Services</a>
+      </Link>
+      <Link href="/contact">
+        <a style={linkStyle}>Contact</a>
       </Link>
     </div>
 
