@@ -1,11 +1,14 @@
 import '../styles/styles.css';
-import Layout from '../components/Layout';
+import CallToAction from '../components/CallToAction';
+import Footer from '../components/Footer';
+import Navigation from '../components/Navigation';
 
 export default function Home() {
   return (
     <div>
-      <p>CONTACT</p>
-      <Layout />
+      <Navigation />
+      <CallToAction />
+      <Footer />
     </div>
   );
 }
