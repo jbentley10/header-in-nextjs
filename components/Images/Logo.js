@@ -26,11 +26,6 @@ const LogoSpring = (props) => {
     className
   } = props
 
-  delay: 1000
-  from: { opacity: 0 }
-  to: opacity: 1
-  config: { config.molasses }
-
   const circleStyle = {
     stroke: "#fff",
     strokeMiterLimit: "10",
@@ -61,7 +56,8 @@ const LogoSpring = (props) => {
             y2="36.5"
             gradientUnits="userSpaceOnUse">
             <stop offset="0" stopColor="#9891ff" />
-            <stop offset="1" stopColor="#ff2aba" /></linearGradient>
+            <stop offset="1" stopColor="#ff2aba" />
+          </linearGradient>
         </defs>
         <title>Asset 7</title>
         <g id="Layer_2" data-name="Layer 2">

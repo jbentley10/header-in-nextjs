@@ -1,3 +1,4 @@
+import Navigation from './Navigation';
 import Hero from './Hero';
 import ThreeColumnIcons from './ThreeColumnIcons';
 import ImageTextSplit from './ImageTextSplit';
@@ -18,7 +19,11 @@ import '../styles/styles.css';
 
 const Layout = () => (
   <div>
-    <Hero />
+    <Navigation />
+    <Hero 
+      headingText={'Create. Analyze. Elevate.'}
+      subtext={'I am a freelance web and graphic designer, passionate about taking brands to the next level.'}
+    />
     <ThreeColumnIcons />
     <ImageTextSplit />
     <DotsTransition />

@@ -31,7 +31,7 @@ const Navigation = () => (
     <Logo 
       className={'relative cursor-pointer'}
     />
-    <div className="navigation" style={navStyle}>
+    <div className="navigation mr-8" style={navStyle}>
       <Link href="/work">
         <a style={linkStyle}>Work</a>
       </Link>

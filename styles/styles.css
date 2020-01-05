@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1:hover, p:hover {
@@ -56,8 +57,8 @@ svg {
 .horizontal-bar {
   position: relative;
   height: 80px;
-  width: 100%;
-  left: -15px;
+  width: 110%;
+  left: -18px;
   transform: rotate(-10deg);
 }
 
@@ -197,10 +198,6 @@ svg {
   svg {
     left: 55px;
     top: 60px;
-  }
-
-  .navigation {
-      margin-bottom: 27vh;
   }
 }
 
