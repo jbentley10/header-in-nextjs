@@ -1,6 +1,7 @@
+import '../styles/styles.css';
 import Layout from '../components/Layout';
 
-export default function Blog() {
+export default function Home() {
   return (
     <Layout />
   );
