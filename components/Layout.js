@@ -16,14 +16,23 @@ import { faCheckSquare, faCoffee, faEnvelope } from '@fortawesome/free-solid-svg
 library.add(fab, faCheckSquare, faCoffee, faEnvelope)
 
 import '../styles/styles.css';
+import HeaderFadeInAnimation from './HeaderFadeInAnimation';
+
+let HeadingText = "Create. Analyze. Elevate." ;
+
+let Subtext = 
+  "I am a freelance web and graphic designer, passionate about taking brands to the next level."
+;
 
 const Layout = () => (
   <div>
     <Navigation />
-    <Hero 
-      headingText={'Create. Analyze. Elevate.'}
-      subtext={'I am a freelance web and graphic designer, passionate about taking brands to the next level.'}
-    />
+    <Hero>
+      <HeaderFadeInAnimation
+        headingText={HeadingText}
+        subtext={Subtext}
+      />
+    </Hero>
     <ThreeColumnIcons />
     <ImageTextSplit />
     <DotsTransition />

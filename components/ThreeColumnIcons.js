@@ -30,7 +30,9 @@ const ThreeColumnIcons = () => (
           <h3 className="text-3xl">Drive Results</h3>
         </div>
       </div>
-      <Button />
+      <Button 
+        buttonText={'View My Services'}
+      />
     </div>
 
     <style jsx>{`

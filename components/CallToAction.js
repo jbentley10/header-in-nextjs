@@ -1,11 +1,30 @@
 import '../styles/styles.css';
+import PropTypes from 'prop-types';
 
 /* Component Layout */ 
-const CallToAction = () => (
+const CallToAction = (props) => {
+    const {
+      TagName: tag,
+      ctaText
+    } = props
+
+  return (
     <div className="call-to-action bg-dark-background text-white w-full p-24 text-center">
-        <h2 className="text-2xl">Interested in Learning More?</h2>
-        <p className="text-sm">Contact Me Directly!</p>
+        {ctaText}
     </div>
-);
+  )
+}
 
 export default CallToAction;
+
+CallToAction.propTypes = {
+  tagName: PropTypes.string,
+  className: PropTypes.string,
+  ctaText: PropTypes.string
+}
+
+CallToAction.defaultProps = {
+  tagName: '',
+  className: '',
+  ctaText: ''
+}

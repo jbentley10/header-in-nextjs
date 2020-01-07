@@ -13,7 +13,6 @@ const linkStyle = {
   color: '#ffffff',
   transition: '.5s',
   fontFamily: 'Barlow, sans-serif',
-  float: 'right',
   padding: '0 20px',
   textDecoration: 'none',
   fontWeight: 'bolder',
@@ -22,12 +21,13 @@ const linkStyle = {
 
 const navStyle = {
   zIndex: '999',
-  position: 'relative'
+  position: 'relative',
+  float: 'right'
 }
 
 /* Component Layout */
 const Navigation = () => (
-  <div className="navigation" style={backgroundStyle}>
+  <div className="navigation h-56" style={backgroundStyle}>
     <Logo 
       className={'relative cursor-pointer'}
     />

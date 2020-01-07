@@ -1,6 +1,3 @@
-import Navigation from './Navigation';
-import HeaderFadeInAnimation from './HeaderFadeInAnimation';
-
 /* CSS Styles */ 
 const headerContentStyle = {
   color: '#ffffff',
@@ -13,12 +10,12 @@ const headerContentStyle = {
 }
 
 /* Component Layout */ 
-const Hero = () => {
+const Hero = ({children}) => {
 
   return (
-    <div className="background">
+    <div className="background h-64">
       <div className="header__content" style={headerContentStyle}>
-        <HeaderFadeInAnimation />
+        {children}
       </div>
 
       <style jsx>{`
