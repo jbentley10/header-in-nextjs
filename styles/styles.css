@@ -69,6 +69,15 @@ svg {
   margin: 0 auto;
 }
 
+.shadow-white {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px #cfcfcf;
+}
+
+.sidebar-container {
+  font-family: Barlow, sans-serif;
+  font-weight: 500;
+}
+
 /* Animate the logo */
 /* Circle */
 .cls-1 {

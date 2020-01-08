@@ -18,7 +18,9 @@ export default function Home() {
   return (
     <div>
       <Navigation />
-      <ImageHeader />
+      <ImageHeader 
+        heading={'Contact'}
+      />
       <CallToAction
         ctaText={<MainText />}
       />    
