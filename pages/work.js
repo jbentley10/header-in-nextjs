@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import Sidebar from '../components/Sidebar';
 import CallToAction from '../components/CallToAction';
+import LogoImageContainer from '../components/LogoImageContainer';
+import CircleList from '../components/CircleList';
 import DotsTransition from '../components/images/DotsTransition';
 import Footer from '../components/Footer';
 
@@ -30,9 +32,11 @@ export default function Home() {
         Link4Title={'Line Friends'}
         Link4Link={'https://store.linefriends.com/'}
       />
-      <div className="image-container bg-dark-background w-full p-24">
-        <img className="bg-dark-background h-full flex items-center justify-center" src="../static/pueblo-unido-logo--gradient-blue.png" alt="Pueblo Unido Logo" />
-      </div>
+      <LogoImageContainer 
+        imageSource="../static/pueblo-unido-logo--gradient-blue.png"
+        imageAltText="Pueblo Unido Logo"
+      />
+      
       <div className="text-container bg-dark-background w-full p-24">
         <div className="text-content shadow-white p-24">
           <h2 className="text-white">Lorem ipsum solor dut amet.</h2>
@@ -48,28 +52,12 @@ export default function Home() {
           <p className="text-white">Hi I'm some paragraph text</p>
         </div>
       </div>
-      <div className="text-container bg-dark-background w-full p-24">
-        <div className="text-content shadow-white p-24 text-center">
-          <h3 className="text-white">Tools Used</h3>
-          <ul className="tool-list inline">
-            <li className="inline-block">
-              <div className="text-white bg-white rounded-full h-16 w-16 flex items-center justify-center">
-                <p className="text-black">Tool</p>
-              </div>
-            </li>
-            <li className="inline-block">
-              <div className="text-white bg-white rounded-full h-16 w-16 flex items-center justify-center">
-                <p className="text-black">Tool</p>
-              </div>
-            </li>
-            <li className="inline-block">
-              <div className="text-white bg-white rounded-full h-16 w-16 flex items-center justify-center">
-                <p className="text-black">Tool</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <CircleList 
+        Heading={"Tools Used"}
+        Tool1Name={"HTML"}
+        Tool2Name={"CSS"}
+        Tool3Name={"Adobe XD"}
+      />
       <DotsTransition />
       <CallToAction 
         ctaText={<CTAText />}
