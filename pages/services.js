@@ -4,8 +4,8 @@ import ImageHeader from '../components/ImageHeader';
 import ImageTextSplit from '../components/ImageTextSplit';
 import ImageTextButtonSplit from '../components/ImageTextButtonSplit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import DotsTransition from '../components/images/DotsTransition';
-import HorizontalBar from '../components/images/HorizontalBar';
+import DotsTransition from '../components/Images/DotsTransition';
+import HorizontalBar from '../components/Images/HorizontalBar';
 import CircleList from '../components/CircleList';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';

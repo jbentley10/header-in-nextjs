@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 import CallToAction from '../components/CallToAction';
 import LogoImageContainer from '../components/LogoImageContainer';
 import CircleList from '../components/CircleList';
-import DotsTransition from '../components/images/DotsTransition';
+import DotsTransition from '../components/Images/DotsTransition';
 import Footer from '../components/Footer';
 
 const CTAText = () => 
