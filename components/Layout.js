@@ -24,6 +24,13 @@ let Subtext =
   "I am a freelance web and graphic designer, passionate about taking brands to the next level."
 ;
 
+const CTAText = () => 
+  <div>
+    <h2 className="text-2xl">Interested in learning more?</h2>
+    <p className="text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple"> Contact me</a> directly.</p>
+  </div>
+;
+
 const Layout = () => (
   <div>
     <Navigation />
@@ -38,7 +45,9 @@ const Layout = () => (
     <DotsTransition />
     <TwoTextSplit />
     <HorizontalBar />
-    <CallToAction />
+    <CallToAction 
+      ctaText={<CTAText />}
+    />
     <Footer />
   </div>
 );

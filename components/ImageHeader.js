@@ -1,3 +1,6 @@
+import '../styles/styles.css';
+import PropTypes from 'prop-types';
+
 /* CSS Styles */ 
 const headerContentStyle = {
   color: '#ffffff',
@@ -10,12 +13,17 @@ const headerContentStyle = {
 }
 
 /* Component Layout */ 
-const ImageHeader = () => {
+const ImageHeader = (props) => {
+  const {
+    TagName: tag,
+    className,
+    heading
+  } = props
 
   return (
     <div className="background h-56 opacity-75">
       <div className="header__content" style={headerContentStyle}>
-        <h1 className="text-left pt-16">Contact</h1>
+        <h1 className="text-left pt-16">{heading}</h1>
       </div>
 
       <style jsx>{`
@@ -29,5 +37,16 @@ const ImageHeader = () => {
   )
 }
 
+ImageHeader.propTypes = {
+  tagName: PropTypes.string,
+  className: PropTypes.string,
+  heading: PropTypes.string
+}
+
+ImageHeader.defaultProps = {
+  tagName: '',
+  className: '',
+  heading: ''
+}
 
 export default ImageHeader;
