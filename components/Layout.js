@@ -46,7 +46,7 @@ const Layout = () => (
     <ThreeColumnIcons />
     <Button 
       buttonText={'View My Services'}
-      className={'button text-center text-white bg-dark-background'}
+      className={'button text-center text-white bg-dark-background border-0'}
       linkHref='/services'
     />
     <ImageTextSplit />
