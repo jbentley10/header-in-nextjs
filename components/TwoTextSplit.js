@@ -30,7 +30,6 @@ const TwoTextSplit = () => (
                 <p><strong>Garrett Gillas,</strong> Marketing Technologist</p>
             </div>
         </div>
-        <Button />
 
         <style jsx>{`
         

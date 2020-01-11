@@ -17,8 +17,11 @@ module.exports = {
       colors: {
         'dark-background': '#1b242c',
         'link-purple': '#9c79e3',
-        'button-purple': '#a880f4',
-        'horizontal-bar': '#707070'
+        'link-purple-darker': '#5e4297',
+        'button-purple': '#732aff',
+        'button-purple-darker': '#4510aa',
+        'horizontal-bar': '#707070',
+        'navigation-hover': '#777777'
       },
       borderRadius: {
         'button-radius': '15px'
@@ -44,6 +47,10 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    textColor: ['hover'],
+    backgroundColor: ['hover'],
+    boxShadow: ['hover'],
+  },
   plugins: [],
 }

@@ -12,26 +12,31 @@ import Footer from './Footer';
 /* Font Awesome */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faEnvelope, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faCheckSquare, faCoffee, faEnvelope)
+library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown)
 
 import '../styles/styles.css';
 import HeaderFadeInAnimation from './HeaderFadeInAnimation';
 
-const HeadingText = "Create. Analyze. Elevate." ;
+const HeadingText = "Create. Analyze. Elevate.";
 const Subtext = "I am a freelance web and graphic designer, passionate about taking brands to the next level.";
 
 const CTAText = () => 
   <div>
     <h2 className="text-2xl">Interested in learning more?</h2>
-    <p className="text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple"> Contact me</a> directly.</p>
+    <p className="text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple hover:text-link-purple-darker cursor:pointer"> Contact me</a> directly.</p>
   </div>
 ;
 
 const Layout = () => (
   <div>
-    <Navigation />
+    <Navigation 
+      delayWork={5200}
+      delayAbout={5700}
+      delayServices={6200}
+      delayContact={6700}
+    />
     <Hero>
       <HeaderFadeInAnimation
         headingText={HeadingText}
@@ -42,10 +47,16 @@ const Layout = () => (
     <Button 
       buttonText={'View My Services'}
       className={'button text-center text-white bg-dark-background'}
+      linkHref='/services'
     />
     <ImageTextSplit />
     <DotsTransition />
     <TwoTextSplit />
+    <Button 
+      buttonText={'See My Work'}
+      className={'button text-center text-white bg-dark-background'}
+      linkHref='/work'
+    />
     <HorizontalBar />
     <CallToAction 
       ctaText={<CTAText />}

@@ -17,13 +17,18 @@ a {
     transition: .5s;
 }
 
-svg {
+svg.logo {
     animation: fadeInSVG 2s linear;
     animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
     box-shadow: 3px 2px 8px #4d4e53;
     border-radius: 50%;
     opacity: 0;
+    transition: .25s;
+}
+
+svg.logo:hover {
+  box-shadow: 7px 6px 12px #4d4e53;
 }
 
 @keyframes fadeInSVG {
@@ -76,6 +81,23 @@ svg {
 .sidebar-container {
   font-family: Barlow, sans-serif;
   font-weight: 500;
+}
+
+.transform-5 {
+  transform: translateY(5rem);
+}
+
+.transform-10 {
+  transform: translateY(10rem);
+}
+
+.navigation-link {
+  color: #ffffff;
+  transition: .5s;
+  font-family: Barlow, sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 /* Animate the logo */
@@ -245,5 +267,9 @@ svg {
 
   .header__content {
     top: 70px
+  }
+
+  .move-up {
+    transform: translateY(0);
   }
 }

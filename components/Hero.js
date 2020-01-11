@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {useSpring, animated} from 'react-spring';
+
 /* CSS Styles */ 
 const headerContentStyle = {
   color: '#ffffff',
@@ -11,11 +14,15 @@ const headerContentStyle = {
 /* Component Layout */ 
 const Hero = ({children}) => {
 
+  const fadeIn = useSpring({delay: 7000, opacity: 1, from: {opacity: 0}})
+
   return (
     <div className="background sm:h-screen w-full text-center">
-      <div className="header__content sm:max-w-full md:max-w-2xl" style={headerContentStyle}>
+      <div className="header__content sm:max-w-full md:max-w-3xl" style={headerContentStyle}>
         {children}
       </div>
+
+      <FontAwesomeIcon style={fadeIn} icon="arrow-down" className="text-6xl shadow-none text-white sm:transform-10 transform-5" />
 
       <style jsx>{`
         a:hover {
