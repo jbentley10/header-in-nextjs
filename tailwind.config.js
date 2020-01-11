@@ -1,6 +1,15 @@
 // tailwind.config.js
 module.exports = {
   theme: {
+    screens: {
+      'sm': '0',
+
+      'md': '768px',
+
+      'lg': '990px',
+
+      'xl': '1200px',
+    },
     extend: {
       fontFamily: {
         display: ['Volte', 'Inter-Loom', 'Roboto', 'NanumBarunGothic', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],

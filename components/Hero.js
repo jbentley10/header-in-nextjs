@@ -3,7 +3,6 @@ const headerContentStyle = {
   color: '#ffffff',
   fontFamily: 'Barlow, sans-serif',
   textAlign: 'center',
-  width: '80%',
   margin: '0 auto',
   zIndex: '999',
   position: 'relative'
@@ -13,8 +12,8 @@ const headerContentStyle = {
 const Hero = ({children}) => {
 
   return (
-    <div className="background h-64">
-      <div className="header__content" style={headerContentStyle}>
+    <div className="background sm:h-screen w-full text-center">
+      <div className="header__content sm:max-w-full md:max-w-2xl" style={headerContentStyle}>
         {children}
       </div>
 

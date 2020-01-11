@@ -13,7 +13,6 @@ const linkStyle = {
   color: '#ffffff',
   transition: '.5s',
   fontFamily: 'Barlow, sans-serif',
-  padding: '0 20px',
   textDecoration: 'none',
   fontWeight: 'bolder',
   fontSize: '20px'
@@ -33,16 +32,16 @@ const Navigation = () => (
     />
     <div className="navigation mr-8" style={navStyle}>
       <Link href="/work">
-        <a style={linkStyle}>Work</a>
+        <a style={linkStyle} className="sm:px-4 md:px-8">Work</a>
       </Link>
       <Link href="/about-me">
-        <a style={linkStyle}>About Me</a>
+        <a style={linkStyle} className="sm:px-4 md:px-8">About Me</a>
       </Link>
       <Link href="/services">
-        <a style={linkStyle}>Services</a>
+        <a style={linkStyle} className="sm:px-4 md:px-8">Services</a>
       </Link>
       <Link href="/contact">
-        <a style={linkStyle}>Contact</a>
+        <a style={linkStyle} className="sm:px-4 md:px-8">Contact</a>
       </Link>
     </div>
 
@@ -56,9 +55,9 @@ const Navigation = () => (
         }
 
         a:hover {
-        transition: .5s;
-        text-decoration: underline !important;
-        cursor: pointer !important;
+          transition: .5s;
+          text-decoration: underline !important;
+          cursor: pointer !important;
         }
     `}</style>
   </div>

@@ -1,6 +1,7 @@
 import Navigation from './Navigation';
 import Hero from './Hero';
 import ThreeColumnIcons from './ThreeColumnIcons';
+import Button from './Button';
 import ImageTextSplit from './ImageTextSplit';
 import CallToAction from './CallToAction';
 import DotsTransition from './Images/DotsTransition';
@@ -18,11 +19,8 @@ library.add(fab, faCheckSquare, faCoffee, faEnvelope)
 import '../styles/styles.css';
 import HeaderFadeInAnimation from './HeaderFadeInAnimation';
 
-let HeadingText = "Create. Analyze. Elevate." ;
-
-let Subtext = 
-  "I am a freelance web and graphic designer, passionate about taking brands to the next level."
-;
+const HeadingText = "Create. Analyze. Elevate." ;
+const Subtext = "I am a freelance web and graphic designer, passionate about taking brands to the next level.";
 
 const CTAText = () => 
   <div>
@@ -41,6 +39,10 @@ const Layout = () => (
       />
     </Hero>
     <ThreeColumnIcons />
+    <Button 
+      buttonText={'View My Services'}
+      className={'button text-center text-white bg-dark-background'}
+    />
     <ImageTextSplit />
     <DotsTransition />
     <TwoTextSplit />

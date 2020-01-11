@@ -20,11 +20,11 @@ export default CallToAction;
 CallToAction.propTypes = {
   tagName: PropTypes.string,
   className: PropTypes.string,
-  ctaText: PropTypes.string
+  ctaText: PropTypes.any
 }
 
 CallToAction.defaultProps = {
   tagName: '',
   className: '',
-  ctaText: ''
+  ctaText: <p>Call to Action</p>
 }

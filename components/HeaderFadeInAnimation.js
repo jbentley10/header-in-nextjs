@@ -16,7 +16,7 @@ const HeaderFadeInAnimation = (props) => {
   const fadeInSlow = useSpring({delay: 5200, opacity: 1, from: {opacity: 0}})
 
   return (
-    <div className="container">
+    <div className="sm:w-full">
       <animated.h1 className="text-6xl" style={fadeInQuick}>{headingText}</animated.h1>
       <br />
       <animated.h2 className="text-4xl" style={fadeInSlow}>{subtext}</animated.h2>
