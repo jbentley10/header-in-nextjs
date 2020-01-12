@@ -49,7 +49,9 @@ const Layout = () => (
       className={'button text-center text-white bg-dark-background border-0'}
       linkHref='/services'
     />
-    <ImageTextSplit />
+    <ImageTextSplit>
+      <img className="rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src="../static/profile.png" alt="John Bentley Freelance Web Designer" />
+    </ImageTextSplit>
     <DotsTransition />
     <TwoTextSplit />
     <Button 

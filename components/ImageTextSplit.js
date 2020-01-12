@@ -2,10 +2,10 @@ import ProfileImage from './Images/ProfileImage';
 import '../styles/styles.css';
 
 /* Component Layout */ 
-const ImageTextSplit = () => (
+const ImageTextSplit = ({children}) => (
     <div className="image-text-split p-12 text-center bg-dark-background md:align-middle text-white">
         <div className="image-text-split__image-container sm:text-center sm:my-6 md:my-0 sm:m-auto sm:w-3/5 md:w-2/5 sm:block md:inline-block md:align-middle">
-            <ProfileImage />
+            {children}
         </div>
         <div className="image-text-split__text-container sm:w-full md:w-2/5 text-left sm:inline-block md:align-middle">
             <h3 className="image-text-split__heading text-3xl">Hello! My name is John Bentley.</h3>

@@ -20,7 +20,9 @@ export default function Home() {
       <ImageHeader 
         heading={"About Me"}
       />
-      <ImageTextSplit />
+      <ImageTextSplit>
+        <img src="../static/me-flute.jpg" />
+      </ImageTextSplit>
       <ImageTextButtonSplit />
       <CallToAction 
         ctaText={<CTAText />}
