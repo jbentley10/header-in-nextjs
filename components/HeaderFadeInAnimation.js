@@ -17,9 +17,9 @@ const HeaderFadeInAnimation = (props) => {
 
   return (
     <div className="sm:w-full">
-      <animated.h1 className="text-6xl" style={fadeInQuick}>Create. Analyze. Elevate.</animated.h1>
+      <animated.h1 className="sm:text-5xl md:text-6xl" style={fadeInQuick}>Create. Analyze. Elevate.</animated.h1>
       <br />
-      <animated.h2 className="text-4xl" style={fadeInSlow}>{subtext}</animated.h2>
+      <animated.h2 className="sm:text-3xl md:text-4xl" style={fadeInSlow}>{subtext}</animated.h2>
     </div>
   )
 }
