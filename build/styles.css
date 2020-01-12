@@ -11259,6 +11259,7 @@ svg.logo:hover {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: 170vh;
 }
 
 /* Used for the 3 column icons offset positions */
@@ -11512,10 +11513,6 @@ svg.logo:hover {
     top: 20px;
   }
 
-  .background {
-    height: 170vh;
-  }
-
   .navigation {
     top: 7vh;
     margin: 0 auto;
@@ -11530,6 +11527,10 @@ svg.logo:hover {
   .move-up {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+
+  .background {
+    height: 24rem;
   }
 }
 

@@ -24,8 +24,8 @@ const Subtext = "I am a freelance web and graphic designer, passionate about tak
 
 const CTAText = () => 
   <div>
-    <h2 className="text-2xl">Interested in learning more?</h2>
-    <p className="text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple hover:text-link-purple-darker cursor:pointer"> Contact me</a> directly.</p>
+    <h2 className="text-3xl sm:pb-4 md:pb-0">Interested in learning more?</h2>
+    <p className="sm:text-xl md:text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple hover:text-link-purple-darker cursor:pointer"> Contact me</a> directly.</p>
   </div>
 ;
 

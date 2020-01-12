@@ -2,19 +2,26 @@ import '../styles/styles.css';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
+let blank = ""; 
+
 /* Component Layout */ 
 const Button = (props) => {
     const {
       TagName: tag,
       className,
       buttonText,
-      linkHref
+      linkHref,
+      targetBlank
     } = props
+
+    if (targetBlank == true) {
+      blank = "true"
+    } 
 
     return (
       <div className={className}>
         <Link href={linkHref}>
-          <a className="text-lg p-button-padding rounded-button-radius bg-button-purple cursor-pointer hover:bg-button-purple-darker">{buttonText}</a>
+          <a target={blank} className="text-lg p-button-padding rounded-button-radius bg-button-purple cursor-pointer hover:bg-button-purple-darker">{buttonText}</a>
         </Link>
 
         <style jsx>{`
@@ -28,14 +35,16 @@ Button.propTypes = {
   tagName: PropTypes.string,
   className: PropTypes.string,
   buttonText: PropTypes.string,
-  linkHref: PropTypes.string
+  linkHref: PropTypes.string,
+  targetBlank: PropTypes.bool
 }
 
 Button.defaultProps = {
   tagName: '',
   className: '',
   buttonText: '',
-  linkHref: ''
+  linkHref: '',
+  targetBlank: false
 }
 
 export default Button;

@@ -9,7 +9,7 @@ const CallToAction = (props) => {
     } = props
 
   return (
-    <div className="call-to-action bg-dark-background text-white w-full p-24 text-center">
+    <div className="call-to-action bg-dark-background text-white w-full sm:p-12 md:p-24 text-center">
         {ctaText}
     </div>
   )
