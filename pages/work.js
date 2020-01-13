@@ -25,7 +25,7 @@ const CTAText = () =>
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-dark-background">
       <Navigation />
       <ImageHeader 
         heading={"Work"}
@@ -68,30 +68,30 @@ export default function Home() {
           feel for public-facing materials.</p>
         </div>
       </div>
-
-      <Carousel>
-        <div>
-          <img src="../static/pueblo-unido/Annual-Gala-Poster.png" />
-          <p className="legend">Second Annual Gala Poster</p>
-        </div>
-        <div>
-          <img src="../static/pueblo-unido/client-release-insta.png" />
-          <p className="legend">Client Release Announcement</p>
-        </div>
-        <div>
-          <img src="../static/pueblo-unido/facebook-headers.png" />
-          <p className="legend">Facebook Headers for Notes</p>
-        </div>
-        <div>
-          <img src="../static/pueblo-unido/gala-landing-page.png" />
-          <p className="legend">Gala Landing Page</p>
-        </div>
-        <div>
-          <img src="../static/pueblo-unido/take-action-header.png" />
-          <p className="legend">Take Action Header</p>
-        </div>
-        
-      </Carousel>
+      <div className="bg-dark-background m-auto w-1/2">
+        <Carousel 
+          autoPlay
+          showArrows
+        >
+          <div>
+            <img src="../static/pueblo-unido/Annual-Gala-Poster.png" />
+            <p className="legend">Second Annual Gala Poster</p>
+          </div>
+          <div>
+            <img src="../static/pueblo-unido/client-release-insta.png" />
+            <p className="legend">Client Release Announcement</p>
+          </div>
+          <div>
+            <img src="../static/pueblo-unido/facebook-headers.png" />
+            <p className="legend">Facebook Headers for Notes</p>
+          </div>
+          <div>
+            <img src="../static/pueblo-unido/take-action-header.png" />
+            <p className="legend">Take Action Header</p>
+          </div>
+          
+        </Carousel>
+      </div>
 
       <CircleList 
         Heading={"Tools Used"}
