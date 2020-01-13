@@ -21,7 +21,7 @@ export default function Home() {
         heading={"About Me"}
       />
       <ImageTextSplit>
-        <img src="../static/me-flute.jpg" />
+      <img className="rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src="../static/me-flute.jpg" alt="John Bentley Freelance Web Designer" />
       </ImageTextSplit>
       <ImageTextButtonSplit />
       <CallToAction 

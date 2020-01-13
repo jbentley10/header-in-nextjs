@@ -12,9 +12,9 @@ import Footer from './Footer';
 /* Font Awesome */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee, faEnvelope, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown)
+library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone )
 
 import '../styles/styles.css';
 import HeaderFadeInAnimation from './HeaderFadeInAnimation';
@@ -24,8 +24,12 @@ const Subtext = "I am a freelance web and graphic designer, passionate about tak
 
 const CTAText = () => 
   <div>
-    <h2 className="text-3xl sm:pb-4 md:pb-0">Interested in learning more?</h2>
-    <p className="sm:text-xl md:text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple hover:text-link-purple-darker cursor:pointer"> Contact me</a> directly.</p>
+    <h2 className="text-3xl pb-12">Interested in learning more?</h2>
+    <Button
+      buttonText={'Contact Me'}
+      className={'button text-center text-white bg-dark-background'}
+      linkHref='/contact'
+    />
   </div>
 ;
 
@@ -49,6 +53,7 @@ const Layout = () => (
       className={'button text-center text-white bg-dark-background border-0'}
       linkHref='/services'
     />
+    <div className="bg-dark-background sm:h-8 md:h-32" />
     <ImageTextSplit>
       <img className="rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src="../static/profile.png" alt="John Bentley Freelance Web Designer" />
     </ImageTextSplit>
@@ -63,6 +68,7 @@ const Layout = () => (
     <CallToAction 
       ctaText={<CTAText />}
     />
+    <div className="bg-dark-background h-12" />
     <Footer />
   </div>
 );
