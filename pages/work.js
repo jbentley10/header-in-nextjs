@@ -69,25 +69,28 @@ export default function Home() {
         </div>
       </div>
 
-      <img src="../static/pueblo-unido/Annual-Gala-Poster.png" />
-      <img src="../static/pueblo-unido/client-release-insta.png" />
-      <img src="../static/pueblo-unido/facebook-headers.png" />
-      <img src="../static/pueblo-unido/gala-landing-page.png" />
-      <img src="../static/pueblo-unido/take-action-header.png" />
-
       <Carousel>
         <div>
-          <img src="assets/1.jpeg" />
-          <p className="legend">Legend 1</p>
+          <img src="../static/pueblo-unido/Annual-Gala-Poster.png" />
+          <p className="legend">Second Annual Gala Poster</p>
         </div>
         <div>
-          <img src="assets/2.jpeg" />
-          <p className="legend">Legend 2</p>
+          <img src="../static/pueblo-unido/client-release-insta.png" />
+          <p className="legend">Client Release Announcement</p>
         </div>
         <div>
-          <img src="assets/3.jpeg" />
-          <p className="legend">Legend 3</p>
+          <img src="../static/pueblo-unido/facebook-headers.png" />
+          <p className="legend">Facebook Headers for Notes</p>
         </div>
+        <div>
+          <img src="../static/pueblo-unido/gala-landing-page.png" />
+          <p className="legend">Gala Landing Page</p>
+        </div>
+        <div>
+          <img src="../static/pueblo-unido/take-action-header.png" />
+          <p className="legend">Take Action Header</p>
+        </div>
+        
       </Carousel>
 
       <CircleList 
