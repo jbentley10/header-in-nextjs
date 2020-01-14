@@ -16,9 +16,9 @@ const CircleList = (props) => {
   } = props
 
   return (
-    <div className="text-container bg-dark-background w-full p-24">
-      <div className="text-content shadow-white p-24 text-center">
-        <h3 className="text-white">{Heading}</h3>
+    <div className="text-container bg-dark-background w-full sm:p-8 md:p-24">
+      <div className="text-content shadow-white sm:p-8 md:p-24">
+        <h3 className="text-white sm:text-4xl sm:mb-12 md:mb-0">{Heading}</h3>
         <ul className="tool-list inline">
           <li className="inline-block px-4">
             <div className="text-white bg-white rounded-full h-24 w-24 flex items-center justify-center">

@@ -47,6 +47,14 @@ svg.logo:hover {
   width: 100%;
 }
 
+.background-dots {
+  background-image: url('/static/background-dots-big.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 10px;
+  width: 100%;
+}
+
 /* Used for the 3 column icons offset positions */
 .move-up {
   transform: translateY(-50px);

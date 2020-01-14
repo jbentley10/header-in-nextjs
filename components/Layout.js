@@ -28,7 +28,7 @@ const CTAText = () =>
     <Button
       buttonText={'Contact Me'}
       className={'button text-center text-white bg-dark-background'}
-      linkHref='/contact'
+      linkHref={'/contact'}
     />
   </div>
 ;
@@ -51,7 +51,7 @@ const Layout = () => (
     <Button 
       buttonText={'View My Services'}
       className={'button text-center text-white bg-dark-background border-0'}
-      linkHref='/services'
+      linkHref={'/services'}
     />
     <div className="bg-dark-background sm:h-8 md:h-32" />
     <ImageTextSplit>
@@ -62,7 +62,7 @@ const Layout = () => (
     <Button 
       buttonText={'See My Work'}
       className={'button text-center text-white bg-dark-background'}
-      linkHref='/work'
+      linkHref={'/work'}
     />
     <HorizontalBar />
     <CallToAction 
