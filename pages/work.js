@@ -1,5 +1,6 @@
 import '../styles/styles.css';
 import Head from 'next/head';
+import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Button from '../components/Button';
 import ImageHeader from '../components/ImageHeader';
@@ -36,18 +37,15 @@ export default function Home() {
         heading={"Work"}
       />
       <div className="background-dots">
-        <LogoImageContainer 
-          imageSource="../static/pueblo-unido-logo--gradient-blue.png"
-          imageAltText="Pueblo Unido Logo"
-        />
-      
         {/*
           Introduction Section 
         */}
         <div className="text-container w-full sm:p-8 md:p-24" id="pueblo-unido-pdx">
           <div className="text-content sm:p-8 md:p-24">
             <h2 className="text-white text-center font-bold uppercase sm:text-6xl sm:mb-8 md:pb-1">
-              <a className="text-link-purple hover:text-link-purple-darker" href="https://www.pueblunidopdx.org" target="blank">Pueblo Unido PDX</a></h2>
+              <a className="text-link-purple hover:text-link-purple-darker cursor-pointer" href="https://www.pueblounidopdx.org/" target="blank">Pueblo Unido PDX</a>
+            </h2>
+
             <p className="text-white">Since 2017, Pueblo Unido PDX has focused on helping
             immigrants get connected with legal representation in the Pacific Northwest.</p>
             <p>&nbsp;</p>
