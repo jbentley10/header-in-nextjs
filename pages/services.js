@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+import Head from 'next/head';
 import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import ImageTextSplit from '../components/ImageTextSplit';
@@ -20,6 +21,12 @@ const CTAText = () =>
 export default function Home() {
   return (
     <div>
+      <Head>
+        <link rel="shortcut icon" href="/static/favicon.ico" />
+        <title>John Bentley | Services</title>
+        <meta name="description" content="My skills and expertise revolve around brand identity, web design, and SEO. Get to know my services
+        and schedule a kickoff meeting with me today."/>
+      </Head>
       <Navigation />
       <ImageHeader 
         heading={"Services"}

@@ -1,3 +1,5 @@
+import '../styles/styles.css';
+import Head from 'next/head';
 import Navigation from './Navigation';
 import Hero from './Hero';
 import ThreeColumnIcons from './ThreeColumnIcons';
@@ -35,6 +37,12 @@ const CTAText = () =>
 
 const Layout = () => (
   <div>
+    <Head>
+      <link rel="shortcut icon" href="/static/favicon.ico" />
+      <title>John Bentley - Freelance Web Designer</title>
+      <meta name="description" content="I am a freelance web designer and developer based in Portland, OR. Contact me now to elevate 
+      your brand and drive results."/>
+    </Head>
     <Navigation 
       delayWork={5200}
       delayAbout={5700}

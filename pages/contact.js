@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+import Head from 'next/head';
 import CallToAction from '../components/CallToAction';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
@@ -20,6 +21,12 @@ const MainText = () =>
 export default function Home() {
   return (
     <div>
+      <Head>
+        <link rel="shortcut icon" href="/static/favicon.ico" />
+        <title>John Bentley | Contact</title>
+        <meta name="description" content="If you are need of a brand redesign, website enhancement, or better performance on your website,
+        contact me now to elevate your brand and drive results."/>
+      </Head>
       <Navigation />
       <ImageHeader 
         heading={'Contact'}
