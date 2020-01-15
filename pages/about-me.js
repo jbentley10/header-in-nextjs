@@ -20,7 +20,9 @@ export default function Home() {
       <ImageHeader 
         heading={"About Me"}
       />
-      <ImageTextSplit />
+      <ImageTextSplit>
+      <img className="rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src="../static/me-flute.jpg" alt="John Bentley Freelance Web Designer" />
+      </ImageTextSplit>
       <ImageTextButtonSplit />
       <CallToAction 
         ctaText={<CTAText />}

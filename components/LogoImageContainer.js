@@ -12,8 +12,8 @@ const LogoImageContainer = (props) => {
   } = props
 
   return (
-    <div className="image-container bg-dark-background w-full p-24">
-      <img className="bg-dark-background h-full flex items-center justify-center" src={imageSource} alt={imageAltText} />
+    <div className="image-container w-full p-24 md:pb-0">
+      <img className="h-full flex items-center justify-center" src={imageSource} alt={imageAltText} />
     </div>
   )
 }

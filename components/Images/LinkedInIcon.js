@@ -7,7 +7,11 @@ const LinkedInIcon = (props) => {
     className
   } = props
 
-    return <img className={className} src="../static/linkedin.png" alt="John Bentley on LinkedIn" />
+    return (
+      <a href="https://www.linkedin.com/in/jwbentle" target="blank">
+        <img className={className} src="../static/linkedin.png" alt="John Bentley on LinkedIn" />
+      </a>
+    )
   }
   
   LinkedInIcon.propTypes = {

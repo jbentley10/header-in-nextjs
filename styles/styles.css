@@ -17,29 +17,91 @@ a {
     transition: .5s;
 }
 
-svg {
-    animation: fadeInSVG 2s linear;
-    animation-delay: 1s;
-    -webkit-animation-fill-mode: forwards;
-    box-shadow: 3px 2px 8px #4d4e53;
-    border-radius: 50%;
-    opacity: 0;
+/* Utilities */
+/* Classes given one single purpose, a-la Tailwind's "utility-first" CSS */
+
+.transform-5 {
+  transform: translateY(5rem);
 }
 
-@keyframes fadeInSVG {
-    from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+.transform-7 {
+  transform: translateY(7rem);
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.shadow-white {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px #cfcfcf;
+}
+
+.hero-font {
+  font-size: 6rem;
+}
+
+/* Components */
+/* Classes specific to components in this project */
+
+.three-column-icons__icon {
+  transition: .25s;
+}
+
+.three-column-icons__icon:hover  {
+  cursor: pointer;
+}
+
+.three-column-icons__container:nth-of-type(1):hover > div.three-column-icons__icon { 
+  background-color: #2E464D;
+}
+
+.three-column-icons__container:nth-of-type(2):hover > div.three-column-icons__icon { 
+  background-color: #2E285B;
+}
+
+.three-column-icons__container:nth-of-type(3):hover > div.three-column-icons__icon { 
+  background-color: #4E234F;
+}
+
+.three-column-icons__icon:hover > img {
+  opacity: .5;
+}
+
+.three-column-icons__icon:hover h3 {
+  opacity: 1;
+}
+
+.sidebar-container {
+  font-family: Barlow, sans-serif;
+  font-weight: 500;
+}
+
+.navigation-link {
+  color: #ffffff;
+  transition: .5s;
+  font-family: Barlow, sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .background {
-    background-image: url('/static/background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+  background-image: url('/static/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.background-dots {
+  background-image: url('/static/background-dots-big.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 10px;
+  width: 100%;
 }
 
 /* Used for the 3 column icons offset positions */
@@ -59,23 +121,6 @@ svg {
   width: 110%;
   left: -18px;
   transform: rotate(-10deg);
-}
-
-.grayscale {
-  filter: grayscale(1);
-}
-
-.m-auto {
-  margin: 0 auto;
-}
-
-.shadow-white {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px #cfcfcf;
-}
-
-.sidebar-container {
-  font-family: Barlow, sans-serif;
-  font-weight: 500;
 }
 
 /* Animate the logo */
@@ -102,6 +147,29 @@ svg {
     animation: dashSignature 2s linear;
     animation-delay: 2s;
     -webkit-animation-fill-mode: forwards;
+}
+
+svg.logo {
+  animation: fadeInSVG 2s linear;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  box-shadow: 3px 2px 8px #4d4e53;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .25s;
+}
+
+svg.logo:hover {
+box-shadow: 7px 6px 12px #4d4e53;
+}
+
+@keyframes fadeInSVG {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes dashSignature {
@@ -232,10 +300,6 @@ svg {
     top: 20px;
   }
 
-  .background { 
-    height: 170vh;
-  }
-
   .navigation {
     top: 7vh;
     margin: 0 auto;
@@ -245,5 +309,17 @@ svg {
 
   .header__content {
     top: 70px
+  }
+
+  .move-up {
+    transform: translateY(0);
+  }
+
+  .background {
+    height: 24rem;
+  }
+
+  .hero-font {
+    font-size: 3rem;
   }
 }
