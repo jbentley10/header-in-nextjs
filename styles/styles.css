@@ -47,7 +47,7 @@ a {
 /* Components */
 /* Classes specific to components in this project */
 
-.three-column-icons__icon {
+.three-column-icons__icon, .three-column-icons__icon img, .three-column-icons__icon h3 {
   transition: .25s;
 }
 

@@ -8,8 +8,7 @@ import LogoImageContainer from '../components/LogoImageContainer';
 import DotsTransition from '../components/Images/DotsTransition';
 import Footer from '../components/Footer';
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CTAText = () => 
   <div>
@@ -30,60 +29,132 @@ export default function Home() {
         heading={"Work"}
       />
       <div className="background-dots">
-      <LogoImageContainer 
-        imageSource="../static/pueblo-unido-logo--gradient-blue.png"
-        imageAltText="Pueblo Unido Logo"
-      />
+        <LogoImageContainer 
+          imageSource="../static/pueblo-unido-logo--gradient-blue.png"
+          imageAltText="Pueblo Unido Logo"
+        />
       
-      <div className="text-container w-full sm:p-8 md:p-24">
-        <div className="text-content shadow-white sm:p-8 md:p-24">
-          <h2 className="text-white sm:text-4xl sm:mb-8 md:mb-0">
-            <a className="text-link-purple hover:text-link-purple-darker" href="https://www.pueblunidopdx.org" target="blank">Pueblo Unido PDX</a></h2>
-          <p className="text-white">Since 2017, Pueblo Unido PDX has focused on helping
-          immigrants get connected with legal representation in the Pacific Northwest.</p>
-          <p>&nbsp;</p>
-          <p className="text-white">During my two years as a volunteer for the non-profit, 
-          I rebranded the organization. The logo was reimagined, brand guideliness were set 
-          in place, and Pueblo Unido's website was created from the ground up.</p>
+        {/*
+          Introduction Section 
+        */}
+        <div className="text-container w-full sm:p-8 md:p-24">
+          <div className="text-content sm:p-8 md:p-24">
+            <h2 className="text-white text-center font-bold uppercase sm:text-6xl sm:mb-8 md:pb-1">
+              <a className="text-link-purple hover:text-link-purple-darker" href="https://www.pueblunidopdx.org" target="blank">Pueblo Unido PDX</a></h2>
+            <p className="text-white">Since 2017, Pueblo Unido PDX has focused on helping
+            immigrants get connected with legal representation in the Pacific Northwest.</p>
+            <p>&nbsp;</p>
+            <p className="text-white">During my two years as a volunteer for the non-profit, 
+            I rebranded the organization. The logo was reimagined, brand guideliness were set 
+            in place, and Pueblo Unido's website was created from the ground up.</p>
+          </div>
         </div>
-      </div>
-      <div className="image-container w-full">
-        <img className="flex items-center justify-center" src="../static/pu-carousel-image.png" alt="Pueblo Unido Logo" />
-      </div>
-      <div className="text-container w-full sm:p-8 md:p-24">
-        <div className="text-content shadow-white sm:p-8 md:p-24">
-          <h3 className="text-white sm:text-4xl sm:mb-8 md:mb-0 text-left">From web development, to social media and beyond</h3>
-          <p className="text-white text-left">I helped Pueblo Unido PDX launch its very own newsletter, 
-          created posts for social media, and consulted with other volunteers on look and 
-          feel for public-facing materials.</p>
+
+        {/*
+          Recrafting the Logo 
+          In order to begin the rebranding process, I started by 
+          created a fresh new logo for Pueblo Unido.
+
+          The new logo takes inspiration from the image of Mt. Hood and the 
+          Rockwood neighborhood of Portland, and a colorful gradient
+          represents the beautiful diversity of the people of the United States. 
+        */}
+        <div className="text-container w-full sm:p-8 md:p-24 flex">
+          <div className="text-content w-2/5 lg:mr-48">
+            <h3 className="text-left font-bold sm:text-5xl text-link-purple">Recrafting the Logo</h3>
+            <p className="text-white">In order to begin the rebranding process, I started by 
+            created a fresh new logo for Pueblo Unido.</p>
+            <p className="text-white">The new logo takes inspiration from the image of Mt. Hood and the 
+            Rockwood neighborhood of Portland, and a colorful gradient
+            represents the beautiful diversity of the people of the United States.</p>
+          </div>
+          <div className="image-content w-2/5">
+            <img src="../static/pueblo-unido/old-and-new.png" />
+          </div>
+        </div> 
+
+        {/*
+          Establishing Brand Guidelines 
+          Before developing the website, social media assets, and newsletter templates,
+          I crafted a simple set of brand guidelines for the organization to follow.
+
+          The brand guidelines reverberated into social media, the website, and all 
+          future communications from Pueblo Unido PDX - creating a consistent
+          look and feel across all the major marketing touchpoints.
+        */}
+        <div className="text-container w-full sm:p-8 md:p-24 flex">
+          <div className="image-content w-2/5">
+            <img src="../static/pueblo-unido/old-and-new.png" />
+          </div>
+          <div className="text-content w-2/5 lg:mr-48">
+            <h3 className="text-left font-bold sm:text-5xl text-link-purple">Establishing Brand Guidelines</h3>
+            <p className="text-white">Before developing the website, social media assets, and newsletter templates,
+            I crafted a simple set of brand guidelines for the organization to follow.</p>
+            <p className="text-white">The brand guidelines reverberated into social media, the website, and all 
+            future communications from Pueblo Unido PDX — creating a consistent
+            look and feel across all the major marketing touchpoints.</p>
+          </div>
         </div>
+
+        {/*
+          Building a Website
+          I volunteered to create a website for Pueblo Unido PDX, based
+          on these brand guidelines.
+
+          The process began with an intake meeting between myself 
+          and the various stakeholders of Pueblo Unido PDX, such as 
+          the executive director, board members, and other volunteers.
+
+          We discussed what the website would need, and what the major
+          calls to actions for users of the website would be.
+
+          From there, I generated a visual 'comp' of the website. Once that
+          comp was approved, I coded the website by hand using HTML+CSS.  
+        */}
+        <div className="text-container w-full sm:p-8 md:p-24 flex">
+          <div className="text-content w-2/5 lg:mr-48">
+            <h3 className="text-left font-bold sm:text-5xl text-link-purple">Building a Website</h3>
+            <p className="text-white">I volunteered to create a website for Pueblo Unido PDX, based
+            on these brand guidelines.</p>
+            <p className="text-white">The process began with an intake meeting between myself 
+            and the various stakeholders of Pueblo Unido PDX, such as 
+            the executive director, board members, and other volunteers.</p>
+            <p className="text-white">We discussed what the website would need, and what the major
+            calls to actions for users of the website would be.</p>
+            <p className="text-white">From there, I generated a visual 'comp' of the website. Once that
+            comp was approved, I coded the website by hand using HTML+CSS.</p>
+          </div>
+          <div className="image-content w-2/5">
+            <img src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+          </div>
+        </div> 
+
+        {/*
+          Crafting Social Media and Newsletter Campaigns 
+          Once the website was created, I began using the newly crafted
+          brand guidelines to create compelling imagery for social media
+          platforms such as Facebook and Instagram.
+
+          In addition to creating these campaigns, I also worked on 
+          monthly newsletters and critical updates from the organization,
+          sent to 700+ users via MailChimp.
+        */}
+        <div className="text-container w-full sm:p-8 md:p-24 flex">
+          <div className="image-content w-2/5">
+            <img src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+          </div>
+          <div className="text-content w-2/5 lg:mr-48">
+            <h3 className="text-left font-bold sm:text-5xl text-link-purple">Crafting Social Media and Newsletter Campaigns</h3>
+            <p className="text-white">Once the website was created, I began using the newly crafted
+            brand guidelines to create compelling imagery for social media
+            platforms such as Facebook and Instagram.</p>
+            <p className="text-white">In addition to creating these campaigns, I also worked on 
+            monthly newsletters and critical updates from the organization,
+            sent to 700+ users via MailChimp.</p>
+          </div>
+        </div> 
+
       </div>
-      <div className="w-full">
-        <div className="m-auto w-1/2">
-          <Carousel 
-            autoPlay
-            showArrows
-          >
-            <div>
-              <img src="../static/pueblo-unido/Annual-Gala-Poster.png" />
-              <p className="legend">Second Annual Gala Poster</p>
-            </div>
-            <div>
-              <img src="../static/pueblo-unido/client-release-insta.png" />
-              <p className="legend">Client Release Announcement</p>
-            </div>
-            <div>
-              <img src="../static/pueblo-unido/facebook-headers.png" />
-              <p className="legend">Facebook Headers for Notes</p>
-            </div>
-            <div>
-              <img src="../static/pueblo-unido/take-action-header.png" />
-              <p className="legend">Take Action Header</p>
-            </div>            
-          </Carousel>
-        </div>
-      </div>  
-      </div>  
 
       <DotsTransition 
         className={'-mt-6 pt-12'}
