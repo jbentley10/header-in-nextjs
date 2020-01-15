@@ -12,14 +12,14 @@ const Footer = () => (
         className={'grayscale m-auto cursor-pointer'}
       />
     </div>
-    <p className="text-base p-6">Copyright John Bentley 2019</p>
+    <p className="text-base p-6">&copy; John Bentley 2019</p>
     <div className="icons p-4 inline align-middle">
       <FontAwesomeIcon icon="envelope" className="text-6xl shadow-none p-4 cursor-pointer inline-block align-middle" />
       <TumblrIcon 
-        className={'p-4 cursor-pointer inline-block align-middle'}
+        className={'p-4 cursor-pointer inline-block align-middle w-16'}
       />
       <LinkedInIcon 
-        className={'p-4 cursor-pointer inline-block align-middle'}
+        className={'p-4 cursor-pointer inline-block align-middle w-16'}
       />
     </div>
   </div>

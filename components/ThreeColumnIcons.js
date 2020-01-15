@@ -1,40 +1,35 @@
-import Button from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link';
 import '../styles/styles.css';
 
 /* Component Layout */
 const ThreeColumnIcons = () => (
-  <div className="three-column-icons text-center bg-dark-background text-white px-12">
-    <div className="three-column-icons__content-row inline w-4/5 m-0 text-center">
-      <div className="move-up three-column-icons__left inline-block p-12 mb-7">
-        <div className="three-column-icons__icon w-20 h-20 pb-8 margin-0-auto">
-          <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
-        </div>
-        <div className="three-column-icons__text text-left mt-8">
-          <h3 className="text-3xl">Design and Develop</h3>
+  <div className="three-column-icons bg-dark-background sm:block md:flex text-white w-full sm:text-center">
+    <Link href='/work#pueblo-unido-pdx'>
+      <div className="move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7">
+        <div className="bg-cool-green three-column-icons__icon w-full sm:h-auto md:h-full rounded-lg pb-8 margin-0-auto opacity-100">
+          <img className="opacity-100" src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+          <h3 className="text-2xl sm:opacity-100 md:opacity-0 sm:pb-0">Design and Develop</h3>
         </div>
       </div>
-      <div className="three-column-icons__middle inline-block p-12 mt-6">
-        <div className="three-column-icons__icon w-20 h-20 margin-0-auto">
-          <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
-        </div>
-        <div className="three-column-icons__text text-left mt-8">
-          <h3 className="text-3xl">Build Your Brand</h3>
-        </div>
-      </div>
-      <div className="move-up three-column-icons__right inline-block p-12 mb-7">
-        <div className="three-column-icons__icon w-20 h-20 pb-8 margin-0-auto">
-          <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
-        </div>
-        <div className="three-column-icons__text text-left mt-8">
-          <h3 className="text-3xl">Drive Results</h3>
+    </Link>
+    <Link href='/work#pueblo-unido-pdx'>
+      <div className="three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 md:mt-6">
+        <div className="bg-cool-blue three-column-icons__icon w-full sm:h-auto md:h-full rounded-lg margin-0-auto opacity-100">
+          <img className="opacity-100" src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+          <h3 className="text-2xl sm:opacity-100 md:opacity-0 sm:pb-8">Build Your Brand</h3>
         </div>
       </div>
-      <Button 
-        buttonText={'View My Services'}
-      />
-    </div>
-
+    </Link>
+    
+    <Link href='/work#pueblo-unido-pdx'>
+      <div className="move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7">
+        <div className="bg-cool-purple three-column-icons__icon w-full sm:h-auto md:h-full rounded-lg pb-8 margin-0-auto opacity-100">
+          <img className="opacity-100" src="../static/tripwire/tripwire-mockup.png" />
+          <h3 className="text-2xl sm:opacity-100 md:opacity-0 sm:pb-0">Drive Results</h3>
+        </div>
+      </div>
+    </Link>
     <style jsx>{`
       
     `}</style>
