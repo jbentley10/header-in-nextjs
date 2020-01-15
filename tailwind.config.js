@@ -1,6 +1,21 @@
 // tailwind.config.js
 module.exports = {
   theme: {
+    fontSize: {
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
+      '8xl': '6rem',
+    },
     screens: {
       'sm': '0',
 
@@ -21,7 +36,13 @@ module.exports = {
         'button-purple': '#732aff',
         'button-purple-darker': '#4510aa',
         'horizontal-bar': '#707070',
-        'navigation-hover': '#777777'
+        'navigation-hover': '#777777',
+        'cool-green': '#41676E',
+        'cool-green--reduced-opacity': '#2E464D',
+        'cool-blue': '#402C8B',
+        'cool-blue--reduced-opacity': '#2E285B',
+        'cool-purple': '#812373',
+        'cool-purple--reduced-opacity': '#4E234F',
       },
       borderRadius: {
         'button-radius': '15px'

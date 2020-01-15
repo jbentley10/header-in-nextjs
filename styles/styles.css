@@ -17,27 +17,76 @@ a {
     transition: .5s;
 }
 
-svg.logo {
-    animation: fadeInSVG 2s linear;
-    animation-delay: 1s;
-    -webkit-animation-fill-mode: forwards;
-    box-shadow: 3px 2px 8px #4d4e53;
-    border-radius: 50%;
-    opacity: 0;
-    transition: .25s;
+/* Utilities */
+/* Classes given one single purpose, a-la Tailwind's "utility-first" CSS */
+
+.transform-5 {
+  transform: translateY(5rem);
 }
 
-svg.logo:hover {
-  box-shadow: 7px 6px 12px #4d4e53;
+.transform-7 {
+  transform: translateY(7rem);
 }
 
-@keyframes fadeInSVG {
-  from {
-    opacity: 0;
-  }
-    to {
-      opacity: 1;
-    }
+.grayscale {
+  filter: grayscale(1);
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.shadow-white {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px #cfcfcf;
+}
+
+.hero-font {
+  font-size: 6rem;
+}
+
+/* Components */
+/* Classes specific to components in this project */
+
+.three-column-icons__icon {
+  transition: .25s;
+}
+
+.three-column-icons__icon:hover  {
+  cursor: pointer;
+}
+
+.three-column-icons__container:nth-of-type(1):hover > div.three-column-icons__icon { 
+  background-color: #2E464D;
+}
+
+.three-column-icons__container:nth-of-type(2):hover > div.three-column-icons__icon { 
+  background-color: #2E285B;
+}
+
+.three-column-icons__container:nth-of-type(3):hover > div.three-column-icons__icon { 
+  background-color: #4E234F;
+}
+
+.three-column-icons__icon:hover > img {
+  opacity: .5;
+}
+
+.three-column-icons__icon:hover h3 {
+  opacity: 1;
+}
+
+.sidebar-container {
+  font-family: Barlow, sans-serif;
+  font-weight: 500;
+}
+
+.navigation-link {
+  color: #ffffff;
+  transition: .5s;
+  font-family: Barlow, sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .background {
@@ -74,40 +123,6 @@ svg.logo:hover {
   transform: rotate(-10deg);
 }
 
-.grayscale {
-  filter: grayscale(1);
-}
-
-.m-auto {
-  margin: 0 auto;
-}
-
-.shadow-white {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 4px -1px #cfcfcf;
-}
-
-.sidebar-container {
-  font-family: Barlow, sans-serif;
-  font-weight: 500;
-}
-
-.transform-5 {
-  transform: translateY(5rem);
-}
-
-.transform-7 {
-  transform: translateY(7rem);
-}
-
-.navigation-link {
-  color: #ffffff;
-  transition: .5s;
-  font-family: Barlow, sans-serif;
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 20px;
-}
-
 /* Animate the logo */
 /* Circle */
 .cls-1 {
@@ -132,6 +147,29 @@ svg.logo:hover {
     animation: dashSignature 2s linear;
     animation-delay: 2s;
     -webkit-animation-fill-mode: forwards;
+}
+
+svg.logo {
+  animation: fadeInSVG 2s linear;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  box-shadow: 3px 2px 8px #4d4e53;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .25s;
+}
+
+svg.logo:hover {
+box-shadow: 7px 6px 12px #4d4e53;
+}
+
+@keyframes fadeInSVG {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes dashSignature {
@@ -279,5 +317,9 @@ svg.logo:hover {
 
   .background {
     height: 24rem;
+  }
+
+  .hero-font {
+    font-size: 3rem;
   }
 }

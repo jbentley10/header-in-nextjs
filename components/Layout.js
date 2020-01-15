@@ -48,6 +48,7 @@ const Layout = () => (
       />
     </Hero>
     <ThreeColumnIcons />
+    <div className="bg-dark-background pb-5" />
     <Button 
       buttonText={'View My Services'}
       className={'button text-center text-white bg-dark-background border-0'}

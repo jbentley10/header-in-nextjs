@@ -3,33 +3,25 @@ import '../styles/styles.css';
 
 /* Component Layout */
 const ThreeColumnIcons = () => (
-  <div className="three-column-icons bg-dark-background text-white px-12 w-full sm:text-center">
-    <div className="move-up three-column-icons__left sm:block md:inline-block sm:py-12 md:p-8 mb-7">
-      <div className="three-column-icons__icon w-20 sm:h-12 md:h-20 pb-8 margin-0-auto">
-        <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
-      </div>
-      <div className="three-column-icons__text sm:text-center md:w-56 mt-8">
-        <h3 className="text-2xl">Design and Develop</h3>
+  <div className="three-column-icons bg-dark-background flex text-white w-full sm:text-center">
+    <div className="move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7">
+      <div className="bg-cool-green three-column-icons__icon w-full sm:h-12 md:h-full rounded-lg pb-8 margin-0-auto opacity-100">
+        <img className="opacity-100" src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+        <h3 className="text-2xl opacity-0">Design and Develop</h3>
       </div>
     </div>
-    <div className="three-column-icons__middle sm:block md:inline-block sm:py-12 md:p-8 md:mt-6">
-      <div className="three-column-icons__icon w-20 sm:h-12 md:h-20 margin-0-auto">
-        <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
-      </div>
-      <div className="three-column-icons__text sm:text-center md:w-56 mt-8">
-        <h3 className="text-2xl">Build Your Brand</h3>
+    <div className="three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 md:mt-6">
+      <div className="bg-cool-blue three-column-icons__icon w-full sm:h-12 md:h-full rounded-lg margin-0-auto opacity-100">
+        <img className="opacity-100" src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+        <h3 className="text-2xl opacity-0">Build Your Brand</h3>
       </div>
     </div>
-    <div className="move-up three-column-icons__right sm:block md:inline-block sm:py-12 md:p-8 mb-7">
-      <div className="three-column-icons__icon w-20 sm:h-12 md:h-20 pb-8 margin-0-auto">
-        <FontAwesomeIcon icon="check-square" className="text-6xl shadow-none" />
-      </div>
-      <div className="three-column-icons__text sm:text-center md:w-56 mt-8">
-        <h3 className="text-2xl">Drive Results</h3>
+    <div className="move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7">
+      <div className="bg-cool-purple three-column-icons__icon w-full sm:h-12 md:h-full rounded-lg pb-8 margin-0-auto opacity-100">
+        <img className="opacity-100" src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+        <h3 className="text-2xl opacity-0">Drive Results</h3>
       </div>
     </div>
-    <p>&nbsp;</p>
-
     <style jsx>{`
       
     `}</style>
