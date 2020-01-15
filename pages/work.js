@@ -37,7 +37,7 @@ export default function Home() {
         {/*
           Introduction Section 
         */}
-        <div className="text-container w-full sm:p-8 md:p-24">
+        <div className="text-container w-full sm:p-8 md:p-24" id="pueblo-unido-pdx">
           <div className="text-content sm:p-8 md:p-24">
             <h2 className="text-white text-center font-bold uppercase sm:text-6xl sm:mb-8 md:pb-1">
               <a className="text-link-purple hover:text-link-purple-darker" href="https://www.pueblunidopdx.org" target="blank">Pueblo Unido PDX</a></h2>
@@ -141,7 +141,7 @@ export default function Home() {
         */}
         <div className="text-container w-full sm:p-8 md:p-24 flex">
           <div className="image-content w-2/5">
-            <img src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+            <img src="../static/pueblo-unido/social-media-mockup.png" />
           </div>
           <div className="text-content w-2/5 lg:mr-48">
             <h3 className="text-left font-bold sm:text-5xl text-link-purple">Crafting Social Media and Newsletter Campaigns</h3>
@@ -162,7 +162,7 @@ export default function Home() {
       <CallToAction 
         ctaText={<CTAText />}
       />
-      <div className="h-12" />
+      <div className="h-12 bg-dark-background" />
       <Footer />
     </div>
   );

@@ -38,7 +38,7 @@ const Navigation = (props) => {
       <Logo 
         className={'relative cursor-pointer logo'}
       />
-      <div className="navigation mr-8" style={navStyle}>
+      <div className="navigation mr-8 sm:w-full md:w-auto" style={navStyle}>
         <Link href="/work">
           <animated.a style={fadeInWork} className={navigationLinkClassList}>Work</animated.a>
         </Link>

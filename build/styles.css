@@ -11484,14 +11484,14 @@ a {
 }
 
 .background {
-  background-image: url('/static/background.png');
+  background-image: url('/static/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
 
 .background-dots {
-  background-image: url('/static/background-dots-big.png');
+  background-image: url('/static/background-dots-big.jpg');
   background-size: cover;
   background-repeat: repeat;
   background-position: 10px;
