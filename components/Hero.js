@@ -22,7 +22,7 @@ const Hero = ({children}) => {
         {children}
       </div>
 
-      <FontAwesomeIcon style={fadeIn} icon="arrow-down" className="sm:mt-5 md:mt-0 lg:mt-40 sm:text-3xl md:text-5xl shadow-none text-white sm:transform-3 md:transform-5" />
+      <FontAwesomeIcon style={fadeIn} icon="arrow-down" className="m-auto sm:w-8 md:w-3 sm:mt-5 md:mt-0 lg:mt-40 sm:text-3xl md:text-5xl shadow-none text-white sm:transform-3 md:transform-5" />
 
       <style jsx>{`
         a:hover {

@@ -49,6 +49,8 @@ module.exports = {
       },
       width: {
         '49': '49%',
+        '8': '8%',
+        '3': '3%'
       },
       padding: {
         'button-padding': '20px 30px'
