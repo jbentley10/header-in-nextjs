@@ -1,8 +1,6 @@
 import '../styles/styles.css';
-import Head from 'next/head';
+import Layout from '../components/Layout';
 import CallToAction from '../components/CallToAction';
-import Button from '../components/Button';
-import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,21 +19,21 @@ const MainText = () =>
 export default function Home() {
   return (
     <div>
-      <Head>
-        <link rel="shortcut icon" href="/static/favicon.ico" />
-        <title>John Bentley | Contact</title>
-        <meta name="description" content="If you are need of a brand redesign, website enhancement, or better performance on your website,
-        contact me now to elevate your brand and drive results."/>
-      </Head>
-      <Navigation />
-      <ImageHeader 
-        heading={'Contact'}
-      />
-      <CallToAction
-        ctaText={<MainText />}
-      />    
-      <div className="bg-dark-background md:h-24" />
-      <Footer />
+      <Layout 
+        pageMeta={{
+          title: " | Contact",
+          keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
+          description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results."
+        }}
+      >
+        <ImageHeader 
+          heading={'Contact'}
+        />
+        <CallToAction
+          ctaText={<MainText />}
+        />    
+        <div className="bg-dark-background md:h-24" />
+      </Layout>
     </div>
   );
 }

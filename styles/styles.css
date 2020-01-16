@@ -52,14 +52,14 @@ a {
 /* Classes specific to components in this project */
 
 .sidebar-container {
-  font-family: Barlow, sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: 500;
 }
 
 .navigation-link {
   color: #ffffff;
   transition: .5s;
-  font-family: Barlow, sans-serif;
+  font-family: 'Barlow', sans-serif;
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.5rem;
