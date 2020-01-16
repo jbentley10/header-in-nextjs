@@ -17,12 +17,10 @@ const Hero = ({children}) => {
   const fadeIn = useSpring({delay: 7000, opacity: 1, from: {opacity: 0}})
 
   return (
-    <div className="background sm:h-screen max-w-full text-center">
+    <div className="background sm:h-65 md:h-100 lg:h-85 xl:h-65 max-w-full text-center">
       <div className="header__content w-full" style={headerContentStyle}>
         {children}
       </div>
-
-      <FontAwesomeIcon style={fadeIn} icon="arrow-down" className="m-auto sm:w-8 md:w-3 sm:mt-5 md:mt-0 lg:mt-40 sm:text-3xl md:text-5xl shadow-none text-white sm:transform-3 md:transform-5" />
 
       <style jsx>{`
         a:hover {
