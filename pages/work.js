@@ -91,8 +91,8 @@ export default function Home() {
           <div className="image-content w-2/5">
             <img src="../static/pueblo-unido/old-and-new.png" />
           </div>
-          <div className="text-content w-2/5 lg:mr-48">
-            <h3 className="text-left font-bold sm:text-5xl text-link-purple">Establishing Brand Guidelines</h3>
+          <div className="text-content text-right w-2/5 lg:ml-24 xl:ml-48">
+            <h3 className="font-bold sm:text-5xl text-link-purple">Establishing Brand Guidelines</h3>
             <p className="text-white">Before developing the website, social media assets, and newsletter templates,
             I crafted a simple set of brand guidelines for the organization to follow.</p>
             <p className="text-white">The brand guidelines reverberated into social media, the website, and all 
@@ -148,8 +148,8 @@ export default function Home() {
           <div className="image-content w-2/5">
             <img src="../static/pueblo-unido/social-media-mockup.png" />
           </div>
-          <div className="text-content w-2/5 lg:mr-48">
-            <h3 className="text-left font-bold sm:text-5xl text-link-purple">Crafting Social Media and Newsletter Campaigns</h3>
+          <div className="text-content text-right w-2/5 lg:ml-24 xl:ml-48">
+            <h3 className="font-bold sm:text-5xl text-link-purple">Crafting Social Media and Newsletter Campaigns</h3>
             <p className="text-white">Once the website was created, I began using the newly crafted
             brand guidelines to create compelling imagery for social media
             platforms such as Facebook and Instagram.</p>

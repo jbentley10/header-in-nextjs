@@ -24,7 +24,8 @@ class ThreeColumnIcons extends Component {
             <div 
               style={{
                 opacity: this.state.imgViz ? 1 : 0.25,
-                transition: 'opacity 1s linear'
+                transform: 'translateY(' + this.state.imgViz ? 0 : '20px' + ')',
+                transition: 'all 2s linear'
               }}
               className="move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7">
               <div className="bg-cool-green three-column-icons__icon w-full sm:h-auto md:h-full rounded-lg pb-8 margin-0-auto opacity-100 border-8 border-cool-green--reduced-opacity">
