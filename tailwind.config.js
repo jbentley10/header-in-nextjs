@@ -56,7 +56,8 @@ module.exports = {
         'button-padding': '20px 30px'
       },
       height: {
-        '65': '65vh'
+        '65': '65vh',
+        '85': '85vh',
       },
       minHeight: {
         '1/20': '5%',
