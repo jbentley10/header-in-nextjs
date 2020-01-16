@@ -29,6 +29,8 @@ const Layout = ({ pageMeta, children }) => (
 
       <link rel="shortcut icon" href="/static/favicon.ico" />
 
+      <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
+
       {/* Google Tag Manager */}
       <script type="text/javascript">{`
       {
