@@ -27,7 +27,6 @@ export default function Home() {
           description: "Learn more about the work I have done throughout my career, including brand redesigns, web design and development, and SEO-driven results."
         }}
       >
-        <Navigation />
         <ImageHeader 
           heading={"Work"}
         />

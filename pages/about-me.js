@@ -23,7 +23,6 @@ export default function Home() {
           description: "Get know my background including what I do, how design shaped my career, and what I like to do in my spare time."
         }}
       >
-        <Navigation />
         <ImageHeader 
           heading={"About Me"}
         />

@@ -25,7 +25,6 @@ export default function Home() {
           description: "My skills and expertise revolve around brand identity, web design, and SEO. Get to know my services and schedule a kickoff meeting with me today."
         }}
       >
-        <Navigation />
         <ImageHeader 
           heading={"Services"}
         />

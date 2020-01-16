@@ -26,7 +26,6 @@ export default function Home() {
           description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results."
         }}
       >
-        <Navigation />
         <ImageHeader 
           heading={'Contact'}
         />
