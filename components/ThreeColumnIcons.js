@@ -23,7 +23,7 @@ class ThreeColumnIcons extends Component {
           <Link href='/work#pueblo-unido-pdx'>
             <div 
               style={{
-                opacity: this.state.imgViz ? 1 : 0.25,
+                opacity: this.state.imgViz ? 1 : 0,
                 transform: 'translateY(' + this.state.imgViz ? 0 : '20px' + ')',
                 transition: 'all 2s linear'
               }}
