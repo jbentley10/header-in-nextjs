@@ -16,7 +16,6 @@ const headerContentStyle = {
 const ImageHeader = (props) => {
   const {
     TagName: tag,
-    className,
     heading
   } = props
 
@@ -39,13 +38,11 @@ const ImageHeader = (props) => {
 
 ImageHeader.propTypes = {
   tagName: PropTypes.string,
-  className: PropTypes.string,
   heading: PropTypes.string
 }
 
 ImageHeader.defaultProps = {
   tagName: '',
-  className: '',
   heading: ''
 }
 
