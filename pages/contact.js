@@ -24,6 +24,8 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results."
         }}
+        navigationClassName={'lg:h-68'}
+        logoWidth={'7%'}
       >
         <ImageHeader 
           heading={'Contact'}

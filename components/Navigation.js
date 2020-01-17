@@ -23,7 +23,9 @@ const Navigation = (props) => {
       delayWork,
       delayAbout,
       delayServices,
-      delayContact
+      delayContact,
+      navigationClassName,
+      logoWidth
   } = props
 
   const fadeInWork = useSpring({delay: {delayWork}, opacity: 1, from: {opacity: 0}})
@@ -34,9 +36,10 @@ const Navigation = (props) => {
   const navigationLinkClassList = "sm:px-4 md:px-8 navigation-link hover:text-navigation-hover cursor-pointer";
 
   return (
-    <div className="navigation h-56" style={backgroundStyle}>
+    <div className={navigationClassName + ' navigation h-56'} style={backgroundStyle}>
       <Logo 
         className={'relative cursor-pointer logo'}
+        logoWidth={logoWidth}
       />
       <div className="navigation mr-8 sm:w-full md:w-auto" style={navStyle}>
         <Link href="/work">
@@ -77,14 +80,16 @@ Navigation.propTypes = {
   delayWork: PropTypes.number,
   delayAbout: PropTypes.number,
   delayServices: PropTypes.number,
-  delayContact: PropTypes.number
+  delayContact: PropTypes.number,
+  navigationClassName: PropTypes.string
 }
 
 Navigation.defaultProps = {
   delayWork: 0,
   delayAbout: 0,
   delayServices: 0,
-  delayContact: 0
+  delayContact: 0,
+  navigationClassName: ''
 }
 
 export default Navigation;

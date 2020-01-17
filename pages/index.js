@@ -33,6 +33,8 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "I am a freelance web designer and developer based in Portland, OR. Contact me now to elevate your brand and drive results."
         }}
+        navigationClassName={'lg:h-128'}
+        logoWidth={'10%'}
       >
         <Hero>
           <HeaderFadeInAnimation

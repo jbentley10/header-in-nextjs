@@ -1,28 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types'
-import { useSpring, animated, config } from 'react-spring';
-
-// Example function from https://codesandbox.io/embed/nw61327570
-function componentDidMount() {
-  let pathLengths = Array.from(
-    this.svg.current.getElementsByTagName("*")
-  ).map(el => {
-    let size;
-    try {
-      size = el.getTotalLength();
-    } catch (error) {
-      size = 0;
-    }
-    return size;
-  });
-
-  this.setState({ offset: Math.max(...pathLengths) + 0.3 });
-}
+import { animated } from 'react-spring';
 
 const LogoSpring = (props) => {
   const {
     TagName: tag,
+    logoWidth,
     className
   } = props
 
@@ -41,11 +25,11 @@ const LogoSpring = (props) => {
   return (
     <Link href="index">
       <animated.svg
-      viewBox={"0 0 73 73"}
-      width={"10%"}
-      padding={"50px"}
-      style={svgStyle}
-      className={className}
+        viewBox={"0 0 73 73"}
+        width={logoWidth}
+        padding={"50px"}
+        style={svgStyle}
+        className={className}
       >
         <defs>
           <linearGradient
@@ -78,11 +62,13 @@ const LogoSpring = (props) => {
 LogoSpring.propTypes = {
   tagName: PropTypes.string,
   className: PropTypes.string,
+  logoWidth: PropTypes.number
 }
 
 LogoSpring.defaultProps = {
   tagName: '',
-  className: ''
+  className: '',
+  logoWidth: 6
 }
 
 export default LogoSpring;

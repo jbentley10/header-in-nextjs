@@ -21,6 +21,8 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "Get know my background including what I do, how design shaped my career, and what I like to do in my spare time."
         }}
+        navigationClassName={'lg:h-68'}
+        logoWidth={'7%'}
       >
         <ImageHeader 
           heading={"About Me"}
