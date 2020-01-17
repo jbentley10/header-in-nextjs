@@ -1,6 +1,5 @@
 import '../styles/styles.css';
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import ImageTextSplit from '../components/ImageTextSplit';
 import ImageTextButtonSplit from '../components/ImageTextButtonSplit';

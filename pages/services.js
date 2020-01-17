@@ -1,6 +1,5 @@
 import '../styles/styles.css';
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import DotsTransition from '../components/Images/DotsTransition';

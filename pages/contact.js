@@ -1,7 +1,6 @@
 import '../styles/styles.css';
 import Layout from '../components/Layout';
 import CallToAction from '../components/CallToAction';
-import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
