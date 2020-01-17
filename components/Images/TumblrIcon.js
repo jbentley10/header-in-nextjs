@@ -8,7 +8,7 @@ const TumblrIcon = (props) => {
   } = props
 
   return (
-    <a href="https://www.tumblr.com/blog/jbentley10" target="blank">
+    <a href="https://jbentley10.tumblr.com/" target="blank">
       <img className={className} src="../static/tumblr.png" alt="John Bentley on Tumblr" />
     </a>
   )

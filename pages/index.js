@@ -66,6 +66,7 @@ export default function Home() {
           linkHref={'/work'}
         />
         <HorizontalBar />
+        
         <CallToAction 
           ctaText={<CTAText />}
         />
