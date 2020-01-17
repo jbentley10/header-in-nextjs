@@ -1,6 +1,5 @@
 import '../styles/styles.css';
 import Helmet from 'react-helmet'
-import Head from 'next/head';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
@@ -13,7 +12,7 @@ library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, f
 
 import '../styles/styles.css';
 
-const Layout = ({ pageMeta, children }) => (
+const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName }) => (
   <>
     <Helmet>
       <html lang="en" />
@@ -52,10 +51,10 @@ const Layout = ({ pageMeta, children }) => (
     `}</noscript>
     
     <Navigation 
-      delayWork={5200}
-      delayAbout={5700}
-      delayServices={6200}
-      delayContact={6700}
+      navigationClassName={navigationClassName}
+      fadeInNav={fadeInNav}
+      logoWidth={logoWidth}
+      logoClassName={logoClassName}
     />
       {children}
     <Footer />

@@ -1,6 +1,5 @@
 import '../styles/styles.css';
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import ImageTextSplit from '../components/ImageTextSplit';
 import ImageTextButtonSplit from '../components/ImageTextButtonSplit';
@@ -22,6 +21,10 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "Get know my background including what I do, how design shaped my career, and what I like to do in my spare time."
         }}
+        navigationClassName={'lg:h-128 navigation h-56'}
+        fadeInNav={false}
+        logoWidth={'7%'}
+        logoClassName={'relative cursor-pointer logo'}
       >
         <ImageHeader 
           heading={"About Me"}

@@ -1,33 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types'
-import { useSpring, animated, config } from 'react-spring';
 
-// Example function from https://codesandbox.io/embed/nw61327570
-function componentDidMount() {
-  let pathLengths = Array.from(
-    this.svg.current.getElementsByTagName("*")
-  ).map(el => {
-    let size;
-    try {
-      size = el.getTotalLength();
-    } catch (error) {
-      size = 0;
-    }
-    return size;
-  });
-
-  this.setState({ offset: Math.max(...pathLengths) + 0.3 });
-}
-
-const LogoSpring = (props) => {
-  const {
-    TagName: tag,
-    className
-  } = props
+const Logo = ({logoWidth, logoClassName}) => {
 
   const circleStyle = {
-    stroke: "#fff",
+    stroke: "#ffffff",
     strokeMiterLimit: "10",
     fill: "url(#linear-gradient)"
   }
@@ -39,13 +16,13 @@ const LogoSpring = (props) => {
   const fill = "#ffffff";
 
   return (
-    <Link href="index">
-      <animated.svg
-      viewBox={"0 0 73 73"}
-      width={"10%"}
-      padding={"50px"}
-      style={svgStyle}
-      className={className}
+    <Link href="/index">
+      <svg
+        viewBox={"0 0 73 73"}
+        width={logoWidth}
+        padding={"50px"}
+        style={svgStyle}
+        className={logoClassName}
       >
         <defs>
           <linearGradient
@@ -55,8 +32,8 @@ const LogoSpring = (props) => {
             x2="72.515"
             y2="36.5"
             gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#9891ff" />
-            <stop offset="1" stopColor="#ff2aba" />
+            <stop offset="0" stopColor="#9891ff" /> {/* Gives the purple gradient to the logo */}
+            <stop offset="1" stopColor="#ff2aba" /> {/* Gives the purple gradient to the logo */}
           </linearGradient>
         </defs>
         <title>Asset 7</title>
@@ -70,19 +47,9 @@ const LogoSpring = (props) => {
             </g>
           </g>
         </g>
-      </animated.svg>
+      </svg>
     </Link>
   )
 }
 
-LogoSpring.propTypes = {
-  tagName: PropTypes.string,
-  className: PropTypes.string,
-}
-
-LogoSpring.defaultProps = {
-  tagName: '',
-  className: ''
-}
-
-export default LogoSpring;
+export default Logo;

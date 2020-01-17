@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Logo from './Images/Logo';
 import {useSpring, animated} from 'react-spring';
-import PropTypes from 'prop-types'
 
 import '../styles/styles.css';
 
@@ -17,26 +16,31 @@ const navStyle = {
 }
 
 /* Component Layout */
-const Navigation = (props) => {
-  const {
-    TagName:
-      delayWork,
-      delayAbout,
-      delayServices,
-      delayContact
-  } = props
+const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth}) => {
 
-  const fadeInWork = useSpring({delay: {delayWork}, opacity: 1, from: {opacity: 0}})
-  const fadeInAbout = useSpring({delay: {delayAbout}, opacity: 1, from: {opacity: 0}})
-  const fadeInServices = useSpring({delay: {delayServices}, opacity: 1, from: {opacity: 0}})
-  const fadeInContact = useSpring({delay: {delayContact}, opacity: 1, from: {opacity: 0}})
+  const delayWork =7200
+  const delayAbout = 7700
+  const delayServices = 8200
+  const delayContact = 8700
+  const fadeInWork = {display: + 'block'}
+  const fadeInAbout = {display: + 'block'}
+  const fadeInServices = {display: + 'block'}
+  const fadeInContact = {display: + 'block'}
+
+  if ({fadeInNav} == true) {
+    fadeInWork = useSpring({delay: delayWork, opacity: 1, from: {opacity: 0}})
+    fadeInAbout = useSpring({delay: delayAbout, opacity: 1, from: {opacity: 0}})
+    fadeInServices = useSpring({delay: delayServices, opacity: 1, from: {opacity: 0}})
+    fadeInContact = useSpring({delay: delayContact, opacity: 1, from: {opacity: 0}})
+  }
 
   const navigationLinkClassList = "sm:px-4 md:px-8 navigation-link hover:text-navigation-hover cursor-pointer";
 
   return (
-    <div className="navigation h-56" style={backgroundStyle}>
+    <div className={navigationClassName} style={backgroundStyle}>
       <Logo 
-        className={'relative cursor-pointer logo'}
+        logoClassName={logoClassName}
+        logoWidth={logoWidth}
       />
       <div className="navigation mr-8 sm:w-full md:w-auto" style={navStyle}>
         <Link href="/work">
@@ -71,20 +75,6 @@ const Navigation = (props) => {
     </div>
   )
   
-}
-
-Navigation.propTypes = {
-  delayWork: PropTypes.number,
-  delayAbout: PropTypes.number,
-  delayServices: PropTypes.number,
-  delayContact: PropTypes.number
-}
-
-Navigation.defaultProps = {
-  delayWork: 0,
-  delayAbout: 0,
-  delayServices: 0,
-  delayContact: 0
 }
 
 export default Navigation;

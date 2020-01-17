@@ -9,7 +9,8 @@ const Footer = () => (
   <div className="bg-dark-background text-white w-full text-center">
     <div className="logo-container">
       <Logo 
-        className={'grayscale m-auto cursor-pointer'}
+        logoClassName={'grayscale m-auto cursor-pointer logo'}
+        logoWidth={'6%'}
       />
     </div>
     <p className="text-base p-6">

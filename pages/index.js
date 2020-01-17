@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import HeaderFadeInAnimation from '../components/HeaderFadeInAnimation';
@@ -24,7 +25,9 @@ const CTAText = () =>
   </div>
 ;
 
+
 export default function Home() {
+
   return (
     <div>
       <Layout
@@ -33,6 +36,10 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "I am a freelance web designer and developer based in Portland, OR. Contact me now to elevate your brand and drive results."
         }}
+        navigationClassName={'z-navigation lg:h-128 navigation h-56'}
+        fadeInNav={true}
+        logoWidth={'10%'}
+        logoClassName={'logo-animate relative cursor-pointer'}
       >
         <Hero>
           <HeaderFadeInAnimation

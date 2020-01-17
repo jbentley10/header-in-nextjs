@@ -21,7 +21,7 @@ const Button = (props) => {
     return (
       <div className={className}>
         <Link href={linkHref}>
-          <a target={blank} className="text-lg p-button-padding rounded-button-radius bg-button-purple cursor-pointer hover:bg-button-purple-darker">{buttonText}</a>
+          <a target={blank} className="font-barlow font-extrabold text-lg p-button-padding rounded-button-radius bg-button-purple cursor-pointer hover:bg-button-purple-darker">{buttonText}</a>
         </Link>
 
         <style jsx>{`

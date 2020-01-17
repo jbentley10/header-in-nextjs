@@ -1,6 +1,5 @@
 import '../styles/styles.css';
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import DotsTransition from '../components/Images/DotsTransition';
@@ -24,6 +23,10 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "My skills and expertise revolve around brand identity, web design, and SEO. Get to know my services and schedule a kickoff meeting with me today."
         }}
+        navigationClassName={'lg:h-128 navigation h-56'}
+        fadeInNav={false}
+        logoWidth={'7%'}
+        logoClassName={'relative cursor-pointer logo'}
       >
         <ImageHeader 
           heading={"Services"}

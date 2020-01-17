@@ -16,6 +16,9 @@ module.exports = {
       '7xl': '5rem',
       '8xl': '6rem',
     },
+    fontFamily: {
+      barlow: ['Barlow'],
+    },
     screens: {
       'sm': '0',
 
@@ -56,8 +59,10 @@ module.exports = {
         'button-padding': '20px 30px'
       },
       height: {
-        '65': '65vh',
-        '85': '85vh',
+        '68': '17vh',
+        '128': '32vh',
+        '260': '65vh',
+        '340': '85vh',
       },
       minHeight: {
         '1/20': '5%',
@@ -71,6 +76,11 @@ module.exports = {
         'contain': 'contain',
         '50%': '50%',
         '100%': '100%',
+      },
+      zIndex: {
+        'cover-all': '100',
+        'navigation': '80',
+        'body-content': '50'
       }
     }
   },

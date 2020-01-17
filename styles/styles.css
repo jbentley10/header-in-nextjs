@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  font-family: 'Barlow', sans-serif;
+}
+
 h1:hover, p:hover {
     cursor: default;
 }
@@ -74,9 +78,9 @@ a {
 
 .background-dots {
   background-image: url('/static/background-dots-big.jpg');
-  background-size: cover;
+  background-size: inherit;
   background-repeat: repeat;
-  background-position: 10px;
+  background-position: 5rem;
   width: 100%;
 }
 
@@ -126,17 +130,26 @@ a {
 }
 
 svg.logo {
+  border-radius: 50%;
+  opacity: 0;
+  animation: fadeInSVG .01s linear;
+  animation-delay: 0;
+  -webkit-animation-fill-mode: forwards;
+  transition: all .25s ease-in-out;
+}
+
+svg.logo-animate {
+  border-radius: 50%;
+  opacity: 0;
   animation: fadeInSVG 2s linear;
   animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
-  box-shadow: 3px 2px 8px #4d4e53;
-  border-radius: 50%;
-  opacity: 0;
-  transition: .25s;
+  transition: all .25s ease-in-out;
 }
 
-svg.logo:hover {
-box-shadow: 7px 6px 12px #4d4e53;
+svg.logo:hover, svg.logo-animate:hover {
+  box-shadow: 0px 1px 38px #9a9a9a;
+  cursor: pointer;
 }
 
 @keyframes fadeInSVG {

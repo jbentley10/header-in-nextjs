@@ -1,7 +1,6 @@
 import '../styles/styles.css';
 import Layout from '../components/Layout';
 import CallToAction from '../components/CallToAction';
-import Navigation from '../components/Navigation';
 import ImageHeader from '../components/ImageHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -25,6 +24,10 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results."
         }}
+        navigationClassName={'lg:h-128 navigation h-56'}
+        fadeInNav={false}
+        logoWidth={'7%'}
+        logoClassName={'relative cursor-pointer logo'}
       >
         <ImageHeader 
           heading={'Contact'}
