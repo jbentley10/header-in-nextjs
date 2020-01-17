@@ -21,11 +21,8 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "Get know my background including what I do, how design shaped my career, and what I like to do in my spare time."
         }}
-        delayWork={0}
-        delayAbout={0}
-        delayServices={0}
-        delayContact={0}
         navigationClassName={'lg:h-128 navigation h-56'}
+        fadeInNav={false}
         logoWidth={'7%'}
         logoClassName={'relative cursor-pointer logo'}
       >

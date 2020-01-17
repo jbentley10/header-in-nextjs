@@ -24,11 +24,8 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results."
         }}
-        delayWork={0}
-        delayAbout={0}
-        delayServices={0}
-        delayContact={0}
         navigationClassName={'lg:h-128 navigation h-56'}
+        fadeInNav={false}
         logoWidth={'7%'}
         logoClassName={'relative cursor-pointer logo'}
       >

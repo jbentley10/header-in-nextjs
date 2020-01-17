@@ -23,11 +23,8 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "My skills and expertise revolve around brand identity, web design, and SEO. Get to know my services and schedule a kickoff meeting with me today."
         }}
-        delayWork={0}
-        delayAbout={0}
-        delayServices={0}
-        delayContact={0}
         navigationClassName={'lg:h-128 navigation h-56'}
+        fadeInNav={false}
         logoWidth={'7%'}
         logoClassName={'relative cursor-pointer logo'}
       >

@@ -27,11 +27,8 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "Learn more about the work I have done throughout my career, including brand redesigns, web design and development, and SEO-driven results."
         }}
-        delayWork={0}
-        delayAbout={0}
-        delayServices={0}
-        delayContact={0}
         navigationClassName={'z-navigation lg:h-128 navigation h-56'}
+        fadeInNav={false}
         logoWidth={'7%'}
         logoClassName={'relative cursor-pointer logo'}
       >
@@ -138,6 +135,7 @@ export default function Home() {
             </div>
             <div className="image-content w-2/5">
               <img src="../static/pueblo-unido/pueblo-unido-mockup.png" />
+              <img src="../static/pueblo-unido/gala-landing-page.jpg" />
             </div>
           </div> 
 

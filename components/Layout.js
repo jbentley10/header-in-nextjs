@@ -12,7 +12,7 @@ library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, f
 
 import '../styles/styles.css';
 
-const Layout = ({ pageMeta, children, navigationClassName, delayWork, delayAbout, delayServices, delayContact, fromOpacity, logoWidth, logoClassName }) => (
+const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName }) => (
   <>
     <Helmet>
       <html lang="en" />
@@ -51,12 +51,8 @@ const Layout = ({ pageMeta, children, navigationClassName, delayWork, delayAbout
     `}</noscript>
     
     <Navigation 
-      delayWork={delayWork}
-      delayAbout={delayAbout}
-      delayServices={delayServices}
-      delayContact={delayContact}
-      fromOpacity={fromOpacity}
       navigationClassName={navigationClassName}
+      fadeInNav={fadeInNav}
       logoWidth={logoWidth}
       logoClassName={logoClassName}
     />
