@@ -130,17 +130,28 @@ a {
 }
 
 svg.logo {
-  animation: fadeInSVG 2s linear;
-  animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
   box-shadow: 3px 2px 8px #4d4e53;
   border-radius: 50%;
   opacity: 0;
+  animation: fadeInSVG .01s linear;
+  animation-delay: 0;
+  -webkit-animation-fill-mode: forwards;
+  transition: .01s;
+}
+
+svg.logo-animate {
+  box-shadow: 3px 2px 8px #4d4e53;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fadeInSVG 2s linear;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
   transition: .25s;
 }
 
 svg.logo:hover {
-box-shadow: 7px 6px 12px #4d4e53;
+  box-shadow: 7px 6px 12px #4d4e53;
+  cursor: pointer;
 }
 
 @keyframes fadeInSVG {

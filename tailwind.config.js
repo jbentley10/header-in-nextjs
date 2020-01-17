@@ -76,6 +76,11 @@ module.exports = {
         'contain': 'contain',
         '50%': '50%',
         '100%': '100%',
+      },
+      zIndex: {
+        'cover-all': '100',
+        'navigation': '80',
+        'body-content': '50'
       }
     }
   },

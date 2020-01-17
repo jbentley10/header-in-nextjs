@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import ImageHeader from '../components/ImageHeader';
@@ -17,6 +18,7 @@ const CTAText = () =>
 ;
 
 export default function Home() {
+
   return (
     <div>
       <Layout 
@@ -25,8 +27,13 @@ export default function Home() {
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "Learn more about the work I have done throughout my career, including brand redesigns, web design and development, and SEO-driven results."
         }}
-        navigationClassName={'lg:h-128'}
+        delayWork={0}
+        delayAbout={0}
+        delayServices={0}
+        delayContact={0}
+        navigationClassName={'z-navigation lg:h-128 navigation h-56'}
         logoWidth={'7%'}
+        logoClassName={'relative cursor-pointer logo'}
       >
         <ImageHeader 
           heading={"Work"}

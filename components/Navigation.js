@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Logo from './Images/Logo';
 import {useSpring, animated} from 'react-spring';
-import PropTypes from 'prop-types'
 
 import '../styles/styles.css';
 
@@ -17,16 +16,7 @@ const navStyle = {
 }
 
 /* Component Layout */
-const Navigation = (props) => {
-  const {
-    TagName:
-      delayWork,
-      delayAbout,
-      delayServices,
-      delayContact,
-      navigationClassName,
-      logoWidth
-  } = props
+const Navigation = ({delayWork, delayAbout, delayServices, delayContact, navigationClassName, logoClassName, logoWidth}) => {
 
   const fadeInWork = useSpring({delay: {delayWork}, opacity: 1, from: {opacity: 0}})
   const fadeInAbout = useSpring({delay: {delayAbout}, opacity: 1, from: {opacity: 0}})
@@ -36,9 +26,9 @@ const Navigation = (props) => {
   const navigationLinkClassList = "sm:px-4 md:px-8 navigation-link hover:text-navigation-hover cursor-pointer";
 
   return (
-    <div className={navigationClassName + ' navigation h-56'} style={backgroundStyle}>
+    <div className={navigationClassName} style={backgroundStyle}>
       <Logo 
-        className={'relative cursor-pointer logo'}
+        logoClassName={logoClassName}
         logoWidth={logoWidth}
       />
       <div className="navigation mr-8 sm:w-full md:w-auto" style={navStyle}>
@@ -74,22 +64,6 @@ const Navigation = (props) => {
     </div>
   )
   
-}
-
-Navigation.propTypes = {
-  delayWork: PropTypes.number,
-  delayAbout: PropTypes.number,
-  delayServices: PropTypes.number,
-  delayContact: PropTypes.number,
-  navigationClassName: PropTypes.string
-}
-
-Navigation.defaultProps = {
-  delayWork: 0,
-  delayAbout: 0,
-  delayServices: 0,
-  delayContact: 0,
-  navigationClassName: ''
 }
 
 export default Navigation;

@@ -1,4 +1,6 @@
 import '../styles/styles.css';
+import {useSpring, animated} from 'react-spring';
+
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import HeaderFadeInAnimation from '../components/HeaderFadeInAnimation';
@@ -24,17 +26,25 @@ const CTAText = () =>
   </div>
 ;
 
+
 export default function Home() {
+  const fadeInHomePage = useSpring({delay: 250, opacity: 1, backgroundColor: '#1b242c', from: {opacity: 0.25, backgroundColor: '#1b242c'}})
+
   return (
-    <div>
+    <animated.div className="z-cover-all" style={fadeInHomePage}>
       <Layout
         pageMeta={{
           title: "- Freelance Web Designer | Home",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "I am a freelance web designer and developer based in Portland, OR. Contact me now to elevate your brand and drive results."
         }}
-        navigationClassName={'lg:h-128'}
+        delayWork={7200}
+        delayAbout={7700}
+        delayServices={8200}
+        delayContact={8700}
+        navigationClassName={'z-navigation lg:h-128 navigation h-56'}
         logoWidth={'10%'}
+        logoClassName={'logo-animate relative cursor-pointer'}
       >
         <Hero>
           <HeaderFadeInAnimation
@@ -66,6 +76,6 @@ export default function Home() {
         />
         <div className="bg-dark-background h-12" />
       </Layout>
-    </div>
+    </animated.div>
   );
 }

@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types'
 import {useSpring, animated} from 'react-spring';
 
 import '../styles/styles.css';
 
 /* Animations */ 
-const HeaderFadeInAnimation = ({headingText}, {subtext}) => {
+const HeaderFadeInAnimation = ({headingText, subtext}) => {
 
   // Define one of our springs
   const fadeInQuick = useSpring({delay: 4000, opacity: 1, from: {opacity: 0}})

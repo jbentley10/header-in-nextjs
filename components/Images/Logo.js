@@ -1,16 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types'
 
-const LogoSpring = (props) => {
-  const {
-    TagName: tag,
-    logoWidth,
-    className
-  } = props
+const Logo = ({logoWidth, logoClassName}) => {
 
   const circleStyle = {
-    stroke: "#fff",
+    stroke: "#ffffff",
     strokeMiterLimit: "10",
     fill: "url(#linear-gradient)"
   }
@@ -22,13 +16,13 @@ const LogoSpring = (props) => {
   const fill = "#ffffff";
 
   return (
-    <Link href="index">
+    <Link href="/index">
       <svg
         viewBox={"0 0 73 73"}
         width={logoWidth}
         padding={"50px"}
         style={svgStyle}
-        className={className}
+        className={logoClassName}
       >
         <defs>
           <linearGradient
@@ -38,8 +32,8 @@ const LogoSpring = (props) => {
             x2="72.515"
             y2="36.5"
             gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#9891ff" />
-            <stop offset="1" stopColor="#ff2aba" />
+            <stop offset="0" stopColor="#9891ff" /> {/* Gives the purple gradient to the logo */}
+            <stop offset="1" stopColor="#ff2aba" /> {/* Gives the purple gradient to the logo */}
           </linearGradient>
         </defs>
         <title>Asset 7</title>
@@ -58,16 +52,4 @@ const LogoSpring = (props) => {
   )
 }
 
-LogoSpring.propTypes = {
-  tagName: PropTypes.string,
-  className: PropTypes.string,
-  logoWidth: PropTypes.number
-}
-
-LogoSpring.defaultProps = {
-  tagName: '',
-  className: '',
-  logoWidth: 6
-}
-
-export default LogoSpring;
+export default Logo;

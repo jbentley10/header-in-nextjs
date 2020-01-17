@@ -12,7 +12,7 @@ const headerContentStyle = {
 const Hero = ({children}) => {
 
   return (
-    <div className="background sm:h-260 md:h-100 lg:h-75 max-w-full text-center">
+    <div className="z-body-content background sm:h-260 md:h-100 lg:h-75 max-w-full text-center">
       <div className="header__content w-full" style={headerContentStyle}>
         {children}
       </div>
