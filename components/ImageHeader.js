@@ -21,7 +21,7 @@ const ImageHeader = (props) => {
   } = props
 
   return (
-    <div className="background lg:h-56 xl:h-64 opacity-75">
+    <div className="background sm:h-56 lg:h-56 xl:h-64 opacity-75">
       <div className="header__content" style={headerContentStyle}>
         <h1 className="text-left pt-16">{heading}</h1>
       </div>

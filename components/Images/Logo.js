@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types'
-import { animated } from 'react-spring';
 
 const LogoSpring = (props) => {
   const {
@@ -24,7 +23,7 @@ const LogoSpring = (props) => {
 
   return (
     <Link href="index">
-      <animated.svg
+      <svg
         viewBox={"0 0 73 73"}
         width={logoWidth}
         padding={"50px"}
@@ -54,7 +53,7 @@ const LogoSpring = (props) => {
             </g>
           </g>
         </g>
-      </animated.svg>
+      </svg>
     </Link>
   )
 }

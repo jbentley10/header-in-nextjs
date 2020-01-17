@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  font-family: 'Barlow', sans-serif;
+}
+
 h1:hover, p:hover {
     cursor: default;
 }
