@@ -13,8 +13,8 @@ const ImageTextButtonSplit = () => (
       </div>
 
       <div className="image-text-split__image-container sm:text-center sm:my-8 md:mb-12 sm:m-auto sm:w-full md:w-2/5 sm:block md:inline-block md:align-middle">
-        <img className="rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-hike.jpg" alt="John Bentley Freelance Web Designer" />
-        <img className="rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-nepal.jpg" alt="John Bentley Freelance Web Designer" />
+        <img className="rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-hike.jpg" alt="Climbing and hiking just outside of Portland" />
+        <img className="rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" />
       </div>
 
       <Button 

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 /* Component Layout */ 
 const CallToAction = (props) => {
     const {
-      TagName: tag,
       ctaText
     } = props
 
@@ -18,13 +17,9 @@ const CallToAction = (props) => {
 export default CallToAction;
 
 CallToAction.propTypes = {
-  tagName: PropTypes.string,
-  className: PropTypes.string,
   ctaText: PropTypes.any
 }
 
 CallToAction.defaultProps = {
-  tagName: '',
-  className: '',
-  ctaText: <p>Call to Action</p>
+  ctaText: <p>Contact Me</p>
 }
