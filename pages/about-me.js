@@ -1,4 +1,6 @@
 import '../styles/styles.css';
+
+import Button from '../components/Button';
 import Layout from '../components/Layout';
 import ImageHeader from '../components/ImageHeader';
 import ImageTextSplit from '../components/ImageTextSplit';
@@ -7,8 +9,13 @@ import CallToAction from '../components/CallToAction';
 
 const CTAText = () => 
   <div>
-    <h2 className="text-2xl">Interested in learning more?</h2>
-    <p className="text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple"> Contact me</a> directly.</p>
+    <h2 className="text-3xl pb-12">Interested in working on a project?</h2>
+    <Button
+      buttonText={'Contact Me'}
+      className={'button text-center text-white'}
+      linkHref='/contact'
+      targetBlank={false}
+    />
   </div>
 ;
 
@@ -29,13 +36,17 @@ export default function Home() {
         <ImageHeader 
           heading={"About Me"}
         />
+
         <ImageTextSplit>
-        <img className="rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src="../static/me-flute.jpg" alt="John Bentley Freelance Web Designer" />
+          <img className="rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src="../static/me-flute.jpg" alt="Playing classical flute - one of my favorite hobbies" />
         </ImageTextSplit>
+
         <ImageTextButtonSplit />
+
         <CallToAction 
           ctaText={<CTAText />}
         />
+        
       </Layout>
     </div>
   );

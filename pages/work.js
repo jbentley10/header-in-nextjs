@@ -8,11 +8,12 @@ import DotsTransition from '../components/Images/DotsTransition';
 
 const CTAText = () => 
   <div>
-    <h2 className="text-3xl pb-12">Interested in learning more?</h2>
+    <h2 className="text-3xl pb-12">Interested in working on a project?</h2>
     <Button
       buttonText={'Contact Me'}
       className={'button text-center text-white'}
       linkHref='/contact'
+      targetBlank={false}
     />
   </div>
 ;

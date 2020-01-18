@@ -9,7 +9,7 @@ import CallToAction from '../components/CallToAction';
 
 const CTAText = () => 
   <div>
-    <h2 className="text-2xl">Interested in learning more?</h2>
+    <h2 className="text-2xl">Interested in working on a project?</h2>
     <p className="text-sm"><a href="mailto:john@jwbentley.com" className="text-link-purple"> Contact me</a> directly.</p>
   </div>
 ;
