@@ -153,7 +153,16 @@ export default class Work extends React.Component {
               look and feel across all the major marketing touchpoints.
             */}
             <div className="text-container w-full sm:p-8 md:p-24 sm:inline md:flex">
-              <div className="image-content sm:w-full md:w-2/5">
+              <div className="text-content sm:p-8 lg:w-9/12 lg:mr-48">
+                <h3 className="font-bold sm:text-5xl text-link-purple">Establishing Brand Guidelines</h3>
+                <p className="text-white">Before developing the website, social media assets, and newsletter templates,
+                I crafted a simple set of brand guidelines for the organization to follow.</p>
+                <p>&nbsp;</p>
+                <p className="text-white">The brand guidelines reverberated into social media, the website, and all 
+                future communications from Pueblo Unido PDX — creating a consistent
+                look and feel across all the major marketing touchpoints.</p>
+              </div>
+              <div className="image-content sm:p-8 sm:w-full md:w-2/5">
                 <img onClick={this.handleOpenModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/flyer-ec-mention.svg" />
                 <ReactModal 
                   isOpen={this.state.showModal2}
@@ -162,15 +171,6 @@ export default class Work extends React.Component {
                   <button onClick={this.handleCloseModal2}>X</button>
                   <img onClick={this.handleCloseModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/flyer-ec-mention.svg" />
                 </ReactModal>
-              </div>
-              <div className="text-content sm:p-8 lg:w-9/12 lg:ml-48">
-                <h3 className="font-bold sm:text-5xl text-link-purple">Establishing Brand Guidelines</h3>
-                <p className="text-white">Before developing the website, social media assets, and newsletter templates,
-                I crafted a simple set of brand guidelines for the organization to follow.</p>
-                <p>&nbsp;</p>
-                <p className="text-white">The brand guidelines reverberated into social media, the website, and all 
-                future communications from Pueblo Unido PDX — creating a consistent
-                look and feel across all the major marketing touchpoints.</p>
               </div>
             </div>
   
@@ -228,6 +228,16 @@ export default class Work extends React.Component {
               sent to 700+ users via MailChimp.
             */}
             <div className="text-container w-full sm:p-8 md:p-24 sm:inline md:flex">
+              <div className="text-content sm:p-8 lg:w-9/12 lg:mr-48">
+                <h3 className="font-bold sm:text-5xl text-link-purple">Crafting Social Media and Newsletter Campaigns</h3>
+                <p className="text-white">Once the website was created, I began using the newly crafted
+                brand guidelines to create compelling imagery for social media
+                platforms such as Facebook and Instagram.</p>
+                <p>&nbsp;</p>
+                <p className="text-white">In addition to creating these campaigns, I also worked on 
+                monthly newsletters and critical updates from the organization,
+                sent to 700+ users via MailChimp.</p>
+              </div>
               <div className="image-content sm:w-full md:w-2/5">
                 <img onClick={this.handleOpenModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/social-media-collage.svg" />
                 <ReactModal 
@@ -237,16 +247,6 @@ export default class Work extends React.Component {
                   <button onClick={this.handleCloseModal4}>X</button>
                   <img onClick={this.handleCloseModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/social-media-collage--black.svg" />
                 </ReactModal>
-              </div>
-              <div className="text-content sm:p-8 lg:w-9/12 lg:ml-48">
-                <h3 className="font-bold sm:text-5xl text-link-purple">Crafting Social Media and Newsletter Campaigns</h3>
-                <p className="text-white">Once the website was created, I began using the newly crafted
-                brand guidelines to create compelling imagery for social media
-                platforms such as Facebook and Instagram.</p>
-                <p>&nbsp;</p>
-                <p className="text-white">In addition to creating these campaigns, I also worked on 
-                monthly newsletters and critical updates from the organization,
-                sent to 700+ users via MailChimp.</p>
               </div>
             </div> 
   
