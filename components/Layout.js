@@ -1,5 +1,6 @@
 import '../styles/styles.css';
-import Helmet from 'react-helmet'
+import Head from 'next/head'
+
 import Navigation from './Navigation';
 import Footer from './Footer';
 
@@ -10,12 +11,9 @@ import { faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone }
 
 library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone )
 
-import '../styles/styles.css';
-
 const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName, drawAnimations }) => (
   <>
-    <Helmet>
-      <html lang="en" />
+    <Head>
       <title>{`John Bentley ${pageMeta.title}`}</title>
 
       <meta charset="UTF-8" />
@@ -41,7 +39,8 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
         })(window,document,'script','dataLayer','GTM-MX6MMQH');
       }
       `}</script>
-    </Helmet>
+      <html lang="en" />
+    </Head>
 
     {/* Google Tag Manager */}
     <noscript>{`
