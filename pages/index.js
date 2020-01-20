@@ -62,6 +62,7 @@ export default function Home() {
         fadeInNav={true}
         logoWidth={'10%'}
         logoClassName={'logo-animate relative cursor-pointer'}
+        drawAnimations={true}
       >
         <Hero>
           <HeaderFadeInAnimation

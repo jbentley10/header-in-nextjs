@@ -16,7 +16,7 @@ const navStyle = {
 }
 
 /* Component Layout */
-const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth}) => {
+const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth, drawAnimations}) => {
 
   const delayWork =7200
   const delayAbout = 7700
@@ -41,6 +41,7 @@ const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth}) 
       <Logo 
         logoClassName={logoClassName}
         logoWidth={logoWidth}
+        drawAnimations={drawAnimations}
       />
       <div className="navigation mr-8 sm:w-full md:w-auto" style={navStyle}>
         <Link href="/work">

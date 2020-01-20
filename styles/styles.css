@@ -52,6 +52,10 @@ a {
   font-size: 6rem;
 }
 
+.margin-0-auto {
+  margin: 0 auto;
+}
+
 /* Components */
 /* Classes specific to components in this project */
 
@@ -106,36 +110,49 @@ a {
 /* Animate the logo */
 /* Circle */
 .cls-1 {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dashCircle 7s linear;
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  fill: #fff;
+}
+
+.cls-1--animate {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: #fff;
+  animation: dashCircle 7s linear;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .cls-2 {
-    stroke-dasharray: 109.766;
-    stroke-dashoffset: 109.766;
+  stroke-dasharray: 109.766;
+  stroke-dashoffset: 0;
+  fill: #fff;
 }
 
 .cls-3, .cls-4{
-    stroke-dasharray: 117.38;
-    stroke-dashoffset: 117.38;
+  stroke-dasharray: 117.38;
+  stroke-dashoffset: 0;
+  fill: #fff;
 }
 
-.cls-2, .cls-3, .cls-4 {
-    animation: dashSignature 2s linear;
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
+.cls-2--animate {
+  stroke-dasharray: 109.766;
+  animation: dashSignature 2s linear;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.cls-3--animate, .cls-4--animate {
+  stroke-dasharray: 117.38;
+  animation: dashSignature 2s linear;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 svg.logo {
   border-radius: 50%;
-  opacity: 0;
-  animation: fadeInSVG .01s linear;
-  animation-delay: 0;
-  -webkit-animation-fill-mode: forwards;
-  transition: all .25s ease-in-out;
+  opacity: 1;
 }
 
 svg.logo-animate {
@@ -162,93 +179,23 @@ svg.logo:hover, svg.logo-animate:hover {
 }
 
 @keyframes dashSignature {
-    from {
-        stroke-dashoffset: 118;
-        fill: #000;
-      }
-      to {
-        stroke-dashoffset: 0;
-        fill: #fff;
-      }
+  from {
+    stroke-dashoffset: 118;
+    fill: #000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
 }
 
 @keyframes dashCircle {
-    from {
-      stroke-dashoffset: 1000;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-}
-
-/* From Blobs tutorial: https://codesandbox.io/embed/8zx4ppk01l */
-.hooks-main > svg {
-  display: none;
-}
-
-.hooks-main > div {
-  position: absolute;
-  will-change: transform;
-  border-radius: 0;
-  background: #a64eba;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  opacity: 0.4;
-}
-
-/* Small */
-.hooks-main > div:nth-child(1) {
-  width: 80px;
-  height: 80px;
-}
-
-/* Large */
-.hooks-main > div:nth-child(2) {
-  width: 175px;
-  height: 175px;
-}
-
-/* Medium */
-.hooks-main > div:nth-child(3) {
-  width: 125px;
-  height: 125px;
-}
-
-.hooks-main > div::after {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 0;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.hooks-main > div:nth-child(2)::after {
-  top: 70px;
-  left: 70px;
-  width: 70px;
-  height: 70px;
-}
-
-.hooks-main > div:nth-child(3)::after {
-  top: 50px;
-  left: 50px;
-  width: 50px;
-  height: 50px;
-}
-
-.hooks-main {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  filter: url('#goo');
-  overflow: hidden;
-  top: 0;
-}
-
-.margin-0-auto {
-  margin: 0 auto;
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* Media Queries */
@@ -306,11 +253,11 @@ svg.logo:hover, svg.logo-animate:hover {
 
 @media screen and (max-width: 767px) {
   h1 {
-      font-size: 50px;
+    font-size: 50px;
   }
 
   p {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   svg {

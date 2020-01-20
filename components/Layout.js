@@ -12,7 +12,7 @@ library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, f
 
 import '../styles/styles.css';
 
-const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName }) => (
+const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName, drawAnimations }) => (
   <>
     <Helmet>
       <html lang="en" />
@@ -55,6 +55,7 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
       fadeInNav={fadeInNav}
       logoWidth={logoWidth}
       logoClassName={logoClassName}
+      drawAnimations={drawAnimations}
     />
       {children}
     <Footer />

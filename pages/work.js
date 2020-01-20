@@ -87,6 +87,7 @@ export default class Work extends React.Component {
           fadeInNav={false}
           logoWidth={'7%'}
           logoClassName={'relative cursor-pointer logo'}
+          drawAnimations={false}
         >
           <ImageHeader 
             heading={"Work"}
