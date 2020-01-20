@@ -29,6 +29,8 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
 
       <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
 
+      <link rel="canonical" href={pageMeta.URL} />
+
       {/* Google Tag Manager */}
       <script type="text/javascript">{`
       {

@@ -27,7 +27,8 @@ export default function Home() {
         pageMeta={{
           title: " | Services",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-          description: "My skills and expertise revolve around brand identity, web design, and SEO. Get to know my services and schedule a kickoff meeting with me today."
+          description: "My skills and expertise revolve around brand identity, web design, and SEO. Get to know my services and schedule a kickoff meeting with me today.",
+          URL: "https://www.jwbentley.com/services"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
         fadeInNav={false}

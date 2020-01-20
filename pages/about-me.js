@@ -52,7 +52,8 @@ export default function Home() {
         pageMeta={{
           title: " | About Me",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-          description: "Get know my background including what I do, how design shaped my career, and what I like to do in my spare time."
+          description: "Get know my background including what I do, how design shaped my career, and what I like to do in my spare time.",
+          URL: "https://www.jwbentley.com/about-me"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
         fadeInNav={false}

@@ -56,7 +56,8 @@ export default function Home() {
         pageMeta={{
           title: "- Freelance Web Designer | Home",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-          description: "I am a freelance web designer and developer based in Portland, OR. Contact me now to elevate your brand and drive results."
+          description: "I am a freelance web designer and developer based in Portland, OR. Contact me now to elevate your brand and drive results.",
+          URL: "https://www.jwbentley.com"
         }}
         navigationClassName={'z-navigation lg:h-128 navigation h-56'}
         fadeInNav={true}

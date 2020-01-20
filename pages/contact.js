@@ -24,7 +24,8 @@ export default function Home() {
         pageMeta={{
           title: " | Contact",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-          description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results."
+          description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results.",
+          URL: "https://www.jwbentley.com/contact"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
         fadeInNav={false}
