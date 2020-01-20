@@ -22,10 +22,10 @@ const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth, d
   const delayAbout = 7700
   const delayServices = 8200
   const delayContact = 8700
-  const fadeInWork = {display: + 'block'}
-  const fadeInAbout = {display: + 'block'}
-  const fadeInServices = {display: + 'block'}
-  const fadeInContact = {display: + 'block'}
+  var fadeInWork = {display: + 'block'}
+  var fadeInAbout = {display: + 'block'}
+  var fadeInServices = {display: + 'block'}
+  var fadeInContact = {display: + 'block'}
 
   if ({fadeInNav} == true) {
     fadeInWork = useSpring({delay: delayWork, opacity: 1, from: {opacity: 0}})
