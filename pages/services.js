@@ -33,6 +33,7 @@ export default function Home() {
         fadeInNav={false}
         logoWidth={'7%'}
         logoClassName={'relative cursor-pointer logo'}
+        drawAnimations={false}
       >
         <ImageHeader 
           heading={"Services"}
