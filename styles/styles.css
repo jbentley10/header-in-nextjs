@@ -153,6 +153,7 @@ a {
 svg.logo {
   border-radius: 50%;
   opacity: 1;
+  transition: all .25s ease-in-out;
 }
 
 svg.logo-animate {

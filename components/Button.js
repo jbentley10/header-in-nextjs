@@ -15,8 +15,10 @@ const Button = (props) => {
     } = props
 
     if (targetBlank == true) {
-      blank = "true"
-    } 
+      blank = "_blank"
+    } else {
+      blank = "_self"
+    }
 
     return (
       <div className={className}>
