@@ -131,7 +131,7 @@ export default class Work extends React.Component {
                 represents the beautiful diversity of the people of the United States.</p>
               </div>
               <div className="image-content sm:w-full md:w-2/5">
-                <img onClick={this.handleOpenModal1} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/old-and-new.png" />
+                <img alt="Pueblo Unido original and new logos" onClick={this.handleOpenModal1} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/old-and-new.png" />
                 <ReactModal 
                   isOpen={this.state.showModal1}
                   contentLabel="Minimal Modal Example"
@@ -163,7 +163,7 @@ export default class Work extends React.Component {
                 look and feel across all the major marketing touchpoints.</p>
               </div>
               <div className="image-content sm:p-8 sm:w-full md:w-2/5">
-                <img onClick={this.handleOpenModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/flyer-ec-mention.svg" />
+                <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleOpenModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/flyer-ec-mention.svg" />
                 <ReactModal 
                   isOpen={this.state.showModal2}
                   contentLabel="Minimal Modal Example"
@@ -206,7 +206,7 @@ export default class Work extends React.Component {
                 comp was approved, I coded the website by hand using HTML+CSS.</p>
               </div>
               <div className="image-content sm:p-8 sm:m-auto md:m-0 sm:w-full md:w-2/5">
-                <img onClick={this.handleOpenModal3} className="cursor-pointer" src="../static/pueblo-unido/gala-landing-page.svg" />
+                <img alt="Pueblo Unido Anniversary Gala landing page comp" onClick={this.handleOpenModal3} className="cursor-pointer" src="../static/pueblo-unido/gala-landing-page.svg" />
                 <ReactModal 
                   isOpen={this.state.showModal3}
                   contentLabel="Minimal Modal Example"
@@ -239,7 +239,7 @@ export default class Work extends React.Component {
                 sent to 700+ users via MailChimp.</p>
               </div>
               <div className="image-content sm:w-full md:w-2/5">
-                <img onClick={this.handleOpenModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/social-media-collage.svg" />
+                <img alt="Various social media and newsletter designs" onClick={this.handleOpenModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/social-media-collage.svg" />
                 <ReactModal 
                   isOpen={this.state.showModal4}
                   contentLabel="Minimal Modal Example"

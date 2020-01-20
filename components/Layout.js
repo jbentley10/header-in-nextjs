@@ -23,6 +23,7 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
       <meta name="author" content="John Bentley" />
 
       <meta name="description" content={pageMeta.description} />
+      <meta name="google-site-verification" content="M_p92ZTam2mOfgHf3dENr7BjOADVdOWvwp4RjHG8reY" />
 
       <meta name="keywords" content={pageMeta.keywords.join(',')} />
 
