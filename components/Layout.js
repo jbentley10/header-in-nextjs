@@ -14,7 +14,7 @@ library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, f
 const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName, drawAnimations }) => (
   <>
     <Head>
-      <title>{`John Bentley ${pageMeta.title}`}</title>
+      <title>{`${pageMeta.title}`}</title>
 
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
