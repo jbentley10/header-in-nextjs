@@ -83,7 +83,7 @@ export default function Home() {
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
           imageSrc={'../static/profile.png'}
-          imageAlt={'John Bentley, Freelance Web Design Professional'}
+          imageAlt={'John Bentley, Freelance Web Design in Portland Oregon'}
         >
         </ImageTextSplit>
         <DotsTransition />
