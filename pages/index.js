@@ -31,7 +31,7 @@ const ImageTextSplitCopy = () =>
   <div>
     <div>
       <h3 className="image-text-split__heading text-3xl">Hello! My name is John Bentley.</h3>
-      <p className="image-text-split__text sm:text-xl text-base">I am a freelance web design professional living in Portland, Oregon. Throughout my six years as a creative I’ve worked on many projects, with clients ranging from small, grassroots non-profits to large, fortune 500 companies. I am extremely passionate about taking brands to the next level.</p>
+      <p className="image-text-split__text sm:text-xl text-base">I am a freelance web design professional living in Portland, Oregon. I specialize in WordPress development, SEO, digital marketing strategy and user experience design. Throughout my six years as a creative I’ve worked on many projects, with clients ranging from small, grassroots non-profits to large, fortune 500 companies. I am extremely passionate about taking brands to the next level.</p>
       <p>&nbsp;</p>
       <p className="image-text-split__text sm:text-xl text-base">Hire me for your next digital project, and get results!</p>
       <p>&nbsp;</p>
@@ -54,9 +54,9 @@ export default function Home() {
     <div>
       <Layout
         pageMeta={{
-          title: "Freelance Web Design in Portland, Oregon | John Bentley",
+          title: "Freelance Web Design in Portland, Oregon | WordPress Development | John Bentley",
           keywords: ["freelance", "web designer", "web design", "web developer", "portland", "oregon"],
-          description: "I am freelance web design and development professional based in Portland, Oregon. Contact me now to elevate your brand and drive results.",
+          description: "I am freelance web design and WordPress development professional based in Portland, Oregon. Contact me now to elevate your brand and drive results.",
           URL: "https://www.jwbentley.com"
         }}
         navigationClassName={'z-navigation lg:h-128 navigation h-56'}
@@ -83,7 +83,7 @@ export default function Home() {
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
           imageSrc={'../static/profile.png'}
-          imageAlt={'John Bentley, Freelance Web Design in Portland Oregon'}
+          imageAlt={'John Bentley, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>
         <DotsTransition />
