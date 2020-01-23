@@ -25,7 +25,7 @@ export default function Home() {
     <div>
       <Layout 
         pageMeta={{
-          title: " | Services",
+          title: "Services - Web Design and Development | John Bentley",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "My skills and expertise revolve around brand identity, web design, and SEO. Get to know my services and schedule a kickoff meeting with me today.",
           URL: "https://www.jwbentley.com/services"

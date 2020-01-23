@@ -49,7 +49,7 @@ export default function Home() {
     <div>
       <Layout 
         pageMeta={{
-          title: " | About Me",
+          title: " About Me - Freelance Web Design | John Bentley",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "Get know my background including what I do, how design shaped my career, and what I like to do in my spare time.",
           URL: "https://www.jwbentley.com/about-me"

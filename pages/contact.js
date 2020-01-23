@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <Layout 
         pageMeta={{
-          title: " | Contact",
+          title: "Contact Me | John Bentley",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
           description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results.",
           URL: "https://www.jwbentley.com/contact"
