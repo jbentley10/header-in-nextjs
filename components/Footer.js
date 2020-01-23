@@ -13,9 +13,10 @@ const Footer = () => (
         logoWidth={'6%'}
       />
     </div>
-    <p className="text-base p-6">
+    <p className="text-base pt-6 pb-2">
       &copy;{`${new Date().getFullYear()} John Bentley`}
     </p>
+    <p className="text-base pb-2">Freelance Web Design - Portland, Oregon</p>
     <div className="icons p-4 inline align-middle">
       <FontAwesomeIcon icon="envelope" className="w-6 text-6xl shadow-none p-4 cursor-pointer inline-block align-middle" />
       <TumblrIcon 
