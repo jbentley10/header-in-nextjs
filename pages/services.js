@@ -37,12 +37,11 @@ export default function Home() {
         drawAnimations={false}
       >
         <ImageHeader 
-          heading={"Services"}
+          heading={"Services and Small Business Web Design Packages"}
         />
 
         <div className="background-dots text-container w-full sm:p-8 md:p-24 lg:p-0">
           <div className="text-content sm:p-4 md:px-24">
-            <h2 className="text-white text-center md:pt-8">Small Business Web Design Packages Available!</h2>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p className="text-white lg:w-4/6 m-auto">Web Design</p>
