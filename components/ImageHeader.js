@@ -20,7 +20,7 @@ const ImageHeader = (props) => {
   } = props
 
   return (
-    <div className="background sm:h-56 md:h-auto opacity-75">
+    <div className="background sm:h-auto opacity-75">
       <div className="header__content" style={headerContentStyle}>
         <h1 className="text-left py-16">{heading}</h1>
       </div>
