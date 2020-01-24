@@ -25,9 +25,9 @@ export default function Home() {
     <div>
       <Layout 
         pageMeta={{
-          title: "Services - Web Design and Development | John Bentley",
-          keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-          description: "Learn about the services I offer, including: web design, WordPress development, branding, and marketing strategy. Get to know my services and schedule a kickoff meeting with me today.",
+          title: "Services - Small Business Web Design Packages | John Bentley",
+          keywords: ["freelance", "small business web design packages", "web designer", "web developer", "portland", "oregon"],
+          description: "Learn about the services I offer for small business, including: web design, WordPress development, branding, and marketing strategy. Get to know my service packages and schedule a kickoff meeting with me today.",
           URL: "https://www.jwbentley.com/services"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
@@ -42,6 +42,7 @@ export default function Home() {
 
         <div className="background-dots text-container w-full sm:p-8 md:p-24 lg:p-0">
           <div className="text-content sm:p-4 md:px-24">
+            <h2 className="text-white text-center md:pt-8">Small Business Web Design Packages Available!</h2>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p className="text-white lg:w-4/6 m-auto">Web Design</p>
