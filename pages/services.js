@@ -27,7 +27,7 @@ export default function Home() {
         pageMeta={{
           title: "Services - Small Business Web Design Packages | John Bentley",
           keywords: ["freelance", "small business web design packages", "web designer", "web developer", "portland", "oregon"],
-          description: "Learn about the services I offer for small business, including: web design, WordPress development, branding, and marketing strategy. Get to know my service packages and schedule a kickoff meeting with me today.",
+          description: "Learn about the services and small business web design packages I offer, including: web design, WordPress development, branding, and marketing strategy. Get to know my service packages and schedule a kickoff meeting with me today.",
           URL: "https://www.jwbentley.com/services"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
