@@ -81,7 +81,7 @@ export default class Work extends React.Component {
           pageMeta={{
             title: "Work - Web Design and Development | John Bentley",
             keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-            description: "Learn more about the work I have done throughout my career, including brand redesigns, web design and development, and SEO-driven results.",
+            description: "View examples of my work in my freelance web design and development portfolio, including brand redesigns and SEO-driven results.",
             URL: "https://www.jwbentley.com/work"
           }}
           navigationClassName={'z-navigation lg:h-128 navigation h-56'}

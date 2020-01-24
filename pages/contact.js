@@ -24,7 +24,7 @@ export default function Home() {
         pageMeta={{
           title: "Contact Me | John Bentley",
           keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-          description: "If you are need of a brand redesign, website enhancement, or better performance on your website, contact me now to elevate your brand and drive results.",
+          description: "Contact me now to schedule a kick-off meeting for web design, WordPress development, or SEO.",
           URL: "https://www.jwbentley.com/contact"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
