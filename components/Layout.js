@@ -27,7 +27,7 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
 
       <link rel="shortcut icon" href="/static/favicon.ico" />
 
-      <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" defer rel="stylesheet" />
 
       <link rel="canonical" href={pageMeta.URL} />
 
