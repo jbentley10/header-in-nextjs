@@ -13,7 +13,7 @@ export default function Home() {
             title: " | sitemap",
             keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
             description: "View the sitemap for jwbentley.com",
-            URL: "https://www.jwbentley.com/about-me"
+            URL: "https://www.jwbentley.com/web-developer-about-me"
           }}
           navigationClassName={'lg:h-128 navigation h-56'}
           fadeInNav={false}
@@ -31,7 +31,7 @@ export default function Home() {
             <p>&nbsp;</p>
             <p className="text-white lg:w-4/6 m-auto"><a href="/work" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Work</a></p>
             <p>&nbsp;</p>
-            <p className="text-white lg:w-4/6 m-auto"><a href="/about-me" className="text-link-purple hover:text-link-purple-darker cursor-pointer">About Me</a></p>
+            <p className="text-white lg:w-4/6 m-auto"><a href="/web-developer-about-me" className="text-link-purple hover:text-link-purple-darker cursor-pointer">About Me</a></p>
             <p>&nbsp;</p>
             <p className="text-white lg:w-4/6 m-auto"><a href="/services" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Services</a></p>
             <p>&nbsp;</p>

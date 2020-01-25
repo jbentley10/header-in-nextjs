@@ -22,11 +22,11 @@ const CTAText = () =>
 const GrowingUpCopy = () =>
   <div>
     <h3 className="image-text-split__heading text-3xl">It's a pleasure to meet you.</h3>
-    <p className="image-text-split__text sm:text-xl text-base">I am a freelance web designer and digital marketer with over five years of experience. I’ve worked on many different projects, with clients ranging from small non-profits to large, fortune 500 companies.</p>
+    <p className="image-text-split__text sm:text-xl text-base">I am a freelance web designer and digital marketer with over five years of experience. I’ve worked on many different projects, with clients ranging from small nonprofits to large fortune 500 companies.</p>
     <p>&nbsp;</p>
     <p className="image-text-split__text sm:text-xl text-base">As a kid growing up in England, I fell in love with technology. Even though we had to dial up to use the Internet back then, I patiently waited for those glorious pixels to show up on the screen. I built my first website when I was 12 years old, and was hooked on video games well before then.</p>
     <p>&nbsp;</p>
-    <p className="image-text-split__text sm:text-xl text-base">Since living in the United States, I earned a bachelor's degree in <a className="text-link-purple hover:text-link-purple-darker cursor-pointer" href="https://news.ucsc.edu/2018/03/game-design.html" target="_blank">Computer Science: Game Design</a> from the University of California Santa Cruz. <a href="http://danielpagharion.com/project_warp/" target="_blank" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Coding games</a> and software on a bigger scale than before was difficult, but exhilirating at the same time.</p>
+    <p className="image-text-split__text sm:text-xl text-base">Since living in the United States, I earned a bachelor's degree in <a className="text-link-purple hover:text-link-purple-darker cursor-pointer" href="https://news.ucsc.edu/2018/03/game-design.html" target="_blank">Computer Science: Game Design</a> from the University of California Santa Cruz. <a href="http://danielpagharion.com/project_warp/" target="_blank" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Coding games</a> and software on a bigger scale than before was difficult, but exhilarating at the same time.</p>
     <p>&nbsp;</p>
     <p className="image-text-split__text sm:text-xl text-base">After graduating, I started to develop websites again in my spare time. I consider web design to be my main profession, but I have <a href="https://www.linkedin.com/in/jwbentle" target="_blank" className="text-link-purple hover:text-link-purple-darker cursor-pointer">built my skills</a> in marketing campaign strategy, user experience, search engine optimization, and branding.</p>        
     <p>&nbsp;</p>   
@@ -49,10 +49,10 @@ export default function Home() {
     <div>
       <Layout 
         pageMeta={{
-          title: " About Me - Freelance Web Design | John Bentley",
-          keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-          description: "Learn about what I do, and how I've grown as a freelance web design and development professional in Portland, Oregon.",
-          URL: "https://www.jwbentley.com/about-me"
+          title: "About Me - Freelance Web Designer and Developer | John Bentley",
+          keywords: ["freelance", "web designer about me", "web developer about me", "web designer", "web developer", "portland", "oregon"],
+          description: "Learn about me and what I do, and how I've grown as a freelance web designer and developer in Portland, Oregon.",
+          URL: "https://www.jwbentley.com/web-developer-about-me"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
         fadeInNav={false}
@@ -72,7 +72,7 @@ export default function Home() {
         <ImageTextSplit
           copy={<MyPromiseCopy />}
           imageSrc={'../static/photo-booth.jpg'}
-          imageAlt={'A freelance creative professional that puts you first'}
+          imageAlt={'About Me - web developer and web designer'}
         >
         </ImageTextSplit>
 

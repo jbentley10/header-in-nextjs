@@ -41,7 +41,7 @@ const ImageTextSplitCopy = () =>
       <Button
         buttonText={'Learn More About Me'}
         className={'button text-left text-white bg-dark-background'}
-        linkHref={'/about-me'}
+        linkHref={'/web-developer-about-me'}
         targetBlank={false}
       />
     </div>
