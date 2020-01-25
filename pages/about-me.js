@@ -52,7 +52,7 @@ export default function Home() {
           title: "About Me - Freelance Web Designer and Developer | John Bentley",
           keywords: ["freelance", "web designer about me", "web developer about me", "web designer", "web developer", "portland", "oregon"],
           description: "Learn about me and what I do, and how I've grown as a freelance web designer and developer in Portland, Oregon.",
-          URL: "https://www.jwbentley.com/web-developer-about-me"
+          URL: "https://www.jwbentley.com/about-me"
         }}
         navigationClassName={'lg:h-128 navigation h-56'}
         fadeInNav={false}

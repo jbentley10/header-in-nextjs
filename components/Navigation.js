@@ -47,7 +47,7 @@ const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth, d
         <Link href="/work">
           <animated.a style={fadeInWork} className={navigationLinkClassList}>Work</animated.a>
         </Link>
-        <Link href="/web-developer-about-me">
+        <Link href="/about-me">
           <animated.a style={fadeInAbout} className={navigationLinkClassList}>About Me</animated.a>
         </Link>
         <Link href="/services">
