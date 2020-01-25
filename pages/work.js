@@ -107,25 +107,16 @@ export default class Work extends React.Component {
                 immigrants get connected with legal representation in the Pacific Northwest.</p>
                 <p>&nbsp;</p>
                 <p className="text-white lg:w-4/6 m-auto">During my two years as a volunteer for the non-profit, 
-                I rebranded the organization. The logo was reimagined, brand guideliness were set 
+                I rebranded the organization. The logo was reimagined, brand guidelines were set 
                 in place, and Pueblo Unido's website was created from the ground up.</p>
               </div>
             </div>
-  
-            {/*
-              Recrafting the Logo 
-              In order to begin the rebranding process, I started by 
-              created a fresh new logo for Pueblo Unido.
-  
-              The new logo takes inspiration from the image of Mt. Hood and the 
-              Rockwood neighborhood of Portland, and a colorful gradient
-              represents the beautiful diversity of the people of the United States. 
-            */}
+              
             <div className="text-container w-full sm:p-8 md:p-24 sm:inline md:flex">
               <div className="text-content sm:p-8 lg:w-9/12 lg:mr-48">
                 <h3 className="text-left font-bold sm:text-5xl text-link-purple">Recrafting the Logo</h3>
                 <p className="text-white">In order to begin the rebranding process, I started by 
-                created a fresh new logo for Pueblo Unido.</p>
+                creating a fresh new logo for Pueblo Unido.</p>
                 <p>&nbsp;</p>
                 <p className="text-white">The new logo takes inspiration from the image of Mt. Hood and the 
                 Rockwood neighborhood of Portland, and a colorful gradient
