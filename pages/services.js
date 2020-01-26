@@ -87,7 +87,7 @@ export default function Home() {
             buttonText={'Contact Me'}
             className={'button text-center text-white'}
             linkHref={'./contact'}
-            targetBlank={true}
+            targetBlank={false}
           />
 
           <div className="h-24" />
