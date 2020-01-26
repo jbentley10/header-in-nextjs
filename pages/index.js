@@ -31,7 +31,7 @@ const ImageTextSplitCopy = () =>
   <div>
     <div>
       <h3 className="image-text-split__heading text-3xl">Hello! My name is John Bentley.</h3>
-      <p className="image-text-split__text sm:text-xl text-base">I am a freelance web design professional living in Portland, Oregon. I specialize in WordPress development, SEO, digital marketing strategy and user experience design. Throughout my six years as a creative I’ve worked on many projects, with clients ranging from small, grassroots non-profits to large, fortune 500 companies. I am extremely passionate about taking brands to the next level.</p>
+      <p className="image-text-split__text sm:text-xl text-base">Are you looking for freelance web design in Portland, Oregon? I specialize in WordPress development, SEO, digital marketing strategy and user experience design. Throughout my six years as a creative I’ve worked on many projects, with clients ranging from small, grassroots non-profits to large, fortune 500 companies. I am extremely passionate about taking brands to the next level.</p>
       <p>&nbsp;</p>
       <p className="image-text-split__text sm:text-xl text-base">Hire me for your next digital project, and get results!</p>
       <p>&nbsp;</p>
