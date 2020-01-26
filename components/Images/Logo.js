@@ -35,6 +35,7 @@ const Logo = ({logoWidth, logoClassName, drawAnimations}) => {
         padding={"50px"}
         style={svgStyle}
         className={logoClassName}
+        title={"John Bentley - Freelance Web Designer Portland Oregon"}
       >
         <defs>
           <linearGradient
