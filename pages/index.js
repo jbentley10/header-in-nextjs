@@ -54,7 +54,7 @@ export default function Home() {
     <div>
       <Layout
         pageMeta={{
-          title: "Freelance Web Design in Portland, Oregon | WordPress Development | John Bentley",
+          title: "Freelance Web Design in Portland, Oregon | John Bentley",
           keywords: ["freelance", "web designer", "web design", "web developer", "portland", "oregon"],
           description: "I am freelance web design and WordPress development professional based in Portland, Oregon. Contact me now to elevate your brand and drive results.",
           URL: "https://www.jwbentley.com"
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="bg-dark-background sm:h-8 md:h-32" />
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
-          imageSrc={'../static/profile.png'}
+          imageSrc={'../static/profile.webp'}
           imageAlt={'John Bentley, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>
