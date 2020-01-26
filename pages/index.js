@@ -54,9 +54,9 @@ export default function Home() {
     <div>
       <Layout
         pageMeta={{
-          title: "Freelance Web Design in Portland, Oregon | John Bentley",
+          title: "Freelance Web Design - Portland, Oregon | John Bentley",
           keywords: ["freelance", "web designer", "web design", "web developer", "portland", "oregon"],
-          description: "I am freelance web design and WordPress development professional based in Portland, Oregon. Contact me now to elevate your brand and drive results.",
+          description: "I am a creative professional specializing in WordPress development and freelance web design in Portland, Oregon. Contact me now to elevate your brand and drive results.",
           URL: "https://www.jwbentley.com"
         }}
         navigationClassName={'z-navigation lg:h-128 navigation h-56'}
