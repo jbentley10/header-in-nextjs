@@ -152,7 +152,7 @@ export default class PuebloUnido extends React.Component {
               {/*
               Introduction Section 
               */}
-              <div className="text-container w-full sm:p-8 md:p-24 lg:p-0" id="pueblo-unido-pdx">
+              <div className="text-container w-full sm:p-8 md:p-24 lg:p-0" id="pueblo-unido">
                 <div className="text-content sm:p-4 md:p-24">
                   <h2 className="text-white text-center font-bold uppercase sm:text-6xl sm:mb-8 md:pb-1">
                   <a className="text-link-purple hover:text-link-purple-darker cursor-pointer" href="https://www.pueblounidopdx.org/" target="blank">Pueblo Unido PDX</a>
