@@ -185,7 +185,7 @@ export default class PuebloUnido extends React.Component {
                   to create a beautiful site in only 2 weeks.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido original and new logos" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
+                  <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
                   <ReactModal 
                     isOpen={this.state.showModal9}
                     contentLabel="Minimal Modal Example"
@@ -196,6 +196,12 @@ export default class PuebloUnido extends React.Component {
                   
                 </div>
               </div>
+              <Button 
+                buttonText={'See My Work'}
+                className={'button text-center text-white bg-dark-background border-0 hover:bg-button-purple-darker cursor-pointer'}
+                linkHref={'/work'}
+                targetBlank={false}
+              />
             </div>
     
             <DotsTransition 
