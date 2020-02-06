@@ -134,9 +134,9 @@ export default class PuebloUnido extends React.Component {
         <div>
             <Layout 
             pageMeta={{
-                title: "Work - Web Design and Development | John Bentley",
+                title: "Tripwire - Work - Web Design and Development | John Bentley",
                 keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-                description: "View examples of my work in my freelance web design and development portfolio, including brand redesigns and SEO-driven results.",
+                description: "View examples of my work at Tripwire, including upgrading the look and feel, as well as SEO-driven results.",
                 URL: "https://www.jwbentley.com/work"
             }}
             navigationClassName={'z-navigation lg:h-128 navigation h-56'}
@@ -278,16 +278,28 @@ export default class PuebloUnido extends React.Component {
                   </ReactModal>
                 </div>
               </div> 
-              <div className="p-12 text-center bg-dark-background">
-                <div>
-                  <Button 
-                    buttonText={'Line Friends'}
-                    className={'button text-center text-white bg-dark-background'}
-                    linkHref={'/work/line-friends#line-friends'}
-                    targetBlank={false}
-                  />
-                </div>
-              </div> 
+              <div className="flex bg-dark-background">
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'Pueblo Unido'}
+                      className={'button text-center text-white bg-dark-background'}
+                      linkHref={'/work/pueblo-unido#pueblo-unido'}
+                      targetBlank={false}
+                    />
+                  </div>
+                </div> 
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'Line Friends'}
+                      className={'button text-center text-white bg-dark-background'}
+                      linkHref={'/work/line-friends#line-friends'}
+                      targetBlank={false}
+                    />
+                  </div>
+                </div> 
+              </div>
             </div>
     
             <DotsTransition 

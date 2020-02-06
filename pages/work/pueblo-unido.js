@@ -134,9 +134,9 @@ export default class PuebloUnido extends React.Component {
         <div>
             <Layout 
             pageMeta={{
-                title: "Work - Web Design and Development | John Bentley",
+                title: "Pueblo Unido - Work - Web Design and Development | John Bentley",
                 keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-                description: "View examples of my work in my freelance web design and development portfolio, including brand redesigns and SEO-driven results.",
+                description: "View examples of my work at Pueblo Unido PDX, including brand redesigns and social media enhancements.",
                 URL: "https://www.jwbentley.com/work"
             }}
             navigationClassName={'z-navigation lg:h-128 navigation h-56'}
