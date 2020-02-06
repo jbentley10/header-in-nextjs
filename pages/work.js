@@ -44,8 +44,22 @@ export default class Work extends React.Component {
             heading={"Work"}
           />
           <div className="background-dots">
-            <div className="h-64" />
-            <ThreeColumnIcons />
+            <div className="h-32" />
+            <ThreeColumnIcons 
+              Block1Copy='Pueblo Unido PDX'
+              Block1ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
+              Block1ImageSource='../static/pueblo-unido/pueblo-unido-mockup.webp'
+              Block1Link='/work/pueblo-unido#pueblo-unido'
+              Block2Copy='Tripwire'
+              Block2ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
+              Block2ImageSource='../static/tripwire/tripwire-mockup.webp'
+              Block2Link='/work/tripwire#tripwire'
+              Block3Copy='Line Friends'
+              Block3ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
+              Block3ImageSource='../static/line-friends/line-friends-mockup.webp'
+              Block3Link='/work/line-friends#line-friends'
+            >
+            </ThreeColumnIcons>
           </div>
   
           <DotsTransition 

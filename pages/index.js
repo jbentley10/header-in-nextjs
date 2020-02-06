@@ -71,7 +71,22 @@ export default function Home() {
             subtext={Subtext}
           />
         </Hero>
-        <ThreeColumnIcons />
+        <ThreeColumnIcons 
+          Block1Copy='Design and Develop'
+          Block1ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
+          Block1ImageSource='../static/pueblo-unido/pueblo-unido-mockup.webp'
+          Block1Link='/work/pueblo-unido'
+          Block2Copy='Elevate Your Brand'
+          Block2ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
+          Block2ImageSource='../static/tripwire/tripwire-mockup.webp'
+          Block2Link='/work/tripwire'
+          Block3Copy='Drive Results'
+          Block3ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
+          Block3ImageSource='../static/line-friends/line-friends-mockup.webp'
+          Block3Link='/work/line-friends'
+        >
+
+        </ThreeColumnIcons>
         <div className="bg-dark-background pb-5" />
         <Button 
           buttonText={'View My Services'}

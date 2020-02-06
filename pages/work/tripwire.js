@@ -134,9 +134,9 @@ export default class PuebloUnido extends React.Component {
         <div>
             <Layout 
             pageMeta={{
-                title: "Work - Web Design and Development | John Bentley",
+                title: "Tripwire - Work - Web Design and Development | John Bentley",
                 keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-                description: "View examples of my work in my freelance web design and development portfolio, including brand redesigns and SEO-driven results.",
+                description: "View examples of my work at Tripwire, including upgrading the look and feel, as well as SEO-driven results.",
                 URL: "https://www.jwbentley.com/work"
             }}
             navigationClassName={'z-navigation lg:h-128 navigation h-56'}
@@ -187,7 +187,7 @@ export default class PuebloUnido extends React.Component {
                   visibility by 25%. Page one rankings increased substantially as well. </p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido original and new logos" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/seo-report.webp" />
+                  <img alt="SEO search optimization report" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/seo-report.webp" />
                   <ReactModal 
                     isOpen={this.state.showModal5}
                     contentLabel="Minimal Modal Example"
@@ -215,7 +215,7 @@ export default class PuebloUnido extends React.Component {
                   new components if needed). </p>
                 </div>
                 <div className="image-content sm:p-8 sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleOpenModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/tripwire-mockup.webp" />
+                  <img alt="Tripwire site on desktop, tablet, and mobile" onClick={this.handleOpenModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/tripwire-mockup.webp" />
                   <ReactModal 
                     isOpen={this.state.showModal6}
                     contentLabel="Minimal Modal Example"
@@ -242,7 +242,7 @@ export default class PuebloUnido extends React.Component {
                   will prevent Tripwire’s from any downtime during code deployments.</p>
                 </div>
                 <div className="image-content sm:p-8 sm:m-auto md:m-0 sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido Anniversary Gala landing page comp" onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
+                  <img alt="Tripwire look and feel revamp - homepage design" onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
                   <ReactModal 
                     isOpen={this.state.showModal7}
                     contentLabel="Minimal Modal Example"
@@ -268,7 +268,7 @@ export default class PuebloUnido extends React.Component {
                   me a clear path on developing this highly-successful test. </p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Various social media and newsletter designs" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp" />
+                  <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp" />
                   <ReactModal 
                     isOpen={this.state.showModal8}
                     contentLabel="Minimal Modal Example"
@@ -278,6 +278,28 @@ export default class PuebloUnido extends React.Component {
                   </ReactModal>
                 </div>
               </div> 
+              <div className="flex bg-dark-background">
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'Pueblo Unido'}
+                      className={'button text-center text-white bg-dark-background'}
+                      linkHref={'/work/pueblo-unido#pueblo-unido'}
+                      targetBlank={false}
+                    />
+                  </div>
+                </div> 
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'Line Friends'}
+                      className={'button text-center text-white bg-dark-background'}
+                      linkHref={'/work/line-friends#line-friends'}
+                      targetBlank={false}
+                    />
+                  </div>
+                </div> 
+              </div>
             </div>
     
             <DotsTransition 

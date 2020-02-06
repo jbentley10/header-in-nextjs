@@ -134,9 +134,9 @@ export default class PuebloUnido extends React.Component {
         <div>
             <Layout 
             pageMeta={{
-                title: "Work - Web Design and Development | John Bentley",
+                title: "LINE FRIENDS - Work - Web Design and Development | John Bentley",
                 keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
-                description: "View examples of my work in my freelance web design and development portfolio, including brand redesigns and SEO-driven results.",
+                description: "View examples of my work for LINE FRIENDS, including upgrading the look and feel of the site on Shopify.",
                 URL: "https://www.jwbentley.com/work"
             }}
             navigationClassName={'z-navigation lg:h-128 navigation h-56'}
@@ -156,7 +156,7 @@ export default class PuebloUnido extends React.Component {
               {/*
                 Introduction Section 
               */}
-              <div className="text-container w-full sm:p-8 md:p-24 lg:p-0" id="tripwire">
+              <div className="text-container w-full sm:p-8 md:p-24 lg:p-0" id="line-friends">
                 <div className="text-content sm:p-4 md:p-24">
                   <h2 className="text-white text-center font-bold uppercase sm:text-6xl sm:mb-8 md:pb-1">
                     <a className="text-link-purple hover:text-link-purple-darker cursor-pointer" href="https://store.linefriends.com/" target="blank">LINE FRIENDS</a>
@@ -185,7 +185,7 @@ export default class PuebloUnido extends React.Component {
                   to create a beautiful site in only 2 weeks.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido original and new logos" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
+                  <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
                   <ReactModal 
                     isOpen={this.state.showModal9}
                     contentLabel="Minimal Modal Example"
@@ -195,6 +195,28 @@ export default class PuebloUnido extends React.Component {
                   </ReactModal>
                   
                 </div>
+              </div>
+              <div className="flex bg-dark-background">
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'Tripwire'}
+                      className={'button text-center text-white bg-dark-background'}
+                      linkHref={'/work/tripwire#tripwire'}
+                      targetBlank={false}
+                    />
+                  </div>
+                </div> 
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'See More Work'}
+                      className={'button text-center text-white bg-dark-background'}
+                      linkHref={'/work'}
+                      targetBlank={false}
+                    />
+                  </div>
+                </div> 
               </div>
             </div>
     
