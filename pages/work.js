@@ -6,6 +6,7 @@ import ReactModal from 'react-modal';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import ImageHeader from '../components/ImageHeader';
+import ThreeColumnIcons from '../components/ThreeColumnIcons';
 import CallToAction from '../components/CallToAction';
 import DotsTransition from '../components/Images/DotsTransition';
 
@@ -43,7 +44,8 @@ export default class Work extends React.Component {
             heading={"Work"}
           />
           <div className="background-dots">
-            {/* Insert Navigation Component here */}
+            <div className="h-64" />
+            <ThreeColumnIcons />
           </div>
   
           <DotsTransition 
