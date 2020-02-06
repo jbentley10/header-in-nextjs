@@ -156,7 +156,7 @@ export default class PuebloUnido extends React.Component {
               {/*
                 Introduction Section 
               */}
-              <div className="text-container w-full sm:p-8 md:p-24 lg:p-0" id="tripwire">
+              <div className="text-container w-full sm:p-8 md:p-24 lg:p-0" id="line-friends">
                 <div className="text-content sm:p-4 md:p-24">
                   <h2 className="text-white text-center font-bold uppercase sm:text-6xl sm:mb-8 md:pb-1">
                     <a className="text-link-purple hover:text-link-purple-darker cursor-pointer" href="https://store.linefriends.com/" target="blank">LINE FRIENDS</a>
@@ -196,12 +196,16 @@ export default class PuebloUnido extends React.Component {
                   
                 </div>
               </div>
-              <Button 
-                buttonText={'See My Work'}
-                className={'button text-center text-white bg-dark-background border-0 hover:bg-button-purple-darker cursor-pointer'}
-                linkHref={'/work'}
-                targetBlank={false}
-              />
+              <div className="p-12 text-center bg-dark-background">
+                <div>
+                  <Button 
+                    buttonText={'See More Work'}
+                    className={'button text-center text-white bg-dark-background'}
+                    linkHref={'/work'}
+                    targetBlank={false}
+                  />
+                </div>
+              </div> 
             </div>
     
             <DotsTransition 

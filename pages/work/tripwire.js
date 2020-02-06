@@ -278,12 +278,16 @@ export default class PuebloUnido extends React.Component {
                   </ReactModal>
                 </div>
               </div> 
-              <Button 
-                buttonText={'Line Friends'}
-                className={'button text-center text-white bg-dark-background border-0 hover:bg-button-purple-darker cursor-pointer'}
-                linkHref={'/work/line-friends'}
-                targetBlank={false}
-              />
+              <div className="p-12 text-center bg-dark-background">
+                <div>
+                  <Button 
+                    buttonText={'Line Friends'}
+                    className={'button text-center text-white bg-dark-background'}
+                    linkHref={'/work/line-friends#line-friends'}
+                    targetBlank={false}
+                  />
+                </div>
+              </div> 
             </div>
     
             <DotsTransition 
