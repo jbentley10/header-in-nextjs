@@ -22,6 +22,7 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
 
       <meta name="description" content={pageMeta.description} />
       <meta name="google-site-verification" content="M_p92ZTam2mOfgHf3dENr7BjOADVdOWvwp4RjHG8reY" />
+      <meta name="google-site-verification" content="_w00_Eeow8a5B9kCntT5NbQKkc71Jc-16sukIt5qAIc" />
 
       <meta name="keywords" content={pageMeta.keywords.join(',')} />
 
