@@ -127,8 +127,8 @@ export default function Home() {
           </div>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
-          <div className="flex bg-dark-background">
-                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+          <div className="flex bg-transparent">
+                <div className="sm:py-12 md:p-12 flex-auto bg-transparent">
                   <div>
                     <Button 
                       buttonText={'Download My Resume (Color)'}
@@ -138,7 +138,7 @@ export default function Home() {
                     />
                   </div>
                 </div> 
-                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                <div className="sm:py-12 md:p-12 flex-auto bg-transparent">
                   <div>
                     <Button 
                       buttonText={'Download My Resume (Printer-Friendly)'}

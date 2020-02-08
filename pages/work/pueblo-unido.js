@@ -261,11 +261,11 @@ export default class PuebloUnido extends React.Component {
                   </ReactModal>
                 </div>
               </div>
-              <div className="p-12 text-center bg-dark-background">
+              <div className="p-12 text-center transparent">
                 <div>
                   <Button 
                     buttonText={'Tripwire'}
-                    className={'button text-center text-white bg-dark-background'}
+                    className={'button text-center text-white transparent'}
                     linkHref={'/work/tripwire#tripwire'}
                     targetBlank={false}
                   />

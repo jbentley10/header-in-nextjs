@@ -46,6 +46,7 @@ module.exports = {
         'cool-blue--reduced-opacity': '#2E285B',
         'cool-purple': '#812373',
         'cool-purple--reduced-opacity': '#4E234F',
+        'transparent': 'transparent'
       },
       borderRadius: {
         'button-radius': '15px'

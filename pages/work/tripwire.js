@@ -278,22 +278,22 @@ export default class PuebloUnido extends React.Component {
                   </ReactModal>
                 </div>
               </div> 
-              <div className="flex bg-dark-background">
-                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+              <div className="flex bg-transparent">
+                <div className="sm:py-12 md:p-12 flex-auto bg-transparent">
                   <div>
                     <Button 
                       buttonText={'Pueblo Unido'}
-                      className={'button text-center text-white bg-dark-background'}
+                      className={'button text-center text-white bg-transparent'}
                       linkHref={'/work/pueblo-unido#pueblo-unido'}
                       targetBlank={false}
                     />
                   </div>
                 </div> 
-                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                <div className="sm:py-12 md:p-12 flex-auto bg-transparent">
                   <div>
                     <Button 
                       buttonText={'Line Friends'}
-                      className={'button text-center text-white bg-dark-background'}
+                      className={'button text-center text-white bg-transparent'}
                       linkHref={'/work/line-friends#line-friends'}
                       targetBlank={false}
                     />

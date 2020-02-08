@@ -207,11 +207,11 @@ export default class PuebloUnido extends React.Component {
                     />
                   </div>
                 </div> 
-                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                <div className="sm:py-12 md:p-12 flex-auto bg-transparent">
                   <div>
                     <Button 
                       buttonText={'See More Work'}
-                      className={'button text-center text-white bg-dark-background'}
+                      className={'button text-center text-white bg-transparent'}
                       linkHref={'/work'}
                       targetBlank={false}
                     />
