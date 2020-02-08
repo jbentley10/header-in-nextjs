@@ -127,12 +127,28 @@ export default function Home() {
           </div>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
-          <Button 
-            buttonText={'See My Resume'}
-            className={'button text-center text-white'}
-            linkHref={'../static/JohnBentleyResume.pdf'}
-            targetBlank={true}
-          />
+          <div className="flex bg-dark-background">
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'Download My Resume (Color)'}
+                      className={'button text-center text-white'}
+                      linkHref={'../static/JohnBentleyResume.pdf'}
+                      targetBlank={true}
+                    />
+                  </div>
+                </div> 
+                <div className="sm:py-12 md:p-12 flex-auto bg-dark-background">
+                  <div>
+                    <Button 
+                      buttonText={'Download My Resume (Printer-Friendly)'}
+                      className={'button text-center text-white'}
+                      linkHref={'../static/JohnBentleyResume--PrinterFriendly.pdf'}
+                      targetBlank={true}
+                    />
+                  </div>
+                </div> 
+              </div>
         </div> 
 
         <DotsTransition />
