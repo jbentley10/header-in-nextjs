@@ -185,13 +185,13 @@ export default class PuebloUnido extends React.Component {
                   to create a beautiful site in only 2 weeks.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
+                  <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" onerror="this.src='../static/line-friends/line-friends-home.jpg'" />
                   <ReactModal 
                     isOpen={this.state.showModal9}
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal9}>X</button>
-                    <img onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
+                    <img onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="../static/line-friends/line-friends-home.webp"  onerror="this.src='../static/line-friends/line-friends-home.jpg'" />
                   </ReactModal>
                   
                 </div>

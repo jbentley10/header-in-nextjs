@@ -187,13 +187,13 @@ export default class PuebloUnido extends React.Component {
                   visibility by 25%. Page one rankings increased substantially as well. </p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="SEO search optimization report" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/seo-report.webp" />
+                  <img alt="SEO search optimization report" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/seo-report.webp"  onerror="this.src='../static/tripwire/seo-report.jpg'" />
                   <ReactModal 
                     isOpen={this.state.showModal5}
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal5}>X</button>
-                    <img onClick={this.handleCloseModal5} className="sm:m-auto md:m-auto cursor-pointer" src="../static/tripwire/seo-report.webp" />
+                    <img onClick={this.handleCloseModal5} className="sm:m-auto md:m-auto cursor-pointer" src="../static/tripwire/seo-report.webp"  onerror="this.src='../static/tripwire/seo-report.jpg'" />
                   </ReactModal>
                   
                 </div>
@@ -242,13 +242,13 @@ export default class PuebloUnido extends React.Component {
                   will prevent Tripwire’s from any downtime during code deployments.</p>
                 </div>
                 <div className="image-content sm:p-8 sm:m-auto md:m-0 sm:w-full md:w-2/5">
-                  <img alt="Tripwire look and feel revamp - homepage design" onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
+                  <img alt="Tripwire look and feel revamp - homepage design" onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" onerror="this.src='../static/tripwire/home-page-design.jpg'" />
                   <ReactModal 
                     isOpen={this.state.showModal7}
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal7}>X</button>
-                    <img onClick={this.handleCloseModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
+                    <img onClick={this.handleCloseModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp"  onerror="this.src='../static/tripwire/home-page-design.jpg'" />
                   </ReactModal>
                 </div>
               </div> 
@@ -268,7 +268,7 @@ export default class PuebloUnido extends React.Component {
                   me a clear path on developing this highly-successful test. </p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp" />
+                  <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp"  onerror="this.src='../static/tripwire/optimization.jpg'" />
                   <ReactModal 
                     isOpen={this.state.showModal8}
                     contentLabel="Minimal Modal Example"

@@ -6,7 +6,7 @@ const DotsTransition = (props) => {
     className
   } = props
 
-  return <img className={className + " bg-dark-background w-full"} src="../static/dots-transition.webp" alt="Circles and Dots" />
+  return <img className={className + " bg-dark-background w-full"} src="../static/dots-transition.webp" onerror="this.src='../static/dots-transition.jpg'" alt="Circles and Dots" />
 }
 
 DotsTransition.propTypes = {
