@@ -74,15 +74,15 @@ export default function Home() {
         <ThreeColumnIcons 
           Block1Copy='Design and Develop'
           Block1ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-          Block1ImageSource='../static/pueblo-unido/pueblo-unido-mockup.webp'
+          Block1ImageSource='../static/pueblo-unido/pueblo-unido-mockup.jpg'
           Block1Link='/work/pueblo-unido'
           Block2Copy='Elevate Your Brand'
           Block2ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-          Block2ImageSource='../static/tripwire/tripwire-mockup.webp'
+          Block2ImageSource='../static/tripwire/tripwire-mockup.jpg'
           Block2Link='/work/tripwire'
           Block3Copy='Drive Results'
           Block3ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-          Block3ImageSource='../static/line-friends/line-friends-mockup.webp'
+          Block3ImageSource='../static/line-friends/line-friends-mockup.jpg'
           Block3Link='/work/line-friends'
         >
 
@@ -97,7 +97,7 @@ export default function Home() {
         <div className="bg-dark-background sm:h-8 md:h-32" />
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
-          imageSrc={'../static/profile.webp'}
+          imageSrc={'../static/profile.jpg'}
           imageAlt={'John Bentley, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>
