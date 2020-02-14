@@ -188,7 +188,7 @@ export default class PuebloUnido extends React.Component {
                   <picture>
                     <source type="image/webp" srcSet="../static/line-friends/line-friends-home.webp" />
                     <source type="image/jpeg" srcSet="../static/line-friends/line-friends-home.jpg" />
-                    <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.jpg" />
+                    <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
                   </picture>
                   <ReactModal 
                     isOpen={this.state.showModal9}
@@ -198,7 +198,7 @@ export default class PuebloUnido extends React.Component {
                     <picture>
                       <source type="image/webp" srcSet="../static/line-friends/line-friends-home.webp" />
                       <source type="image/jpeg" srcSet="../static/line-friends/line-friends-home.jpg" />
-                      <img onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="../static/line-friends/line-friends-home.jpg" />
+                      <img onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="../static/line-friends/line-friends-home.webp" />
                     </picture>
                   </ReactModal>
                   

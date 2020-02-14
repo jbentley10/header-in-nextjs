@@ -74,7 +74,7 @@ a {
 }
 
 .background {
-  background-image: url('/static/background.webp');
+  background-image: url('/static/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -95,7 +95,7 @@ a {
 
 /* Jagged lines background */
 .lines-background {
-  background-image: url('/static/line-background.webp');
+  background-image: url('/static/line-background.jpg');
 }
 
 /* Horizontal bar that's tilted */
