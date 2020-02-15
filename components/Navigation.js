@@ -18,22 +18,6 @@ const navStyle = {
 /* Component Layout */
 const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth, drawAnimations}) => {
 
-  const delayWork =7200
-  const delayAbout = 7700
-  const delayServices = 8200
-  const delayContact = 8700
-  var fadeInWork = {display: + 'block'}
-  var fadeInAbout = {display: + 'block'}
-  var fadeInServices = {display: + 'block'}
-  var fadeInContact = {display: + 'block'}
-
-  if ({fadeInNav} == true) {
-    fadeInWork = useSpring({delay: delayWork, opacity: 1, from: {opacity: 0}})
-    fadeInAbout = useSpring({delay: delayAbout, opacity: 1, from: {opacity: 0}})
-    fadeInServices = useSpring({delay: delayServices, opacity: 1, from: {opacity: 0}})
-    fadeInContact = useSpring({delay: delayContact, opacity: 1, from: {opacity: 0}})
-  }
-
   const navigationLinkClassList = "sm:px-4 md:px-8 navigation-link hover:text-navigation-hover cursor-pointer";
 
   return (
@@ -45,16 +29,16 @@ const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth, d
       />
       <div className="navigation mr-8 sm:w-full md:w-auto" style={navStyle}>
         <Link href="/work">
-          <animated.a style={fadeInWork} className={navigationLinkClassList}>Work</animated.a>
+          <animated.a className={navigationLinkClassList}>Work</animated.a>
         </Link>
         <Link href="/about-me">
-          <animated.a style={fadeInAbout} className={navigationLinkClassList}>About Me</animated.a>
+          <animated.a className={navigationLinkClassList}>About Me</animated.a>
         </Link>
         <Link href="/services">
-          <animated.a style={fadeInServices} className={navigationLinkClassList}>Services</animated.a>
+          <animated.a className={navigationLinkClassList}>Services</animated.a>
         </Link>
         <Link href="/contact">
-          <animated.a style={fadeInContact} className={navigationLinkClassList}>Contact</animated.a>
+          <animated.a className={navigationLinkClassList}>Contact</animated.a>
         </Link>
       </div>
 

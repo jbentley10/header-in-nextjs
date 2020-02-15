@@ -16,7 +16,7 @@ const MainText = () =>
     <p className="text-lg">I am currently accepting clients.</p> 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p className="text-lg">Interested in small business web design packages? Please visit the <Link href="/services" target="_blank"><a className="text-link-purple hover:text-link-purple-darker">services</a></Link> page.</p>
+    <p className="text-lg">Interested in small business web design packages? Please visit the <Link href="/services"><a className="text-link-purple hover:text-link-purple-darker">services</a></Link> page.</p>
   </div>
 ;
 
