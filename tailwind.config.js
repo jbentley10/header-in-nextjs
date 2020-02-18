@@ -33,6 +33,7 @@ module.exports = {
         display: ['Volte', 'Inter-Loom', 'Roboto', 'NanumBarunGothic', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
+        'lighter-background': '#3e4750',
         'dark-background': '#1b242c',
         'link-purple': '#9c79e3',
         'link-purple-darker': '#5e4297',

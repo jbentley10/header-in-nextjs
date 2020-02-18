@@ -107,6 +107,25 @@ a {
   transform: rotate(-10deg);
 }
 
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form input, .form label {
+  display: block;
+  margin: 0 auto;
+}
+
+.form input, .form textarea {
+  background-color: #3e4750;
+  border: 2px solid #ffffff;
+  padding: 8px 12px;
+  font-family: 'Barlow', sans-serif;
+}
+
 /* Animate the logo */
 /* Circle */
 .cls-1 {

@@ -1,8 +1,22 @@
 {
-    "functions": {
-      "sendContactEmail": {
-        "type": "sendNotification",
-        "to": "jwbentle@gmail.com"
-      }
+    "forms": {
+      "contact": {
+        "name": "Contact Form",
+        "fields": {
+          "name": { 
+            "type": "text", "prettyName": "First and Last Name", "required": true
+          },
+          "email": {
+             "type": "email", "prettyName": "Email Address", "required": true 
+            },
+          "message": {
+             "type": "text", "prettyName": "How can I help you?", "required": false 
+            }
+        }
+      },
+      "actions": [
+        { "type": "email", "to": "john@jwbentley.com" }
+      ],
+      "allowExtraFields": false
     }
   }
