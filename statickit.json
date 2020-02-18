@@ -1,0 +1,8 @@
+{
+    "functions": {
+      "sendContactEmail": {
+        "type": "sendNotification",
+        "to": "jwbentle@gmail.com"
+      }
+    }
+  }

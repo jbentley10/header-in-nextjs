@@ -1,9 +1,12 @@
 import '../styles/styles.css';
 import Link from 'next/link';
+import { StaticKitProvider, useStaticKit, ValidationError } from '@statickit/react';
+import { sendContactEmail } from '@statickit/functions';
 
 import Layout from '../components/Layout';
 import CallToAction from '../components/CallToAction';
 import ImageHeader from '../components/ImageHeader';
+import ContactForm from '../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const MainText = () => 
@@ -22,7 +25,7 @@ const MainText = () =>
 
 export default function Home() {
   return (
-    <div>
+    <StaticKitProvider site="d63545d25c9c">
       <Layout 
         pageMeta={{
           title: "Contact Me | John Bentley",
@@ -41,9 +44,10 @@ export default function Home() {
         />
         <CallToAction
           ctaText={<MainText />}
-        />         
+        />   
+        <ContactForm />      
 
       </Layout>
-    </div>
+    </StaticKitProvider>
   );
 }

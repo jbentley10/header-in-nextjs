@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+import { StaticKitProvider } from '@statickit/react';
 
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
@@ -51,7 +52,7 @@ const ImageTextSplitCopy = () =>
 export default function Home() {
 
   return (
-    <div>
+    <StaticKitProvider site="d63545d25c9c">
       <Layout
         pageMeta={{
           title: "Freelance Web Design - Portland, Oregon | John Bentley",
@@ -116,6 +117,6 @@ export default function Home() {
         />
         <div className="bg-dark-background h-12" />
       </Layout>
-    </div>
+    </StaticKitProvider>
   );
 }
