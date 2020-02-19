@@ -1,5 +1,7 @@
 import '../styles/styles.css';
 import Head from 'next/head'
+import React from 'react'
+import TagManager from 'react-gtm-module'
 
 import Navigation from './Navigation';
 import Footer from './Footer';
@@ -10,6 +12,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone )
+
+const tagManagerArgs = {
+  id: 'GTM-MX6MMQH'
+}
 
 const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName, drawAnimations }) => (
   <>
@@ -31,18 +37,6 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
       <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" async />
 
       <link rel="canonical" href={pageMeta.URL} />
-
-      {/* Google Tag Manager */}
-      <script type="text/javascript">{`
-      {
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MX6MMQH');
-      }
-      `}</script>
-      <html lang="en" />
     </Head>
 
     {/* Google Tag Manager */}
@@ -64,5 +58,9 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
     <Footer />
   </>
 );
+
+Layout.componentDidMount = async function() {
+  TagManager.initialize(tagManagerArgs)
+}
 
 export default Layout;
