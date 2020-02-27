@@ -18,7 +18,7 @@ const Footer = () => (
     </p>
     <p className="text-base pb-2">Freelance Web Design Portland Oregon</p>
     <div className="icons p-4 inline align-middle">
-      <FontAwesomeIcon icon="envelope" className="w-6 text-6xl shadow-none p-4 cursor-pointer inline-block align-middle" />
+      <a href="mailto:john@jwbentley.com?subject=Project Request" className="sm:text-xl cursor-pointer text-white hover:text-gray align-middle"><FontAwesomeIcon icon="envelope" className="w-16 shadow-none p-4 cursor-pointer inline-block align-middle" /></a>
       <TumblrIcon 
         className={'p-4 cursor-pointer inline-block align-middle w-16'}
       />
