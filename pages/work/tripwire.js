@@ -226,7 +226,7 @@ export default class PuebloUnido extends React.Component {
                   <picture>
                     <source type="image/webp" srcSet="../static/tripwire/tripwire-mockup.webp" />
                     <source type="image/jpeg" srcSet="../static/tripwire/tripwire-mockup.jpg" />
-                    <img onClick={this.handleCloseModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/tripwire-mockup.webp" />
+                    <img onClick={this.handleOpenModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/tripwire-mockup.webp" />
                   </picture>                  
                   <ReactModal 
                     isOpen={this.state.showModal6}
@@ -261,7 +261,7 @@ export default class PuebloUnido extends React.Component {
                   <picture>
                       <source type="image/webp" srcSet="../static/tripwire/home-page-design.webp" />
                       <source type="image/jpeg" srcSet="../static/tripwire/home-page-design.jpg" />
-                      <img onClick={this.handleCloseModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
+                      <img onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
                     </picture>                  
                     <ReactModal 
                     isOpen={this.state.showModal7}

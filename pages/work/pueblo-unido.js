@@ -205,8 +205,8 @@ export default class PuebloUnido extends React.Component {
                   isOpen={this.state.showModal2}
                   contentLabel="Minimal Modal Example"
                   >
-                  <button onClick={this.handleCloseModal2}>X</button>
-                  <img onClick={this.handleCloseModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/flyer-ec-mention.svg" />
+                    <button onClick={this.handleCloseModal2}>X</button>
+                    <img onClick={this.handleCloseModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/flyer-ec-mention.svg" />
                   </ReactModal>
                 </div>
               </div>
