@@ -222,7 +222,7 @@ export default class PuebloUnido extends React.Component {
                   were approved, I set out at building the page in Sitecore (again, coding and integrating 
                   new components if needed). </p>
                 </div>
-                <div className="image-content sm:p-8 sm:w-full md:w-2/5">
+                <div className="image-content sm:w-full md:w-2/5">
                   <picture>
                     <source type="image/webp" srcSet="../static/tripwire/tripwire-mockup.webp" />
                     <source type="image/jpeg" srcSet="../static/tripwire/tripwire-mockup.jpg" />
@@ -257,13 +257,13 @@ export default class PuebloUnido extends React.Component {
                   solution, this new solution for the site offers greater flexibility for component styling, and 
                   will prevent Tripwire’s from any downtime during code deployments.</p>
                 </div>
-                <div className="image-content sm:p-8 sm:m-auto md:m-0 sm:w-full md:w-2/5">
+                <div className="image-content sm:w-full md:w-2/5">
                   <picture>
-                      <source type="image/webp" srcSet="../static/tripwire/home-page-design.webp" />
-                      <source type="image/jpeg" srcSet="../static/tripwire/home-page-design.jpg" />
-                      <img onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
-                    </picture>                  
-                    <ReactModal 
+                    <source type="image/webp" srcSet="../static/tripwire/home-page-design.webp" />
+                    <source type="image/jpeg" srcSet="../static/tripwire/home-page-design.jpg" />
+                    <img onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" />
+                  </picture>                  
+                  <ReactModal 
                     isOpen={this.state.showModal7}
                     contentLabel="Minimal Modal Example"
                   >
@@ -292,11 +292,11 @@ export default class PuebloUnido extends React.Component {
                   me a clear path on developing this highly-successful test. </p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                <picture>
-                      <source type="image/webp" srcSet="../static/tripwire/optimization.webp" />
-                      <source type="image/jpeg" srcSet="../static/tripwire/optimization.jpg" />
-                      <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp" />
-                    </picture>
+                  <picture>
+                    <source type="image/webp" srcSet="../static/tripwire/optimization.webp" />
+                    <source type="image/jpeg" srcSet="../static/tripwire/optimization.jpg" />
+                    <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp" />
+                  </picture>
                   <ReactModal 
                     isOpen={this.state.showModal8}
                     contentLabel="Minimal Modal Example"
