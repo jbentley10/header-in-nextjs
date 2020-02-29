@@ -16,8 +16,8 @@ const MainText = () =>
     <ContactForm /> 
     <p>&nbsp;</p>
     <p className="text-lg">You may also contact me directly via phone or email: </p> 
-    <p><FontAwesomeIcon icon="envelope" className="text-6xl shadow-none p-4 cursor-pointer inline-block align-middle" /><a href="mailto:john@jwbentley.com?subject=Project Request" className="text-link-purple hover:text-link-purple-darker align-middle"> john@jwbentley.com</a></p>
-    <p><FontAwesomeIcon icon="phone" className="text-6xl shadow-none p-4 cursor-pointer inline-block align-middle" /><a href="tel:+17605324516" className="text-link-purple hover:text-link-purple-darker align-middle"> (760) 532-4516</a></p>
+    <p><FontAwesomeIcon icon="envelope" className="w-16 shadow-none p-4 cursor-pointer inline-block align-middle" /><a href="mailto:john@jwbentley.com?subject=Project Request" className="sm:text-xl text-link-purple hover:text-link-purple-darker align-middle"> john@jwbentley.com</a></p>
+    <p><FontAwesomeIcon icon="phone" className="w-16 shadow-none p-4 cursor-pointer inline-block align-middle" /><a href="tel:+17605324516" className="sm:text-xl text-link-purple hover:text-link-purple-darker align-middle"> (760) 532-4516</a></p>
     <p className="text-lg">I am currently accepting clients.</p> 
     <p>&nbsp;</p>
     <p>&nbsp;</p>

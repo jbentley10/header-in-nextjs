@@ -102,9 +102,10 @@ a {
 .horizontal-bar {
   position: relative;
   height: 80px;
-  width: 110%;
-  left: -18px;
-  transform: rotate(-10deg);
+  width: 100%;
+  left: 0;
+  transform: skewY(-10deg);
+  transform-origin: 50%!important;
 }
 
 /* Modal Styling */

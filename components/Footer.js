@@ -1,5 +1,6 @@
 import Logo from './Images/Logo';
-import TumblrIcon from './Images/TumblrIcon';
+import FacebookIcon from './Images/FacebookIcon';
+import InstagramIcon from './Images/InstagramIcon';
 import LinkedInIcon from './Images/LinkedInIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../styles/styles.css';
@@ -18,8 +19,11 @@ const Footer = () => (
     </p>
     <p className="text-base pb-2">Freelance Web Design Portland Oregon</p>
     <div className="icons p-4 inline align-middle">
-      <FontAwesomeIcon icon="envelope" className="w-6 text-6xl shadow-none p-4 cursor-pointer inline-block align-middle" />
-      <TumblrIcon 
+      <a href="mailto:john@jwbentley.com?subject=Project Request" className="sm:text-xl cursor-pointer text-white hover:text-gray align-middle"><FontAwesomeIcon icon="envelope" className="w-16 shadow-none p-4 cursor-pointer inline-block align-middle" /></a>
+      <FacebookIcon 
+        className={'p-4 cursor-pointer inline-block align-middle w-16'}
+      />
+      <InstagramIcon 
         className={'p-4 cursor-pointer inline-block align-middle w-16'}
       />
       <LinkedInIcon 

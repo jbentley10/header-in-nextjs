@@ -127,12 +127,12 @@ export default function Home() {
           </div>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
-          <div className="flex bg-transparent">
+          <div className="sm:block md:flex bg-transparent">
                 <div className="sm:py-12 md:p-12 flex-auto bg-transparent">
                   <div>
                     <Button 
                       buttonText={'Download My Resume (Color)'}
-                      className={'button text-center text-white'}
+                      className={'button text-center text-white sm:whitespace-no-wrap'}
                       linkHref={'../static/JohnBentleyResume.pdf'}
                       targetBlank={true}
                     />
@@ -142,7 +142,7 @@ export default function Home() {
                   <div>
                     <Button 
                       buttonText={'Download My Resume (Printer-Friendly)'}
-                      className={'button text-center text-white'}
+                      className={'button text-center text-white sm:whitespace-no-wrap'}
                       linkHref={'../static/JohnBentleyResume--PrinterFriendly.pdf'}
                       targetBlank={true}
                     />
