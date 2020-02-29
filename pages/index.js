@@ -55,8 +55,8 @@ export default function Home() {
     <StaticKitProvider site="d63545d25c9c">
       <Layout
         pageMeta={{
-          title: "Freelance Web Design - Portland, Oregon | John Bentley",
-          keywords: ["freelance", "web designer", "web design", "web developer", "portland", "oregon"],
+          title: "Freelance Web Design - Portland, Oregon | John Bentley Creative",
+          keywords: ["freelance", "web designer", "web design", "web developer", "portland", "oregon", "john bentley creative"],
           description: "I am a creative professional specializing in WordPress development and freelance web design in Portland, Oregon. Contact me now to elevate your brand and drive results.",
           URL: "https://www.jwbentley.com"
         }}
@@ -99,7 +99,7 @@ export default function Home() {
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
           imageSrc={'../static/profile.jpg'}
-          imageAlt={'John Bentley, Freelance Web Design and WordPress Development in Portland Oregon'}
+          imageAlt={'John Bentley Creative, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>
         <DotsTransition />

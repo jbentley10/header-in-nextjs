@@ -30,8 +30,8 @@ export default function Home() {
     <StaticKitProvider site="d63545d25c9c">
       <Layout 
         pageMeta={{
-          title: "Contact Me | John Bentley",
-          keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
+          title: "Contact Me | John Bentley Creative",
+          keywords: ["freelance", "web designer", "web developer", "portland", "oregon", "john bentley creative"],
           description: "Contact me now to schedule a kick-off meeting for web design, WordPress development, or SEO.",
           URL: "https://www.jwbentley.com/contact"
         }}

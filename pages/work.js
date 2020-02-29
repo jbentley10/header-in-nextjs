@@ -29,8 +29,8 @@ export default class Work extends React.Component {
       <div>
         <Layout 
           pageMeta={{
-            title: "Work - Web Design and Development | John Bentley",
-            keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
+            title: "Work - Web Design and Development | John Bentley Creative",
+            keywords: ["freelance", "web designer", "web developer", "portland", "oregon", "john bentley creative"],
             description: "View examples of my work in my freelance web design and development portfolio, including brand redesigns and SEO-driven results.",
             URL: "https://www.jwbentley.com/work"
           }}

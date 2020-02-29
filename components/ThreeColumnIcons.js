@@ -12,7 +12,7 @@ class ThreeColumnIcons extends Component {
   render() {
     return (
       
-      <div className="three-column-icons bg-dark-background sm:block md:flex text-white w-full sm:text-center">
+      <div className="three-column-icons bg-dark-background sm:block md:inline-block text-white w-full sm:text-center">
         <VizSensor
           onChange={(isVisible) => {
             this.setState({imgViz: isVisible})

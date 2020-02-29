@@ -25,8 +25,8 @@ export default function Home() {
     <div>
       <Layout 
         pageMeta={{
-          title: "Small Business Web Design Packages - Services | John Bentley",
-          keywords: ["freelance", "small business web design packages", "affordable web design", "web designer", "web developer", "portland", "oregon"],
+          title: "Small Business Web Design Packages - Services | John Bentley Creative",
+          keywords: ["freelance", "small business web design packages", "affordable web design", "web designer", "web developer", "portland", "oregon", "john bentley creative"],
           description: "Learn about the services and small business web design packages I offer, including: affordable web design, WordPress development, branding, and marketing strategy.",
           URL: "https://www.jwbentley.com/services"
         }}

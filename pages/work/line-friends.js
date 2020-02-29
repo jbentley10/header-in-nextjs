@@ -134,8 +134,8 @@ export default class PuebloUnido extends React.Component {
         <div>
             <Layout 
             pageMeta={{
-                title: "LINE FRIENDS - Work - Web Design and Development | John Bentley",
-                keywords: ["freelance", "web designer", "web developer", "portland", "oregon"],
+                title: "LINE FRIENDS - Work - Web Design and Development | John Bentley Creative",
+                keywords: ["freelance", "web designer", "web developer", "portland", "oregon", "john bentley creative"],
                 description: "View examples of my work for LINE FRIENDS, including upgrading the look and feel of the site on Shopify.",
                 URL: "https://www.jwbentley.com/work"
             }}

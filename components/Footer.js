@@ -14,7 +14,7 @@ const Footer = () => (
       />
     </div>
     <p className="text-base pt-6 pb-2">
-      &copy;{`${new Date().getFullYear()} John Bentley`}
+      &copy;{`${new Date().getFullYear()} John Bentley Creative`}
     </p>
     <p className="text-base pb-2">Freelance Web Design Portland Oregon</p>
     <div className="icons p-4 inline align-middle">

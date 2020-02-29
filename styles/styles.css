@@ -107,6 +107,33 @@ a {
   transform: rotate(-10deg);
 }
 
+/* Modal Styling */
+.modal-overlay {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+/* Extra modal styling for mobile */
+/* .modal {
+
+} */
+
+@media screen and (max-width: 768px) {
+  .modal__overlay {
+    position: relative;
+    width: 100%;
+  }
+}
+
 /* Form Styles */
 .form {
   display: flex;
