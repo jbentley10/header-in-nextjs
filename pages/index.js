@@ -57,7 +57,7 @@ export default function Home() {
         pageMeta={{
           title: "Freelance Web Design - Portland, Oregon | John Bentley Creative",
           keywords: ["freelance", "web designer", "web design", "web developer", "portland", "oregon", "john bentley creative"],
-          description: "I am a creative professional specializing in WordPress development and freelance web design in Portland, Oregon. Contact me now to elevate your brand and drive results.",
+          description: "I am a creative professional specializing in WordPress development and freelance web design in Portland, Oregon. Contact me now to discover how John Bentley Creative can elevate your brand and drive results.",
           URL: "https://www.jwbentley.com"
         }}
         navigationClassName={'z-navigation lg:h-128 navigation h-56'}

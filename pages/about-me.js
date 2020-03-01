@@ -28,7 +28,7 @@ const GrowingUpCopy = () =>
     <p>&nbsp;</p>
     <p className="image-text-split__text sm:text-xl text-base">Since living in the United States, I earned a bachelor's degree in <a className="text-link-purple hover:text-link-purple-darker cursor-pointer" href="https://news.ucsc.edu/2018/03/game-design.html" target="_blank">Computer Science: Game Design</a> from the University of California Santa Cruz. <a href="http://danielpagharion.com/project_warp/" target="_blank" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Coding games</a> and software on a bigger scale than before was difficult, but exhilarating at the same time.</p>
     <p>&nbsp;</p>
-    <p className="image-text-split__text sm:text-xl text-base">After graduating, I started to develop websites again in my spare time. I consider web design to be my main profession, but I have <a href="https://www.linkedin.com/in/jwbentle" target="_blank" className="text-link-purple hover:text-link-purple-darker cursor-pointer">built my skills</a> in marketing campaign strategy, user experience, search engine optimization, and branding.</p>        
+    <p className="image-text-split__text sm:text-xl text-base">After graduating, I started to develop websites again in my spare time. I consider web design to be my main profession, but I have <a href="https://www.linkedin.com/in/jwbentle" target="_blank" className="text-link-purple hover:text-link-purple-darker cursor-pointer">built my skills</a> in marketing campaign strategy, user experience, search engine optimization, and branding. I started John Bentley Creative in order to help individuals and businesses build and scale their digital presence online, while teaching them what I know so that they can succeed on their own.</p>        
     <p>&nbsp;</p>   
   </div>
 ;
@@ -50,7 +50,7 @@ export default function Home() {
       <Layout 
         pageMeta={{
           title: "About Me - Freelance Web Designer and Developer | John Bentley Creative",
-          keywords: ["freelance", "web designer about me", "web developer about me", "web designer", "web developer", "portland", "oregon"],
+          keywords: ["freelance", "web designer about me", "web developer about me", "web designer", "web developer", "portland", "oregon", "john bentley creative"],
           description: "Learn about me and what I do, and how I've grown as a freelance web designer and developer in Portland, Oregon.",
           URL: "https://www.jwbentley.com/about-me"
         }}
