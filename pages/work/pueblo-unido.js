@@ -150,6 +150,7 @@ export default class PuebloUnido extends React.Component {
             logoWidth={'7%'}
             logoClassName={'relative cursor-pointer logo'}
             drawAnimations={false}
+            animationClassName={'navigation mr-8 sm:w-full md:w-auto'}
             >
             <ImageHeader 
                 heading={"Work"}

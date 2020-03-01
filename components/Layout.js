@@ -17,7 +17,7 @@ const tagManagerArgs = {
   id: 'GTM-MX6MMQH'
 }
 
-const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName, drawAnimations }) => (
+const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth, logoClassName, drawAnimations, animationClassName }) => (
   <>
     <Head>
       <title>{`${pageMeta.title}`}</title>
@@ -53,6 +53,7 @@ const Layout = ({ pageMeta, children, navigationClassName, fadeInNav, logoWidth,
       logoWidth={logoWidth}
       logoClassName={logoClassName}
       drawAnimations={drawAnimations}
+      animationClassName={animationClassName}
     />
       {children}
     <Footer />

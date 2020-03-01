@@ -2,15 +2,15 @@ import '../styles/styles.css';
 import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
 
-function imageInView (isVisible) {
-	if (isVisible == true) {
+function imageInView (partialVisibility) {
+	if (partialVisibility == true) {
 		const image = document.getElementById("image-text-split__image");
 		image.classList.add('image-text-split__image--animate');
 	}
 }
 
-function textInView (isVisible) {
-	if (isVisible == true) {
+function textInView (partialVisibility) {
+	if (partialVisibility == true) {
 		const text = document.getElementById("image-text-split__text-container");
 		text.classList.add('image-text-split__text-container--animate');
 	}

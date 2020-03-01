@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Logo from './Images/Logo';
-import {useSpring, animated} from 'react-spring';
+import {animated} from 'react-spring';
 
 import '../styles/styles.css';
 
@@ -16,7 +16,7 @@ const navStyle = {
 }
 
 /* Component Layout */
-const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth, drawAnimations}) => {
+const Navigation = ({navigationClassName, animationClassName, logoClassName, logoWidth, drawAnimations}) => {
 
   const navigationLinkClassList = "sm:px-4 md:px-8 navigation-link hover:text-navigation-hover cursor-pointer";
 
@@ -27,7 +27,7 @@ const Navigation = ({navigationClassName, fadeInNav, logoClassName, logoWidth, d
         logoWidth={logoWidth}
         drawAnimations={drawAnimations}
       />
-      <div className="navigation mr-8 sm:w-full md:w-auto" style={navStyle}>
+      <div id="navigation" className={animationClassName} style={navStyle}>
         <Link href="/work">
           <animated.a className={navigationLinkClassList}>Work</animated.a>
         </Link>

@@ -65,6 +65,7 @@ export default function Home() {
         logoWidth={'10%'}
         logoClassName={'logo-animate relative cursor-pointer'}
         drawAnimations={true}
+        animationClassName={'navigation navigation--home mr-8 sm:w-full md:w-auto'}
       >
         <Hero>
           <HeaderFadeInAnimation

@@ -73,6 +73,14 @@ a {
   font-size: 1.5rem;
 }
 
+.navigation--home {
+  opacity: 0;
+  animation: fadeInSVG 2s 1;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  
+}
+
 .background {
   background-image: url('/static/background.jpg');
   background-size: cover;
@@ -121,18 +129,6 @@ a {
   border-radius: 4px;
   outline: none;
   padding: 20px;
-}
-
-/* Extra modal styling for mobile */
-/* .modal {
-
-} */
-
-@media screen and (max-width: 768px) {
-  .modal__overlay {
-    position: relative;
-    width: 100%;
-  }
 }
 
 /* Form Styles */
@@ -381,5 +377,11 @@ svg.logo:hover, svg.logo-animate:hover {
 
   .hero-font {
     font-size: 3rem;
+  }
+
+  /* Extra modal styling for mobile */
+  .modal__overlay {
+    position: relative;
+    width: 100%;
   }
 }

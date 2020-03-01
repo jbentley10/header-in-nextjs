@@ -4,15 +4,15 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 import Button from './Button.js';
 
-function image1InView (isVisible) {
-	if (isVisible == true) {
+function image1InView (partialVisibility) {
+	if (partialVisibility == true) {
 		const image = document.getElementById("image-text-split__image-1");
 		image.classList.add('image-text-split__image--animate');
 	}
 }
 
-function image2InView (isVisible) {
-	if (isVisible == true) {
+function image2InView (partialVisibility) {
+	if (partialVisibility == true) {
 		const image = document.getElementById("image-text-split__image-2");
 		image.classList.add('image-text-split__image--animate');
 	}

@@ -2,15 +2,15 @@ import Button from './Button';
 import '../styles/styles.css';
 import VisibilitySensor from 'react-visibility-sensor';
 
-function textLeftInView (isVisible) {
-	if (isVisible == true) {
+function textLeftInView (partialVisibility) {
+	if (partialVisibility == true) {
 		const image = document.getElementById("two-text-split__left");
 		image.classList.add('two-text-split__left--animate');
 	}
 }
 
-function textRightInView (isVisible) {
-	if (isVisible == true) {
+function textRightInView (partialVisibility) {
+	if (partialVisibility == true) {
 		const text = document.getElementById("two-text-split__right");
 		text.classList.add('two-text-split__right--animate');
 	}
