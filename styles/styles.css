@@ -154,6 +154,48 @@ a {
   font-family: 'Barlow', sans-serif;
 }
 
+/* ImageTextSplit Styles and Animations */
+.image-text-split__image {
+  transform: translateX(-30px);
+  transition: .75s;
+  opacity: 0;
+}
+
+.image-text-split__image--animate {
+  transform: translateX(0);
+  margin-left: 0;
+  opacity: 1;
+}
+
+.image-text-split__text-container {
+  transform: translateY(45px);
+  transition: .85s;
+  opacity: 0;
+}
+
+.image-text-split__text-container--animate {
+  transform: translateY(0);
+  margin-left: 0;
+  opacity: 1;
+}
+
+.two-text-split__left {
+  transition: .85s;
+  opacity: 0;
+}
+
+.two-text-split__left--animate {
+  opacity: 1;
+}
+
+.two-text-split__right {
+  transition: .85s;
+  opacity: 0;
+}
+
+.two-text-split__right--animate {
+  opacity: 1;
+}
 /* Animate the logo */
 /* Circle */
 .cls-1 {

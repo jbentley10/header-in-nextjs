@@ -1,7 +1,22 @@
 import '../styles/styles.css';
 import PropTypes from 'prop-types';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import Button from './Button.js';
+
+function image1InView (isVisible) {
+	if (isVisible == true) {
+		const image = document.getElementById("image-text-split__image-1");
+		image.classList.add('image-text-split__image--animate');
+	}
+}
+
+function image2InView (isVisible) {
+	if (isVisible == true) {
+		const image = document.getElementById("image-text-split__image-2");
+		image.classList.add('image-text-split__image--animate');
+	}
+}
 
 /* Component Layout */ 
 const ImageTextButtonSplit = (props) => {
@@ -10,14 +25,18 @@ const ImageTextButtonSplit = (props) => {
   } = props 
 
   return (
-    <div className="image-text-split px-12 text-center bg-dark-background py-24 md:align-middle text-white">        
-      <div className="image-text-split__text-container sm:w-full md:w-1/2 md:mr-20 text-left sm:inline-block md:align-middle">
+    <div className="image-text-button-split px-12 text-center bg-dark-background py-24 md:align-middle text-white">              
+      <div className="image-text-button-split__text-container sm:w-full md:w-1/2 md:mr-20 text-left sm:inline-block md:align-middle">
         {copy}
       </div>
-
-      <div className="image-text-split__image-container sm:text-center sm:my-8 md:mb-12 sm:m-auto sm:w-full md:w-2/5 sm:block md:inline-block md:align-middle">
-        <img className="rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-hike.jpg" alt="Climbing and hiking just outside of Portland" />
-        <img className="rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" />
+      
+      <div className="image-text-button-split__image-container sm:text-center sm:my-8 md:mb-12 sm:m-auto sm:w-full md:w-2/5 sm:block md:inline-block md:align-middle">
+        <VisibilitySensor onChange={image1InView}>
+          <img id="image-text-split__image-1" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-hike.jpg" alt="Climbing and hiking just outside of Portland" />
+        </VisibilitySensor>
+        <VisibilitySensor onChange={image2InView}>
+          <img id="image-text-split__image-2" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" />
+        </VisibilitySensor>
       </div>
 
       <Button 
