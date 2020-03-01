@@ -17,9 +17,10 @@ const tagManagerArgs = {
   gtmId: 'GTM-MX6MMQH'
 }
 
-TagManager.initialize(tagManagerArgs);
-
 class Layout extends Component {
+  componentDidMount = async function() {
+    TagManager.initialize(tagManagerArgs)
+  }
 
   render() {
     return (
