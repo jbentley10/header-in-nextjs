@@ -14,13 +14,12 @@ import { faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone }
 library.add(fab, faCheckSquare, faCoffee, faEnvelope, faArrowDown, faPhoneAlt, faPhone )
 
 const tagManagerArgs = {
-  id: 'GTM-MX6MMQH'
+  gtmId: 'GTM-MX6MMQH'
 }
 
+TagManager.initialize(tagManagerArgs);
+
 class Layout extends Component {
-  componentDidMount = async function() {
-    TagManager.initialize(tagManagerArgs)
-  }
 
   render() {
     return (
