@@ -2,26 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://jwbentley.com/</loc>
-        <lastmod>2020-01-20</lastmod>
+        <lastmod>2020-03-05</lastmod>
     </url>
     <url>
         <loc>https://jwbentley.com/work/</loc>
-        <lastmod>2020-01-20</lastmod>
+        <lastmod>2020-03-05</lastmod>
+    </url>
+    <url>
+        <loc>https://jwbentley.com/work/line-friends/</loc>
+        <lastmod>2020-03-05</lastmod>
+    </url>
+    <url>
+        <loc>https://jwbentley.com/work/tripwire/</loc>
+        <lastmod>2020-03-05</lastmod>
+    </url>
+    <url>
+        <loc>https://jwbentley.com/work/pueblo-unido/</loc>
+        <lastmod>2020-03-05</lastmod>
     </url>
     <url>
         <loc>https://jwbentley.com/about-me/</loc>
-        <lastmod>2020-01-20</lastmod>
+        <lastmod>2020-03-05</lastmod>
     </url>
     <url>
         <loc>https://jwbentley.com/contact/</loc>
-        <lastmod>2020-01-20</lastmod>
+        <lastmod>2020-03-05</lastmod>
     </url>
     <url>
         <loc>https://jwbentley.com/services/</loc>
-        <lastmod>2020-01-20</lastmod>
+        <lastmod>2020-03-05</lastmod>
     </url>
     <url>
         <loc>https://jwbentley.com/sitemap/</loc>
-        <lastmod>2020-01-20</lastmod>
+        <lastmod>2020-03-05</lastmod>
     </url>
 </urlset>

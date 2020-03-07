@@ -31,6 +31,12 @@ export default function Home() {
             <p>&nbsp;</p>
             <p className="text-white lg:w-4/6 m-auto"><a href="/work" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Work</a></p>
             <p>&nbsp;</p>
+            <p className="text-white lg:w-4/6 m-auto"><a href="/work/pueblo-unido" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Pueblo Unido</a></p>
+            <p>&nbsp;</p>
+            <p className="text-white lg:w-4/6 m-auto"><a href="/work/tripwire" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Tripwire</a></p>
+            <p>&nbsp;</p>
+            <p className="text-white lg:w-4/6 m-auto"><a href="/work/line-friends" className="text-link-purple hover:text-link-purple-darker cursor-pointer">LINE FRIENDS</a></p>
+            <p>&nbsp;</p>
             <p className="text-white lg:w-4/6 m-auto"><a href="/about-me" className="text-link-purple hover:text-link-purple-darker cursor-pointer">About Me</a></p>
             <p>&nbsp;</p>
             <p className="text-white lg:w-4/6 m-auto"><a href="/services" className="text-link-purple hover:text-link-purple-darker cursor-pointer">Services</a></p>
