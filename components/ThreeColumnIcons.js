@@ -11,7 +11,7 @@ class ThreeColumnIcons extends Component {
   render() {
     return (
       
-      <div className="three-column-icons bg-dark-background sm:block md:flex text-white w-full sm:text-center">
+      <div className="three-column-icons bg-dark-background sm:block md:flex lg:block text-white w-full sm:text-center">
         <Link href={this.props.Block1Link}>
           <div className={this.props.Block1ClassName}>
             <div className="bg-cool-green three-column-icons__icon w-full sm:h-auto md:h-full rounded-lg pb-8 margin-0-auto opacity-100 border-8 border-cool-green--reduced-opacity">
