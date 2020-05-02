@@ -9,6 +9,7 @@ import Button from '../components/Button';
 import ImageTextSplit from '../components/ImageTextSplit';
 import CallToAction from '../components/CallToAction';
 import DotsTransition from '../components/Images/DotsTransition';
+import BlobsTransition from '../components/Images/BlobsTransition';
 import HorizontalBar from '../components/Images/HorizontalBar';
 import TwoTextSplit from '../components/TwoTextSplit';
 
@@ -89,7 +90,6 @@ export default function Home() {
         >
 
         </ThreeColumnIcons>
-        <div className="bg-dark-background pb-5" />
         <Button 
           buttonText={'View My Services'}
           className={'button text-center text-white bg-dark-background border-0'}
@@ -97,6 +97,7 @@ export default function Home() {
           targetBlank={false}
         />
         <div className="bg-dark-background sm:h-8 md:h-32" />
+        <BlobsTransition />
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
           imageSrc={'../static/profile.jpg'}
