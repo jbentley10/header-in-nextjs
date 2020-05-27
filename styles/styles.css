@@ -82,7 +82,7 @@ a {
 }
 
 .webp .background {
-  background-image: url('/static/img/web/background.webp');
+  background-image: url('/static/img/webp/background.webp');
 }
 
 .no-webp .background {

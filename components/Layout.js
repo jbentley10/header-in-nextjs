@@ -43,6 +43,8 @@ class Layout extends Component {
           <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" async />
 
           <link rel="canonical" href={this.props.pageMeta.URL} />
+
+          <script type="text/javascript" src="../static/webp-modernizr.js"></script>
         </Head>
 
         {/* Google Tag Manager */}

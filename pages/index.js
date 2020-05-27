@@ -100,7 +100,7 @@ export default function Home() {
         <BlobsTransition />
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
-          imageSrc={'../static/jpg/profile.jpg'}
+          imageSrc={'profile'}
           imageAlt={'John Bentley Creative, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>

@@ -12,9 +12,9 @@ const DotsTransition = (props) => {
 
   return (
     <picture>
-      <source type="image/webp" srcSet="../static/img/webp.dots-transition.webp" />
+      <source type="image/webp" srcSet="../static/img/webp/dots-transition.webp" />
       <source type="image/jpeg" srcSet="../static/img/jpg/dots-transition.jpg" />
-      <img className={className + " bg-dark-background w-full"} src="../static/img/jpgdots-transition.jpg" alt="Circles and Dots" loading="lazy" />
+      <img className={className + " bg-dark-background w-full"} src="../static/img/jpg/dots-transition.jpg" alt="Circles and Dots" loading="lazy" />
     </picture>
   )
 }
