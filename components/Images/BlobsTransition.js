@@ -14,7 +14,7 @@ const BlobsTransition = (props) => {
     <picture>
       <source type="image/webp" srcSet="../static/blob-background.webp" />
       <source type="image/jpeg" srcSet="../static/blob-background.png" />
-      <img className={className + " bg-dark-background w-full"} src="../static/blob-background.webp" alt="Circles and Dots" />
+      <img className={className + " bg-dark-background w-full"} src="../static/blob-background.webp" alt="Circles and Dots" loading="lazy" />
     </picture>
   )
 }
