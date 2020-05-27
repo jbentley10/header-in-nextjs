@@ -77,19 +77,33 @@ a {
   opacity: 0;
   animation: fadeInSVG 2s 1;
   animation-delay: 6s;
+  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-  
+}
+
+.webp .background {
+  background-image: url('/static/img/web/background.webp');
+}
+
+.no-webp .background {
+  background-image: url('/static/img/jpg/background.jpg');
 }
 
 .background {
-  background-image: url('/static/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
 
+.webp .background-dots {
+  background-image: url('/static/img/web/background-dots-big.webp');
+}
+
+.no-webp .background-dots {
+  background-image: url('/static/img/jpg/background-dots-big.jpg');
+}
+
 .background-dots {
-  background-image: url('/static/background-dots-big.jpg');
   background-size: inherit;
   background-repeat: repeat;
   background-position: 5rem;
@@ -102,8 +116,12 @@ a {
 }
 
 /* Jagged lines background */
-.lines-background {
-  background-image: url('/static/line-background.jpg');
+.webp .lines-background {
+  background-image: url('/static/img/webp/line-background.webp');
+}
+
+.no-webp .lines-background {
+  background-image: url('/static/img/jpg/line-background.jpg');
 }
 
 /* Horizontal bar that's tilted */
@@ -206,6 +224,7 @@ a {
   fill: #fff;
   animation: dashCircle 7s linear;
   animation-delay: 2s;
+  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -225,6 +244,7 @@ a {
   stroke-dasharray: 109.766;
   animation: dashSignature 2s linear;
   animation-delay: 2s;
+  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -232,6 +252,7 @@ a {
   stroke-dasharray: 117.38;
   animation: dashSignature 2s linear;
   animation-delay: 2s;
+  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -246,6 +267,7 @@ svg.logo-animate {
   opacity: 0;
   animation: fadeInSVG 2s linear;
   animation-delay: 1s;
+  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   transition: all .25s ease-in-out;
 }

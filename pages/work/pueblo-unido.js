@@ -139,18 +139,18 @@ export default class PuebloUnido extends React.Component {
         return (
         <div>
             <Layout 
-            pageMeta={{
+              pageMeta={{
                 title: "Pueblo Unido - Work - Web Design and Development | John Bentley Creative",
                 keywords: ["freelance", "web designer", "web developer", "portland", "oregon", "john bentley creative"],
                 description: "View examples of my work at Pueblo Unido PDX, including brand redesigns and social media enhancements.",
                 URL: "https://www.jwbentley.com/work"
-            }}
-            navigationClassName={'z-navigation lg:h-128 navigation h-56'}
-            fadeInNav={false}
-            logoWidth={'7%'}
-            logoClassName={'relative cursor-pointer logo'}
-            drawAnimations={false}
-            animationClassName={'navigation mr-8 sm:w-full md:w-auto'}
+              }}
+              navigationClassName={'z-navigation lg:h-128 navigation h-56'}
+              fadeInNav={false}
+              logoWidth={'7%'}
+              logoClassName={'relative cursor-pointer logo'}
+              drawAnimations={false}
+              animationClassName={'navigation mr-8 sm:w-full md:w-auto'}
             >
             <ImageHeader 
                 heading={"Work"}
@@ -185,13 +185,21 @@ export default class PuebloUnido extends React.Component {
                   represents the beautiful diversity of the people of the United States.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido original and new logos" onClick={this.handleOpenModal1} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/old-and-new.png" loading="lazy" />
+                  <picture>
+                    <source type="image/webp" srcSet="../static/img/webp/old-and-new.webp" />
+                    <source type="image/png" srcSet="../static/img/png/old-and-new.png" />
+                    <img alt="Pueblo Unido original and new logos" onClick={this.handleOpenModal1} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/png/old-and-new.png" loading="lazy" />
+                  </picture>
                   <ReactModal 
                     isOpen={this.state.showModal1}
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal1}>X</button>
-                    <img onClick={this.handleCloseModal1} className="sm:m-auto md:m-auto cursor-pointer w-full" src="../static/pueblo-unido/old-and-new.png" loading="lazy" />
+                    <picture>
+                      <source type="image/webp" srcSet="../static/img/webp/old-and-new.webp" />
+                      <source type="image/png" srcSet="../static/img/png/old-and-new.png" />
+                      <img alt="Pueblo Unido original and new logos" onClick={this.handleCloseModal1} className="sm:m-auto md:m-auto cursor-pointer w-full" src="../static/img/png/old-and-new.png" loading="lazy" />
+                    </picture>
                   </ReactModal>                
                 </div>
               </div> 
@@ -207,14 +215,22 @@ export default class PuebloUnido extends React.Component {
                   look and feel across all the major marketing touchpoints.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleOpenModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/flyer-ec-mention.svg" loading="lazy" />
+                  <picture>
+                    <source type="image/svg" srcSet="../static/img/svg/flyer-ec-mention.svg" />
+                    <source type="image/svg" srcSet="../static/img/svg/flyer-ec-mention.svg" />
+                    <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleOpenModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/svg/flyer-ec-mention.svg" loading="lazy" />
+                  </picture>
                   <ReactModal 
                     isOpen={this.state.showModal2}
                     contentLabel="Minimal Modal Example"
                     style={customStyles}
                   >
                     <button onClick={this.handleCloseModal2}>X</button>
-                    <img onClick={this.handleCloseModal2} className="sm:m-auto md:m-0 cursor-pointer w-full" src="../static/pueblo-unido/flyer-ec-mention.svg" loading="lazy" />
+                    <picture>
+                      <source type="image/svg" srcSet="../static/img/svg/flyer-ec-mention.svg" />
+                      <source type="image/svg" srcSet="../static/img/svg/flyer-ec-mention.svg" />
+                      <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleCloseModal2} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/svg/flyer-ec-mention.svg" loading="lazy" />
+                    </picture>
                   </ReactModal>
                 </div>
               </div>
@@ -236,13 +252,17 @@ export default class PuebloUnido extends React.Component {
                   comp was approved, I coded the website by hand using HTML+CSS.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido Anniversary Gala landing page comp" onClick={this.handleOpenModal3} className="cursor-pointer" src="../static/pueblo-unido/gala-landing-page.svg" loading="lazy" />
+                  <img alt="Pueblo Unido Anniversary Gala landing page comp" onClick={this.handleOpenModal3} className="cursor-pointer" src="../static/svg/gala-landing-page.svg" loading="lazy" />
                   <ReactModal 
                     isOpen={this.state.showModal3}
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal3}>X</button>
-                    <img onClick={this.handleCloseModal3} className="cursor-pointer" src="../static/pueblo-unido/gala-landing-page.svg" loading="lazy" />
+                    <picture>
+                      <source type="image/svg" srcSet="../static/img/svg/gala-landing-page.svg" />
+                      <source type="image/svg" srcSet="../static/img/svg/gala-landing-page.svg" />
+                      <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleCloseModal3} className="cursor-pointer" src="../static/img/svg/gala-landing-page.svg" loading="lazy" />
+                    </picture>
                   </ReactModal>
                 </div>
               </div> 
@@ -259,13 +279,21 @@ export default class PuebloUnido extends React.Component {
                   sent to 700+ users via MailChimp.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Various social media and newsletter designs" onClick={this.handleOpenModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/social-media-collage.svg" loading="lazy" />
+                  <picture>
+                    <source type="image/svg" srcSet="../static/img/svg/social-media-collage.svg" />
+                    <source type="image/svg" srcSet="../static/img/svg/social-media-collage.svg" />
+                    <img alt="Various social media and newsletter designs" onClick={this.handleOpenModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/svg/social-media-collage.svg" loading="lazy" />
+                  </picture>
                   <ReactModal 
                     isOpen={this.state.showModal4}
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal4}>X</button>
-                    <img onClick={this.handleCloseModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/pueblo-unido/social-media-collage--black.svg" loading="lazy" />
+                    <picture>
+                      <source type="image/svg" srcSet="../static/img/svg/social-media-collage--black.svg" />
+                      <source type="image/svg" srcSet="../static/img/svg/social-media-collage--black.svg" />
+                      <img alt="Various social media and newsletter designs" onClick={this.handleCloseModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/svg/social-media-collage--black.svg" loading="lazy" />
+                    </picture>
                   </ReactModal>
                 </div>
               </div>

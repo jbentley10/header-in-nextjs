@@ -28,7 +28,9 @@ const ImageTextSplit = (props) => {
 		<div className="image-text-split p-12 text-center bg-dark-background md:align-middle text-white">
 			<div className="image-text-split__image-container sm:text-center sm:my-6 md:my-0 sm:m-auto sm:w-3/5 md:w-2/5 sm:block md:inline-block md:align-middle">
 			<VisibilitySensor onChange={imageInView}>
-				<img id="image-text-split__image" className="image-text-split__image rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src={imageSrc} alt={imageAlt} loading="lazy" />
+				<picture>
+					<img src={imageSrc} alt={imageAlt} id="image-text-split__image" className="image-text-split__image rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src="../static/img/jpg/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" loading="lazy" />
+        </picture>
 			</VisibilitySensor>
 			</div>
 			<VisibilitySensor onChange={textInView}>

@@ -133,18 +133,18 @@ export default class PuebloUnido extends React.Component {
         return (
         <div>
             <Layout 
-            pageMeta={{
+              pageMeta={{
                 title: "LINE FRIENDS - Work - Web Design and Development | John Bentley Creative",
                 keywords: ["freelance", "web designer", "web developer", "portland", "oregon", "john bentley creative"],
                 description: "View examples of my work for LINE FRIENDS, including upgrading the look and feel of the site on Shopify.",
                 URL: "https://www.jwbentley.com/work"
-            }}
-            navigationClassName={'z-navigation lg:h-128 navigation h-56'}
-            fadeInNav={false}
-            logoWidth={'7%'}
-            logoClassName={'relative cursor-pointer logo'}
-            drawAnimations={false}
-            animationClassName={'navigation mr-8 sm:w-full md:w-auto'}
+              }}
+              navigationClassName={'z-navigation lg:h-128 navigation h-56'}
+              fadeInNav={false}
+              logoWidth={'7%'}
+              logoClassName={'relative cursor-pointer logo'}
+              drawAnimations={false}
+              animationClassName={'navigation mr-8 sm:w-full md:w-auto'}
             >
               <ImageHeader 
                   heading={"Work"}
@@ -187,9 +187,9 @@ export default class PuebloUnido extends React.Component {
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
                   <picture>
-                    <source type="image/webp" srcSet="../static/line-friends/line-friends-home.webp" />
-                    <source type="image/jpeg" srcSet="../static/line-friends/line-friends-home.jpg" />
-                    <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/line-friends/line-friends-home.webp" loading="lazy" />
+                    <source type="image/webp" srcSet="../static/img/webp/line-friends-home.webp" />
+                    <source type="image/jpeg" srcSet="../static/img/jpg/line-friends-home.jpg" />
+                    <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/line-friends-home.jpg" loading="lazy" />
                   </picture>
                   <ReactModal 
                     isOpen={this.state.showModal9}
@@ -197,9 +197,9 @@ export default class PuebloUnido extends React.Component {
                   >
                     <button onClick={this.handleCloseModal9}>X</button>
                     <picture>
-                      <source type="image/webp" srcSet="../static/line-friends/line-friends-home.webp" />
-                      <source type="image/jpeg" srcSet="../static/line-friends/line-friends-home.jpg" />
-                      <img onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="../static/line-friends/line-friends-home.webp" loading="lazy" />
+                      <source type="image/webp" srcSet="../static/img/webp/line-friends-home.webp" />
+                      <source type="image/jpeg" srcSet="../static/img/jpg/line-friends-home.jpg" />
+                      <img onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="../static/img/jpg/line-friends-home.jpg" loading="lazy" />
                     </picture>
                   </ReactModal>
                   

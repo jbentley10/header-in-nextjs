@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 function addDefaultSrc(ev) {
-  ev.target.src = '../static/blob-background.png'
+  ev.target.src = '../static/img/png/blob-background.png';
 }
 
 const BlobsTransition = (props) => {
@@ -12,9 +12,9 @@ const BlobsTransition = (props) => {
 
   return (
     <picture>
-      <source type="image/webp" srcSet="../static/blob-background.webp" />
-      <source type="image/jpeg" srcSet="../static/blob-background.png" />
-      <img className={className + " bg-dark-background w-full"} src="../static/blob-background.webp" alt="Circles and Dots" loading="lazy" />
+      <source type="image/webp" srcSet="../static/img/webp/blob-background.webp" />
+      <source type="image/png" srcSet="../static/img/png/blob-background.png" />
+      <img className={className + " bg-dark-background w-full"} src="../static/img/png/blob-background.png" alt="Circles and Dots" loading="lazy" />
     </picture>
   )
 }

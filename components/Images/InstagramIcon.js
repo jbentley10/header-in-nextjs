@@ -9,7 +9,11 @@ const InstagramIcon = (props) => {
 
   return (
     <a href="https://www.instagram.com/johnbentleycreative/" target="blank">
-      <img className={className} src="../static/instagram.png" alt="John Bentley on Instagram" loading="lazy" />
+      <picture>
+        <source type="image/webp" srcSet="../static/img/webp/instagram.webp" />
+        <source type="image/png" srcSet="../static/img/png/instagram.png" />
+        <img alt="John Bentley Creative on Instagram" className={className} src="../static/img/png/instagram.png" loading="lazy" />
+      </picture>
     </a>
   )
 }

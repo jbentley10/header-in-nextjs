@@ -77,15 +77,15 @@ export default function Home() {
         <ThreeColumnIcons 
           Block1Copy='Design and Develop'
           Block1ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-          Block1ImageSource='../static/pueblo-unido/pueblo-unido-mockup.jpg'
+          Block1FileName='pueblo-unido-mockup'
           Block1Link='/work/pueblo-unido'
           Block2Copy='Elevate Your Brand'
           Block2ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-          Block2ImageSource='../static/tripwire/tripwire-mockup.jpg'
+          Block2FileName='tripwire-mockup'
           Block2Link='/work/tripwire'
           Block3Copy='Drive Results'
           Block3ClassName='move-up three-column-icons__container bg-dark-background sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-          Block3ImageSource='../static/line-friends/line-friends-mockup.jpg'
+          Block3FileName='line-friends-mockup'
           Block3Link='/work/line-friends'
         >
 
@@ -100,7 +100,7 @@ export default function Home() {
         <BlobsTransition />
         <ImageTextSplit
           copy={<ImageTextSplitCopy />}
-          imageSrc={'../static/profile.jpg'}
+          imageSrc={'../static/jpg/profile.jpg'}
           imageAlt={'John Bentley Creative, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>

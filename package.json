@@ -9,7 +9,8 @@
     "start": "next start -p $PORT",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "imagemin": "node webp.js"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +29,10 @@
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sourcemaps": "^2.6.5",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
     "isomorphic-unfetch": "^3.0.0",
+    "modernizr": "^3.11.2",
     "next": "^9.0.5",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.9.0",

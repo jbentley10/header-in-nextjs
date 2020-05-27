@@ -189,9 +189,9 @@ export default class PuebloUnido extends React.Component {
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
                   <picture>
-                    <source type="image/webp" srcSet="../static/tripwire/seo-report.webp" />
-                    <source type="image/jpeg" srcSet="../static/tripwire/seo-report.jpg" />
-                    <img alt="SEO search optimization report" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/seo-report.webp" loading="lazy" />
+                    <source type="image/webp" srcSet="../static/img/webp/seo-report.webp" />
+                    <source type="image/jpeg" srcSet="../static/img/jpg/seo-report.jpg" />
+                    <img alt="SEO search optimization report" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/seo-report.jpg" loading="lazy" />
                   </picture>
                   <ReactModal 
                     isOpen={this.state.showModal5}
@@ -199,9 +199,9 @@ export default class PuebloUnido extends React.Component {
                   >
                     <button onClick={this.handleCloseModal5}>X</button>
                     <picture>
-                      <source type="image/webp" srcSet="../static/tripwire/seo-report.webp" />
-                      <source type="image/jpeg" srcSet="../static/tripwire/seo-report.jpg" />
-                      <img onClick={this.handleCloseModal5} className="sm:m-auto md:m-auto cursor-pointer" src="../static/tripwire/seo-report.webp" loading="lazy" />
+                      <source type="image/webp" srcSet="../static/img/webp/seo-report.webp" />
+                      <source type="image/jpeg" srcSet="../static/img/jpg/seo-report.jpg" />
+                      <img onClick={this.handleCloseModal5} className="sm:m-auto md:m-auto cursor-pointer" src="../static/img/jpg/seo-report.jpg" loading="lazy" />
                     </picture>
                   </ReactModal>
                   
@@ -225,9 +225,9 @@ export default class PuebloUnido extends React.Component {
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
                   <picture>
-                    <source type="image/webp" srcSet="../static/tripwire/tripwire-mockup.webp" />
-                    <source type="image/jpeg" srcSet="../static/tripwire/tripwire-mockup.jpg" />
-                    <img onClick={this.handleOpenModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/tripwire-mockup.webp" loading="lazy" />
+                    <source type="image/webp" srcSet="../static/img/webp/tripwire-mockup.webp" />
+                    <source type="image/jpeg" srcSet="../static/img/jpg/tripwire-mockup.jpg" />
+                    <img onClick={this.handleOpenModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/tripwire-mockup.jpg" loading="lazy" />
                   </picture>                  
                   <ReactModal 
                     isOpen={this.state.showModal6}
@@ -235,9 +235,9 @@ export default class PuebloUnido extends React.Component {
                   >
                     <button onClick={this.handleCloseModal6}>X</button>
                     <picture>
-                      <source type="image/webp" srcSet="../static/tripwire/tripwire-mockup.webp" />
-                      <source type="image/jpeg" srcSet="../static/tripwire/tripwire-mockup.jpg" />
-                      <img onClick={this.handleCloseModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/tripwire-mockup.webp" loading="lazy" />
+                      <source type="image/webp" srcSet="../static/img/webp/tripwire-mockup.webp" />
+                      <source type="image/jpeg" srcSet="../static/img/jpb/tripwire-mockup.jpg" />
+                      <img onClick={this.handleCloseModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/tripwire-mockup.jpg" loading="lazy" />
                     </picture>
                   </ReactModal>
                 </div>
@@ -260,9 +260,9 @@ export default class PuebloUnido extends React.Component {
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
                   <picture>
-                    <source type="image/webp" srcSet="../static/tripwire/home-page-design.webp" />
-                    <source type="image/jpeg" srcSet="../static/tripwire/home-page-design.jpg" />
-                    <img onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" loading="lazy" />
+                    <source type="image/webp" srcSet="../static/img/webp/home-page-design.webp" />
+                    <source type="image/jpeg" srcSet="../static/img/jpg/home-page-design.jpg" />
+                    <img onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/img/jpg/home-page-design.jpg" loading="lazy" />
                   </picture>                  
                   <ReactModal 
                     isOpen={this.state.showModal7}
@@ -270,9 +270,9 @@ export default class PuebloUnido extends React.Component {
                   >
                     <button onClick={this.handleCloseModal7}>X</button>
                     <picture>
-                      <source type="image/webp" srcSet="../static/tripwire/home-page-design.webp" />
-                      <source type="image/jpeg" srcSet="../static/tripwire/home-page-design.jpg" />
-                      <img onClick={this.handleCloseModal7} className="cursor-pointer" src="../static/tripwire/home-page-design.webp" loading="lazy" />
+                      <source type="image/webp" srcSet="../static/img/webp/home-page-design.webp" />
+                      <source type="image/jpeg" srcSet="../static/img/jpg/home-page-design.jpg" />
+                      <img onClick={this.handleCloseModal7} className="cursor-pointer" src="../static/img/jpg/home-page-design.jpg" loading="lazy" />
                     </picture>
                   </ReactModal>
                 </div>
@@ -294,9 +294,9 @@ export default class PuebloUnido extends React.Component {
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
                   <picture>
-                    <source type="image/webp" srcSet="../static/tripwire/optimization.webp" />
-                    <source type="image/jpeg" srcSet="../static/tripwire/optimization.jpg" />
-                    <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp" loading="lazy" />
+                    <source type="image/webp" srcSet="../static/img/webp/optimization.webp" />
+                    <source type="image/jpeg" srcSet="../static/img/jpg/optimization.jpg" />
+                    <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/optimization.jpg" loading="lazy" />
                   </picture>
                   <ReactModal 
                     isOpen={this.state.showModal8}
@@ -304,9 +304,9 @@ export default class PuebloUnido extends React.Component {
                   >
                     <button onClick={this.handleCloseModal8}>X</button>
                     <picture>
-                      <source type="image/webp" srcSet="../static/tripwire/optimization.webp" />
-                      <source type="image/jpeg" srcSet="../static/tripwire/optimization.jpg" />
-                      <img onClick={this.handleCloseModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/tripwire/optimization.webp" loading="lazy" />
+                      <source type="image/webp" srcSet="../static/img/webp/optimization.webp" />
+                      <source type="image/jpeg" srcSet="../static/img/jpg/optimization.jpg" />
+                      <img onClick={this.handleCloseModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/optimization.jpg" loading="lazy" />
                     </picture>
                   </ReactModal>
                 </div>
