@@ -49,15 +49,15 @@ export default class Work extends React.Component {
             <ThreeColumnIcons 
               Block1Copy='Pueblo Unido PDX'
               Block1ClassName='move-up three-column-icons__container bg-transparent sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-              Block1ImageSource='../static/pueblo-unido/pueblo-unido-mockup.jpg'
+              Block1FileName='pueblo-unido-mockup'
               Block1Link='/work/pueblo-unido#pueblo-unido'
               Block2Copy='Tripwire'
               Block2ClassName='move-up three-column-icons__container bg-transparent sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-              Block2ImageSource='../static/tripwire/tripwire-mockup.jpg'
+              Block2FileName='tripwire-mockup'
               Block2Link='/work/tripwire#tripwire'
               Block3Copy='Line Friends'
               Block3ClassName='move-up three-column-icons__container bg-transparent sm:block md:inline-block sm:py-12 md:p-8 mb-7'
-              Block3ImageSource='../static/line-friends/line-friends-mockup.jpg'
+              Block3FileName='line-friends-mockup'
               Block3Link='/work/line-friends#line-friends'
             >
             </ThreeColumnIcons>

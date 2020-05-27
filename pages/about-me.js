@@ -72,7 +72,7 @@ export default function Home() {
 
         <ImageTextSplit
           copy={<MyPromiseCopy />}
-          imageSrc={'../static/photo-booth.jpg'}
+          imageSrc={'photo-booth'}
           imageAlt={'About Me - web developer and web designer'}
         >
         </ImageTextSplit>

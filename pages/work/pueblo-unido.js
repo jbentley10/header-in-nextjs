@@ -252,17 +252,13 @@ export default class PuebloUnido extends React.Component {
                   comp was approved, I coded the website by hand using HTML+CSS.</p>
                 </div>
                 <div className="image-content sm:w-full md:w-2/5">
-                  <img alt="Pueblo Unido Anniversary Gala landing page comp" onClick={this.handleOpenModal3} className="cursor-pointer" src="../static/svg/gala-landing-page.svg" loading="lazy" />
+                  <img alt="Pueblo Unido Anniversary Gala landing page comp" onClick={this.handleOpenModal3} className="cursor-pointer" src="../static/img/svg/gala-landing-page.svg" loading="lazy" />
                   <ReactModal 
                     isOpen={this.state.showModal3}
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal3}>X</button>
-                    <picture>
-                      <source type="image/svg" srcSet="../static/img/svg/gala-landing-page.svg" />
-                      <source type="image/svg" srcSet="../static/img/svg/gala-landing-page.svg" />
-                      <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleCloseModal3} className="cursor-pointer" src="../static/img/svg/gala-landing-page.svg" loading="lazy" />
-                    </picture>
+                    <img alt="Pueblo Unido flyer for potential clients" onClick={this.handleCloseModal3} className="cursor-pointer" src="../static/img/svg/gala-landing-page.svg" loading="lazy" />
                   </ReactModal>
                 </div>
               </div> 
@@ -289,11 +285,7 @@ export default class PuebloUnido extends React.Component {
                     contentLabel="Minimal Modal Example"
                   >
                     <button onClick={this.handleCloseModal4}>X</button>
-                    <picture>
-                      <source type="image/svg" srcSet="../static/img/svg/social-media-collage--black.svg" />
-                      <source type="image/svg" srcSet="../static/img/svg/social-media-collage--black.svg" />
-                      <img alt="Various social media and newsletter designs" onClick={this.handleCloseModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/svg/social-media-collage--black.svg" loading="lazy" />
-                    </picture>
+                    <img alt="Various social media and newsletter designs" onClick={this.handleCloseModal4} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/svg/social-media-collage--black.svg" loading="lazy" />
                   </ReactModal>
                 </div>
               </div>
