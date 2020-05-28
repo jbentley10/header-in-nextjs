@@ -40,11 +40,11 @@ class Layout extends Component {
 
           <link rel="shortcut icon" href="/static/favicon.ico" />
 
-          <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" async />
+          <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" defer />
 
           <link rel="canonical" href={this.props.pageMeta.URL} />
 
-          <script type="text/javascript" src="../static/webp-modernizr.js"></script>
+          <script type="text/javascript" src="../static/webp-modernizr.js" defer />
         </Head>
 
         {/* Google Tag Manager */}
