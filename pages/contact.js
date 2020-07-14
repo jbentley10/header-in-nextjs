@@ -20,6 +20,10 @@ const MainText = () =>
     <p><FontAwesomeIcon icon="phone" className="w-16 shadow-none p-4 cursor-pointer inline-block align-middle" /><a href="tel:+17605324516" className="sm:text-xl text-link-purple hover:text-link-purple-darker align-middle"> (760) 532-4516</a></p>
     <p className="text-lg">I am not currently accepting new projects, but please feel free to reach out! I would be happy to schedule a consultation with you, and plan a project for a later date.</p> 
     <p>&nbsp;</p>
+    {/* Calendly inline widget begin */}
+    {/* <div className="calendly-inline-widget w-10 h-8" data-url="https://calendly.com/jwbentley"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script> */}
+    {/* Calendly inline widget end */}
     <p>&nbsp;</p>
     <p className="text-lg">Interested in small business web design packages? Please visit the <Link href="/services"><a className="text-link-purple hover:text-link-purple-darker">services</a></Link> page.</p>
   </div>
