@@ -11,7 +11,7 @@ import CallToAction from '../components/CallToAction';
 import DotsTransition from '../components/Images/DotsTransition';
 import BlobsTransition from '../components/Images/BlobsTransition';
 import HorizontalBar from '../components/Images/HorizontalBar';
-import TwoTextSplit from '../components/TwoTextSplit';
+import TwoTextSplit from '../components/TwoTextSplit'; 
 
 const HeadingText = "Create. Analyze. Elevate.";
 const Subtext = "I am a freelance web design and development professional, based in Portland, Oregon.";
