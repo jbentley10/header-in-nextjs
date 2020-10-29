@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
+import Image from 'next/image';
 
 function imageInView (partialVisibility) {
 	if (partialVisibility == true) {
@@ -27,12 +28,8 @@ const ImageTextSplit = (props) => {
 	return (
 		<div className="image-text-split p-12 text-center bg-dark-background md:align-middle text-white">
 			<div className="image-text-split__image-container sm:text-center sm:my-6 md:my-0 sm:m-auto sm:w-3/5 md:w-2/5 sm:block md:inline-block md:align-middle">
-			<VisibilitySensor onChange={imageInView}>
-				<picture>
-					<source type="image/jpg" srcSet={"../static/img/jpg/" + imageSrc + ".jpg"} />
-					<source type="image/webp" srcSet={"../static/img/webp/" + imageSrc + ".webp"} />
-					<img id="image-text-split__image" alt={imageAlt} className="image-text-split__image rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src={"../static/img/jpg/" + imageSrc + ".jpg"} loading="lazy" />
-        </picture>
+			<VisibilitySensor onChange={imageInView}>			
+				<Image unsized id="image-text-split__image" alt={imageAlt} className="image-text-split__image rounded-full h-full sm:w-full md:w-4/6 flex items-center justify-center" src={"/../static/img/jpg/" + imageSrc + ".jpg"} loading="lazy" />        
 			</VisibilitySensor>
 			</div>
 			<VisibilitySensor onChange={textInView}>

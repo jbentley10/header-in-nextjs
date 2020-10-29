@@ -2,6 +2,7 @@ import '../../styles/styles.css';
 
 import React from 'react';
 import ReactModal from 'react-modal';
+import Image from 'next/image';
 
 import Layout from '../../components/Layout';
 import Button from '../../components/Button';
@@ -187,22 +188,14 @@ export default class PuebloUnido extends React.Component {
                   <p className="text-white">During just 2 weeks of SEO on the site, I was able to increase search 
                   visibility by 25%. Page one rankings increased substantially as well. </p>
                 </div>
-                <div className="image-content sm:w-full md:w-2/5">
-                  <picture>
-                    <source type="image/webp" srcSet="../static/img/webp/seo-report.webp" />
-                    <source type="image/jpeg" srcSet="../static/img/jpg/seo-report.jpg" />
-                    <img alt="SEO search optimization report" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/seo-report.jpg" loading="lazy" />
-                  </picture>
+                <div className="image-content sm:w-full md:w-2/5">                                      
+                  <Image unsized alt="SEO search optimization report" onClick={this.handleOpenModal5} className="sm:m-auto md:m-0 cursor-pointer" src="/../static/img/jpg/seo-report.jpg" loading="lazy" />                  
                   <ReactModal 
                     isOpen={this.state.showModal5}
                     contentLabel="Minimal Modal Example"
                   >
-                    <button onClick={this.handleCloseModal5}>X</button>
-                    <picture>
-                      <source type="image/webp" srcSet="../static/img/webp/seo-report.webp" />
-                      <source type="image/jpeg" srcSet="../static/img/jpg/seo-report.jpg" />
-                      <img onClick={this.handleCloseModal5} className="sm:m-auto md:m-auto cursor-pointer" src="../static/img/jpg/seo-report.jpg" loading="lazy" />
-                    </picture>
+                    <button onClick={this.handleCloseModal5}>X</button>                                          
+                    <Image unsized onClick={this.handleCloseModal5} className="sm:m-auto md:m-auto cursor-pointer" src="/../static/img/jpg/seo-report.jpg" loading="lazy" />                    
                   </ReactModal>
                   
                 </div>
@@ -223,22 +216,14 @@ export default class PuebloUnido extends React.Component {
                   were approved, I set out at building the page in Sitecore (again, coding and integrating 
                   new components if needed). </p>
                 </div>
-                <div className="image-content sm:w-full md:w-2/5">
-                  <picture>
-                    <source type="image/webp" srcSet="../static/img/webp/tripwire-mockup.webp" />
-                    <source type="image/jpeg" srcSet="../static/img/jpg/tripwire-mockup.jpg" />
-                    <img onClick={this.handleOpenModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/tripwire-mockup.jpg" loading="lazy" />
-                  </picture>                  
+                <div className="image-content sm:w-full md:w-2/5">                                      
+                  <Image unsized onClick={this.handleOpenModal6} className="sm:m-auto md:m-0 cursor-pointer" src="/../static/img/jpg/tripwire-mockup.jpg" loading="lazy" />                  
                   <ReactModal 
                     isOpen={this.state.showModal6}
                     contentLabel="Minimal Modal Example"
                   >
-                    <button onClick={this.handleCloseModal6}>X</button>
-                    <picture>
-                      <source type="image/webp" srcSet="../static/img/webp/tripwire-mockup.webp" />
-                      <source type="image/jpeg" srcSet="../static/img/jpb/tripwire-mockup.jpg" />
-                      <img onClick={this.handleCloseModal6} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/tripwire-mockup.jpg" loading="lazy" />
-                    </picture>
+                    <button onClick={this.handleCloseModal6}>X</button>                                          
+                    <Image unsized onClick={this.handleCloseModal6} className="sm:m-auto md:m-0 cursor-pointer" src="/../static/img/jpg/tripwire-mockup.jpg" loading="lazy" />                    
                   </ReactModal>
                 </div>
               </div>
@@ -258,22 +243,14 @@ export default class PuebloUnido extends React.Component {
                   solution, this new solution for the site offers greater flexibility for component styling, and 
                   will prevent Tripwire’s from any downtime during code deployments.</p>
                 </div>
-                <div className="image-content sm:w-full md:w-2/5">
-                  <picture>
-                    <source type="image/webp" srcSet="../static/img/webp/home-page-design.webp" />
-                    <source type="image/jpeg" srcSet="../static/img/jpg/home-page-design.jpg" />
-                    <img onClick={this.handleOpenModal7} className="cursor-pointer" src="../static/img/jpg/home-page-design.jpg" loading="lazy" />
-                  </picture>                  
+                <div className="image-content sm:w-full md:w-2/5">                                      
+                  <Image unsized onClick={this.handleOpenModal7} className="cursor-pointer" src="/../static/img/jpg/home-page-design.jpg" loading="lazy" />                  
                   <ReactModal 
                     isOpen={this.state.showModal7}
                     contentLabel="Minimal Modal Example"
                   >
-                    <button onClick={this.handleCloseModal7}>X</button>
-                    <picture>
-                      <source type="image/webp" srcSet="../static/img/webp/home-page-design.webp" />
-                      <source type="image/jpeg" srcSet="../static/img/jpg/home-page-design.jpg" />
-                      <img onClick={this.handleCloseModal7} className="cursor-pointer" src="../static/img/jpg/home-page-design.jpg" loading="lazy" />
-                    </picture>
+                    <button onClick={this.handleCloseModal7}>X</button>                                          
+                    <Image unsized onClick={this.handleCloseModal7} className="cursor-pointer" src="/../static/img/jpg/home-page-design.jpg" loading="lazy" />                    
                   </ReactModal>
                 </div>
               </div> 
@@ -292,22 +269,14 @@ export default class PuebloUnido extends React.Component {
                   home page, combined with the knowledge of how they scroll and where they stop scrolling, gave 
                   me a clear path on developing this highly-successful test. </p>
                 </div>
-                <div className="image-content sm:w-full md:w-2/5">
-                  <picture>
-                    <source type="image/webp" srcSet="../static/img/webp/optimization.webp" />
-                    <source type="image/jpeg" srcSet="../static/img/jpg/optimization.jpg" />
-                    <img alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/optimization.jpg" loading="lazy" />
-                  </picture>
+                <div className="image-content sm:w-full md:w-2/5">                                      
+                  <Image unsized alt="Homepage A/B test for Tripwire" onClick={this.handleOpenModal8} className="sm:m-auto md:m-0 cursor-pointer" src="/../static/img/jpg/optimization.jpg" loading="lazy" />                  
                   <ReactModal 
                     isOpen={this.state.showModal8}
                     contentLabel="Minimal Modal Example"
                   >
-                    <button onClick={this.handleCloseModal8}>X</button>
-                    <picture>
-                      <source type="image/webp" srcSet="../static/img/webp/optimization.webp" />
-                      <source type="image/jpeg" srcSet="../static/img/jpg/optimization.jpg" />
-                      <img onClick={this.handleCloseModal8} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/optimization.jpg" loading="lazy" />
-                    </picture>
+                    <button onClick={this.handleCloseModal8}>X</button>                                          
+                    <Image unsized onClick={this.handleCloseModal8} className="sm:m-auto md:m-0 cursor-pointer" src="/../static/img/jpg/optimization.jpg" loading="lazy" />                    
                   </ReactModal>
                 </div>
               </div> 

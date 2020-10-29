@@ -1,7 +1,7 @@
 import '../styles/styles.css';
 import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
-
+import Image from 'next/image';
 import Button from './Button.js';
 
 function image1InView (partialVisibility) {
@@ -31,19 +31,11 @@ const ImageTextButtonSplit = (props) => {
       </div>
       
       <div className="image-text-button-split__image-container sm:text-center sm:my-8 md:mb-12 sm:m-auto sm:w-full md:w-2/5 sm:block md:inline-block md:align-middle">
-        <VisibilitySensor onChange={image1InView}>
-          <picture>
-            <source type="image/webp" srcSet="../static/img/webp/me-hike.webp" />
-            <source type="image/jpeg" srcSet="../static/img/jpg/me-hike.jpg" />
-            <img id="image-text-split__image-1" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/img/jpg/me-hike.jpg" alt="Climbing and hiking just outside of Portland" loading="lazy" />
-          </picture>
+        <VisibilitySensor onChange={image1InView}>                    
+          <Image unsized id="image-text-split__image-1" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="/../static/img/jpg/me-hike.jpg" alt="Climbing and hiking just outside of Portland" loading="lazy" />          
         </VisibilitySensor>
-        <VisibilitySensor onChange={image2InView}>
-          <picture>
-            <source type="image/webp" srcSet="../static/img/webp/me-nepal.webp" />
-            <source type="image/jpeg" srcSet="../static/img/jpg/me-nepal.jpg" />
-            <img id="image-text-split__image-2" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="../static/img/jpg/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" loading="lazy" />
-          </picture>
+        <VisibilitySensor onChange={image2InView}>                    
+          <Image unsized id="image-text-split__image-2" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="/../static/img/jpg/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" loading="lazy" />          
         </VisibilitySensor>
       </div>
 

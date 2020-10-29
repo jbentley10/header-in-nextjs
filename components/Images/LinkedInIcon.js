@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import Image from 'next/image';
 
 const LinkedInIcon = (props) => {
   const {
@@ -9,11 +10,7 @@ const LinkedInIcon = (props) => {
 
     return (
       <a href="https://www.linkedin.com/in/jwbentle" target="blank">
-        <picture>
-          <source type="image/webp" srcSet="../static/img/webp/linkedin.webp" />
-          <source type="image/png" srcSet="../static/img/png/linkedin.png" />
-          <img alt="John Bentley Creative on LinkedIn" className={className} src="../static/img/png/instagram.png" loading="lazy" />
-        </picture>
+        <Image unsized alt="John Bentley Creative on LinkedIn" className={className} src="/../static/img/png/instagram.png" loading="lazy" />        
       </a>
     )
   }

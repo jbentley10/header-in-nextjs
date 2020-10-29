@@ -2,6 +2,7 @@ import '../../styles/styles.css';
 
 import React from 'react';
 import ReactModal from 'react-modal';
+import Image from 'next/image';
 
 import Layout from '../../components/Layout';
 import Button from '../../components/Button';
@@ -185,22 +186,14 @@ export default class PuebloUnido extends React.Component {
                   drop new templates onto pages. Given only wireframes to complete this project, we were able 
                   to create a beautiful site in only 2 weeks.</p>
                 </div>
-                <div className="image-content sm:w-full md:w-2/5">
-                  <picture>
-                    <source type="image/webp" srcSet="../static/img/webp/line-friends-home.webp" />
-                    <source type="image/jpeg" srcSet="../static/img/jpg/line-friends-home.jpg" />
-                    <img alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="../static/img/jpg/line-friends-home.jpg" loading="lazy" />
-                  </picture>
+                <div className="image-content sm:w-full md:w-2/5">                                      
+                  <Image unsized alt="LINE FRIENDS store home page implemented in Shopify" onClick={this.handleOpenModal9} className="sm:m-auto md:m-0 cursor-pointer" src="/../static/img/jpg/line-friends-home.jpg" loading="lazy" />                  
                   <ReactModal 
                     isOpen={this.state.showModal9}
                     contentLabel="Minimal Modal Example"
                   >
-                    <button onClick={this.handleCloseModal9}>X</button>
-                    <picture>
-                      <source type="image/webp" srcSet="../static/img/webp/line-friends-home.webp" />
-                      <source type="image/jpeg" srcSet="../static/img/jpg/line-friends-home.jpg" />
-                      <img onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="../static/img/jpg/line-friends-home.jpg" loading="lazy" />
-                    </picture>
+                    <button onClick={this.handleCloseModal9}>X</button>                                          
+                    <Image unsized onClick={this.handleCloseModal9} className="sm:m-auto md:m-auto cursor-pointer" src="/../static/img/jpg/line-friends-home.jpg" loading="lazy" />                    
                   </ReactModal>
                   
                 </div>

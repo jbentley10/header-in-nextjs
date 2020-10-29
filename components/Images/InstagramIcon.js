@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import Image from 'next/image';
 
 const InstagramIcon = (props) => {
   const {
@@ -8,12 +9,8 @@ const InstagramIcon = (props) => {
   } = props
 
   return (
-    <a href="https://www.instagram.com/johnbentleycreative/" target="blank">
-      <picture>
-        <source type="image/webp" srcSet="../static/img/webp/instagram.webp" />
-        <source type="image/png" srcSet="../static/img/png/instagram.png" />
-        <img alt="John Bentley Creative on Instagram" className={className} src="../static/img/png/instagram.png" loading="lazy" />
-      </picture>
+    <a href="https://www.instagram.com/johnbentleycreative/" target="blank">      
+      <Image unsized alt="John Bentley Creative on Instagram" className={className} src="/../static/img/png/instagram.png" loading="lazy" />      
     </a>
   )
 }
