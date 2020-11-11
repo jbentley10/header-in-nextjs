@@ -10,7 +10,7 @@ const LinkedInIcon = (props) => {
 
     return (
       <a href="https://www.linkedin.com/in/jwbentle" target="blank">
-        <Image unsized alt="John Bentley Creative on LinkedIn" className={className} src="/../static/img/png/instagram.png" loading="lazy" />        
+        <Image unsized alt="John Bentley Creative on LinkedIn" className={className} src="/../public/linkedin.png" loading="lazy" />        
       </a>
     )
   }

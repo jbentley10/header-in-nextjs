@@ -10,7 +10,7 @@ const FacebookIcon = (props) => {
 
   return (
     <a href="https://www.facebook.com/johnbentleycreative/" target="blank">      
-      <Image unsized alt="John Bentley Creative on Facebook" className={className} src="/../static/img/png/facebook.png" alt="Circles and Dots" loading="lazy" />
+      <Image unsized alt="John Bentley Creative on Facebook" className={className} src="/../public/facebook.png" alt="Circles and Dots" loading="lazy" />
     </a>
   )
 }
