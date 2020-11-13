@@ -1,5 +1,7 @@
+// Import styles
 import '../styles/styles.css';
 
+// Import components
 import Button from '../components/Button';
 import Layout from '../components/Layout';
 import ImageHeader from '../components/ImageHeader';
@@ -44,7 +46,7 @@ const MyPromiseCopy = () =>
   </div>
 ;
 
-export default function Home() {
+export default function Home(doc) {
   return (
     <div>
       <Layout 
