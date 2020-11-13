@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
+import Button from './Button';
 
 function imageInView (partialVisibility) {
 	if (partialVisibility == true) {
@@ -19,7 +20,8 @@ function textInView (partialVisibility) {
 /* Component Layout */ 
 const ImageTextSplit = (props) => {
 	const {
-		copy,
+		heading,
+		paragraph,
 		imageSrc,
 		imageAlt
 	} = props 
@@ -37,7 +39,22 @@ const ImageTextSplit = (props) => {
 			</div>
 			<VisibilitySensor onChange={textInView}>
 				<div id="image-text-split__text-container" className="image-text-split__text-container sm:w-full md:w-3/5 text-left sm:inline-block md:align-middle">
-					{copy}
+					<div>
+						<div className="overflow-x-hidden">
+							<h3 className="image-text-split__heading text-3xl">{heading}</h3>
+							<div>{paragraph}</div>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p>
+						</div>
+						<div>
+							<Button
+								buttonText={'Learn More About Me'}
+								className={'button text-left text-white bg-dark-background'}
+								linkHref={'/about-me'}
+								targetBlank={false}
+							/>
+						</div>
+					</div>  
 				</div>
 			</VisibilitySensor>
 		</div>
@@ -45,19 +62,15 @@ const ImageTextSplit = (props) => {
 }
 
 ImageTextSplit.propTypes = {
-	copy: PropTypes.any,
+	heading: PropTypes.string,
+	paragraph: PropTypes.string,
 	imageSrc: PropTypes.string,
 	imageAlt: PropTypes.string
 }
 
 ImageTextSplit.defaultProps = {
-  copy: 
-		<div>
-			<h3 className="image-text-split__heading text-3xl">Hello! My name is John Bentley.</h3>
-			<p className="image-text-split__text sm:text-xl text-base">I am a freelance web designer and digital marketer with over five years of experience. I’ve worked on many different projects, with clients ranging from small non-profits to large, fortune 500 companies.</p>
-			<p>&nbsp;</p>
-			<p className="image-text-split__text sm:text-xl text-base">Hire me for your next digital project, and get results!</p>
-		</div>,
+	heading: "Hello",
+	paragraph: "How are you?",
 	imageSrc: '',
 	imageAlt: ''
 }

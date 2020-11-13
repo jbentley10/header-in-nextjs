@@ -4,6 +4,7 @@ import '../styles/styles.css';
 // Import dependencies
 import React from 'react';
 import { StaticKitProvider } from '@statickit/react';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 // Import functions
 import { fetchEntries } from '../utils/contentfulPages'
@@ -22,38 +23,6 @@ import HorizontalBar from '../components/Images/HorizontalBar';
 import TwoTextSplit from '../components/TwoTextSplit';
 
 export default function Home({ res }) {
-
-  const CTAText = () => 
-    <div>
-      <h2 className="text-3xl pb-12">{res.fields.callToActionText}</h2>
-      
-      <Button
-        buttonText={'Contact Me'}
-        className={'button text-center text-white bg-dark-background'}
-        linkHref={'/contact'}
-        targetBlank={false}
-      />
-    </div>
-  ;
-
-  // const ImageTextSplitCopy = () => {
-  //   <div>
-  //     <div className="overflow-x-hidden">
-  //       <h3 className="image-text-split__heading text-3xl">Hey</h3>
-  //       <div>Dude</div>
-  //       <p>&nbsp;</p>
-  //       <p>&nbsp;</p>
-  //     </div>
-  //     <div>
-  //       <Button
-  //         buttonText={'Learn More About Me'}
-  //         className={'button text-left text-white bg-dark-background'}
-  //         linkHref={'/about-me'}
-  //         targetBlank={false}
-  //       />
-  //     </div>
-  //   </div>    
-  // };
 
   return (   
     <StaticKitProvider site="d63545d25c9c">
@@ -102,15 +71,16 @@ export default function Home({ res }) {
         <div className="bg-dark-background sm:h-8 md:h-32" />
         <BlobsTransition />
         <ImageTextSplit
-          copy={`Hi there`}
+          heading={res.fields.imageTextSplitHeading}
+          paragraph={res.fields.imageTextSplitParagraphShort}
           imageSrc={'profile'}
           imageAlt={'John Bentley Creative, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>
         <DotsTransition />
         <TwoTextSplit 
-          splitText1={res.fields.twoTextSplitParagraph1}
-          splitText2={res.fields.twoTextSplitParagraph2}
+          splitText1={documentToHtmlString(res.fields.twoTextSplitParagraph1)}
+          splitText2={documentToHtmlString(res.fields.twoTextSplitParagraph2)}
         />
         <Button 
           buttonText={'See My Work'}
@@ -121,7 +91,8 @@ export default function Home({ res }) {
         <HorizontalBar />
         
         <CallToAction 
-          ctaText={<CTAText />}
+          heading={documentToHtmlString(res.fields.callToActionHeading)}
+          buttonText={'Contact Me'}
         />
         <div className="bg-dark-background h-12" />
       </Layout>
