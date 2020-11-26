@@ -45,6 +45,7 @@ export default function Home() {
         <ImageHeader 
           heading={'Contact'}
         />
+        <MainText />
         <CallToAction
           ctaText={<MainText />}
         />      

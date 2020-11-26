@@ -7,7 +7,7 @@ import { StaticKitProvider } from '@statickit/react';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 // Import functions
-import { fetchEntries } from '../utils/contentfulPages'
+import { fetchHomePage } from '../utils/contentfulPages'
 
 // Import components
 import Layout from '../components/Layout';
@@ -91,7 +91,7 @@ export default function Home({ res }) {
         <HorizontalBar />
         
         <CallToAction 
-          heading={documentToHtmlString(res.fields.callToActionHeading)}
+          heading={res.fields.callToActionHeading}
           buttonText={'Contact Me'}
         />
         <div className="bg-dark-background h-12" />
@@ -101,7 +101,7 @@ export default function Home({ res }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchEntries()
+  const res = await fetchHomePage()
 
   if (res.fields) {
     return {

@@ -22,7 +22,7 @@ const TwoTextSplit = ({splitText1, splitText2}) => (
         <VisibilitySensor onChange={textLeftInView}>
             <div id="two-text-split__left" className="two-text-split__left left inline">
                 <div className="left-quote sm:w-full md:w-1/2 text-left inline-block">
-                    {splitText1}
+                    <div dangerouslySetInnerHTML={{ __html: splitText1 }} />
                 </div>
                 <div className="w-2/5 inline-block h-24" /> 
                 <p>&nbsp;</p>           
@@ -34,7 +34,7 @@ const TwoTextSplit = ({splitText1, splitText2}) => (
             <div id="two-text-split__right" className="two-text-split__right right inline">
                 <div className="w-2/5 inline-block" />
                 <div className="right-quote sm:w-full md:w-1/2 text-right inline-block mb-12">
-                    {splitText2}
+                    <div dangerouslySetInnerHTML={{ __html: splitText2 }} />
                 </div>
             </div>
         </VisibilitySensor>

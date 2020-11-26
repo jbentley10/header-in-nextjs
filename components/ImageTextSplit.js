@@ -22,6 +22,7 @@ const ImageTextSplit = (props) => {
 	const {
 		heading,
 		paragraph,
+		copy,
 		imageSrc,
 		imageAlt
 	} = props 
@@ -41,11 +42,20 @@ const ImageTextSplit = (props) => {
 				<div id="image-text-split__text-container" className="image-text-split__text-container sm:w-full md:w-3/5 text-left sm:inline-block md:align-middle">
 					<div>
 						<div className="overflow-x-hidden">
-							<h3 className="image-text-split__heading text-3xl">{heading}</h3>
-							<div>{paragraph}</div>
+							<h3 className="image-text-split__heading text-3xl pb-4">{heading}</h3>
+							<p>{paragraph}</p>
 							<p>&nbsp;</p>
 							<p>&nbsp;</p>
 						</div>
+						
+						{ copy !== null &&
+							<div>
+								<div dangerouslySetInnerHTML={{ __html: copy}} />
+								<br />
+								<br />
+							</div>
+						}
+						
 						<div>
 							<Button
 								buttonText={'Learn More About Me'}
@@ -64,13 +74,15 @@ const ImageTextSplit = (props) => {
 ImageTextSplit.propTypes = {
 	heading: PropTypes.string,
 	paragraph: PropTypes.string,
+	copy: PropTypes.string,
 	imageSrc: PropTypes.string,
 	imageAlt: PropTypes.string
 }
 
 ImageTextSplit.defaultProps = {
-	heading: "Hello",
-	paragraph: "How are you?",
+	heading: "",
+	paragraph: "",
+	copy: PropTypes.string,
 	imageSrc: '',
 	imageAlt: ''
 }

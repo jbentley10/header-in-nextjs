@@ -6,13 +6,14 @@ import Button from './Button';
 const CallToAction = (props) => {
     const {
       heading,
-      buttonText
+      buttonText,
+      className
     } = props
 
   return (
-    <div className="call-to-action bg-dark-background text-white w-full sm:p-12 md:p-24 text-center">
+    <div className={`${className} call-to-action bg-dark-background text-white w-full sm:p-12 md:p-24 text-center`}>
       <div>
-        <h2 className="text-3xl pb-12">{heading}</h2>
+        <div className={`text-3xl pb-12`} dangerouslySetInnerHTML={{ __html: heading }} />
         
         <Button
           buttonText={buttonText}
@@ -28,9 +29,13 @@ const CallToAction = (props) => {
 export default CallToAction;
 
 CallToAction.propTypes = {
-  ctaText: PropTypes.any
+  heading: PropTypes.any,
+  buttonText: PropTypes.any,
+  className: PropTypes.string
 }
 
 CallToAction.defaultProps = {
-  ctaText: <p>Contact Me</p>
+  heading: "Interested in learning more?",
+  buttonText: "Contact Me",
+  className: ""
 }

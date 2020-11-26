@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^14.1.2",
+    "@contentful/rich-text-react-renderer": "^14.1.2",
+    "@contentful/rich-text-types": "^14.1.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",

@@ -27,7 +27,7 @@ const ImageTextButtonSplit = (props) => {
   return (
     <div className="image-text-button-split px-12 text-center bg-dark-background py-24 md:align-middle text-white">              
       <div className="image-text-button-split__text-container sm:w-full md:w-1/2 md:mr-20 text-left sm:inline-block md:align-middle">
-        {copy}
+        <div dangerouslySetInnerHTML={{ __html: copy }} />
       </div>
       
       <div className="image-text-button-split__image-container sm:text-center sm:my-8 md:mb-12 sm:m-auto sm:w-full md:w-2/5 sm:block md:inline-block md:align-middle">

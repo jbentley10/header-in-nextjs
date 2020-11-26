@@ -210,6 +210,15 @@ a {
 .two-text-split__right--animate {
   opacity: 1;
 }
+
+.page-heading, .page-copy, .page-subheading h2 {
+  color: #9c79e3;
+}
+
+.page-copy, .page-subheading, .page-copy p {
+  color: #ffffff;
+}
+
 /* Animate the logo */
 /* Circle */
 .cls-1 {
