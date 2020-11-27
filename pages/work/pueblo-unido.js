@@ -109,7 +109,7 @@ export default function PuebloUnido({ res }) {
           </div>
         </div>
 
-        <DotsTransition className={"-mt-6 pt-12"} />
+        {/* <DotsTransition className={"-mt-6 pt-12"} /> */}
         <CallToAction ctaText={<CTAText />} />
         <div className="h-12 bg-dark-background" />
       </Layout>      

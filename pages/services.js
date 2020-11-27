@@ -108,7 +108,7 @@ export default function Services ({ res }) {
             </div>
           </div>
 
-        <DotsTransition />
+        {/* <DotsTransition /> */}
         <HorizontalBar />
         <CallToAction 
           ctaText={<CTAText />}

@@ -77,7 +77,7 @@ export default function Home({ res }) {
           imageAlt={'John Bentley Creative, Freelance Web Design and WordPress Development in Portland Oregon'}
         >
         </ImageTextSplit>
-        <DotsTransition />
+        {/* <DotsTransition /> */}
         <TwoTextSplit 
           splitText1={documentToHtmlString(res.fields.twoTextSplitParagraph1)}
           splitText2={documentToHtmlString(res.fields.twoTextSplitParagraph2)}

@@ -32,10 +32,10 @@ const ImageTextButtonSplit = (props) => {
       
       <div className="image-text-button-split__image-container sm:text-center sm:my-8 md:mb-12 sm:m-auto sm:w-full md:w-2/5 sm:block md:inline-block md:align-middle">
         <VisibilitySensor onChange={image1InView}>                    
-          <Image unsized id="image-text-split__image-1" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="/../public/me-hike.jpg" alt="Climbing and hiking just outside of Portland" loading="lazy" />          
+          <Image width={500} height={500} id="image-text-split__image-1" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="/../public/me-hike.jpg" alt="Climbing and hiking just outside of Portland" loading="lazy" />          
         </VisibilitySensor>
         <VisibilitySensor onChange={image2InView}>                    
-          <Image unsized id="image-text-split__image-2" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="/../public/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" loading="lazy" />          
+          <Image width={500} height={500} id="image-text-split__image-2" className="image-text-split__image rounded-1/2 sm:my-10 md:my-5 sm:h-full sm:w-full md:w-5/6 flex items-center justify-center" src="/../public/me-nepal.jpg" alt="Trekking through the Himalayas in the spring of 2018" loading="lazy" />          
         </VisibilitySensor>
       </div>
 

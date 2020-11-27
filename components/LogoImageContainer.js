@@ -14,7 +14,7 @@ const LogoImageContainer = (props) => {
 
   return (
     <div className="image-container w-full p-24 md:pb-0">
-      <Image unsized className="h-full flex items-center justify-center" src={`/` + imageSource} alt={imageAltText} loading="lazy" />
+      <Image width={80} height={80} className="h-full flex items-center justify-center" src={`/` + imageSource} alt={imageAltText} loading="lazy" />
     </div>
   )
 }

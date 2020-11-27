@@ -1,8 +1,6 @@
+// Import dependencies
 import PropTypes from 'prop-types';
-
-function addDefaultSrc(ev) {
-  ev.target.src = '../static/img/png/blob-background.png';
-}
+import Image from 'next/image';
 
 const BlobsTransition = (props) => {
   const {
@@ -11,11 +9,7 @@ const BlobsTransition = (props) => {
   } = props
 
   return (
-    <picture>
-      <source type="image/webp" srcSet="../static/img/webp/blob-background.webp" />
-      <source type="image/png" srcSet="../static/img/png/blob-background.png" />
-      <img className={className + " bg-dark-background w-full"} src="../static/img/png/blob-background.png" alt="Circles and Dots" loading="lazy" />
-    </picture>
+    <Image layout={`fill`} className={className + " bg-dark-background"} src="/../public/blob-background.png" alt="Circles and Dots" loading="lazy" />
   )
 }
 

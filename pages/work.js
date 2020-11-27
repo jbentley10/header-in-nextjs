@@ -63,9 +63,9 @@ export default class Work extends React.Component {
             </ThreeColumnIcons>
           </div>
   
-          <DotsTransition 
+          {/* <DotsTransition 
             className={'-mt-6 pt-12'}
-          />
+          /> */}
           <CallToAction 
             ctaText={<CTAText />}
           />
