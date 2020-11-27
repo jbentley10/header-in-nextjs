@@ -10,14 +10,26 @@ import ContactForm from '../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const MainText = () => 
-  <div>
+  <div className={`bg-dark-background text-white text-container w-full sm:p-8 md:py-24 md:px-16`}>
     <h2 className="text-3xl">What are you waiting for? It's your time to shine.</h2>
     <p>&nbsp;</p>
     <ContactForm /> 
     <p>&nbsp;</p>
     <p className="text-lg">You may also contact me directly via phone or email: </p> 
-    <p><FontAwesomeIcon icon="envelope" className="w-16 shadow-none p-4 cursor-pointer inline-block align-middle" /><a href="mailto:john@jwbentley.com?subject=Project Request" className="sm:text-xl text-link-purple hover:text-link-purple-darker align-middle"> john@jwbentley.com</a></p>
-    <p><FontAwesomeIcon icon="phone" className="w-16 shadow-none p-4 cursor-pointer inline-block align-middle" /><a href="tel:+17605324516" className="sm:text-xl text-link-purple hover:text-link-purple-darker align-middle"> (760) 532-4516</a></p>
+    <p>
+      <a 
+        href="mailto:john@jwbentley.com?subject=Project Request" 
+        className="sm:text-xl text-link-purple hover:text-link-purple-darker align-middle"> 
+          john@jwbentley.com
+      </a>
+    </p>
+    <p>
+      <a 
+        href="tel:+17605324516" 
+        className="sm:text-xl text-link-purple hover:text-link-purple-darker align-middle"> 
+          (760) 532-4516
+      </a>
+    </p>
     <p className="text-lg">I am not currently accepting new projects, but please feel free to reach out! I would be happy to schedule a consultation with you, and plan a project for a later date.</p> 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -45,6 +57,7 @@ export default function Home() {
         <ImageHeader 
           heading={'Contact'}
         />
+        
         <MainText />
         <CallToAction
           ctaText={<MainText />}

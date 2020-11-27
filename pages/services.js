@@ -13,11 +13,11 @@ import { BLOCKS } from '@contentful/rich-text-types';
 
 const options = {
   renderNode: {
-    [BLOCKS.UL_LIST]: (node, children) => (
-      <ul style={{ listStyleType: 'none', margin: '0', padding: '0' }}>{children}</ul>
+    [BLOCKS.UL_LIST]: (node) => (
+      <ul style={{ listStyleType: 'none', margin: '0', padding: '0' }}>{node}</ul>
     ),
-    [BLOCKS.LIST_ITEM]: (node, children) => (
-      <li style={{ margin: '0 0 -8px 0', padding: '0' }}>{children}</li>
+    [BLOCKS.LIST_ITEM]: (node) => (
+      <li style={{ margin: '0 0 -8px 0', padding: '0' }}>{node}</li>
     ),
   },
 };
