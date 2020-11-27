@@ -9,7 +9,7 @@ const BlobsTransition = (props) => {
   } = props
 
   return (
-    <Image layout={`fill`} className={className + " bg-dark-background"} src="/../public/blob-background.png" alt="Circles and Dots" loading="lazy" />
+    <Image layout={`fill`} className={className + " bg-dark-background"} src="/blob-background.png" alt="Circles and Dots" loading="lazy" />
   )
 }
 

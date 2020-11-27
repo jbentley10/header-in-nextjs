@@ -12,7 +12,7 @@ const DotsTransition = (props) => {
   } = props
 
   return (
-    <Image layout={`fill`} className={className + " bg-dark-background w-full"} src="/../static/img/jpg/dots-transition.jpg" alt="Circles and Dots" loading="lazy" />    
+    <Image layout={`fill`} className={className + " bg-dark-background w-full"} src="/dots-transition.jpg" alt="Circles and Dots" loading="lazy" />    
   )
 }
 
