@@ -17,17 +17,17 @@ const Footer = () => (
     <p className="text-base pt-6 pb-2">
       &copy;{`${new Date().getFullYear()} John Bentley Creative`}
     </p>
-    <p className="text-base pb-2">Freelance Web Design Portland Oregon</p>
+    <p className="text-base pb-4">Freelance Web Design Portland Oregon</p>
     <div className="icons p-4 inline align-middle">
       <a href="mailto:john@jwbentley.com?subject=Project Request" className="sm:text-xl cursor-pointer text-white hover:text-gray align-middle"></a>
       <FacebookIcon 
-        className={'p-4 cursor-pointer inline-block align-middle w-16'}
+        className={'cursor-pointer inline-block align-middle w-16'}
       />
       <InstagramIcon 
-        className={'p-4 cursor-pointer inline-block align-middle w-16'}
+        className={'cursor-pointer inline-block align-middle w-16'}
       />
       <LinkedInIcon 
-        className={'p-4 cursor-pointer inline-block align-middle w-16'}
+        className={'cursor-pointer inline-block align-middle w-16'}
       />
     </div>
   </div>
