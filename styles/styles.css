@@ -210,6 +210,29 @@ a {
 .two-text-split__right--animate {
   opacity: 1;
 }
+
+.page-heading h2, .page-copy h2, .page-subheading h2 {
+  color: #9c79e3;
+}
+
+.page-heading h3, .page-copy h3, .page-subheading h3 {
+  font-family: Barlow, sans-serif;
+  font-size: 2.5em;
+  color: #9c79e3; 
+  font-weight: 400;
+}
+
+.page-heading h4, .page-copy h4, .page-subheading h4 {
+  font-family: Barlow, sans-serif;
+  font-size: 2em;
+  color: #9c79e3; 
+  font-weight: 400;
+}
+
+.page-subheading p, .page-copy p {
+  color: #ffffff;
+}
+
 /* Animate the logo */
 /* Circle */
 .cls-1 {
